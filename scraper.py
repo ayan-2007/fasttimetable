@@ -997,7 +997,25 @@ def scrape_workbook(payload, school="Engineering"):
     return entries
 
 
+DAY_ORDER = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+
+def _time_start_minutes(value):
+    match = re.search(r"(\d{1,2}):(\d{2})", str(value or ""))
+    if not match:
+        return 0
+    return int(match.group(1)) * 60 + int(match.group(2))
+
+
+def sort_entries(entries):
+    def key(entry):
+        day = DAY_ORDER.index(entry.get("day")) if entry.get("day") in DAY_ORDER else len(DAY_ORDER)
+        return (day, _time_start_minutes(entry.get("time")), str(entry.get("course") or "").lower())
+    return sorted(entries, key=key)
+
+
 def write_db(entries):
+    entries = sort_entries(entries)
     payload = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S%z"),
         "source": ", ".join(SOURCE_URLS),
