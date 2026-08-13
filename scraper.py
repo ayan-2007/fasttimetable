@@ -1004,7 +1004,11 @@ def _time_start_minutes(value):
     match = re.search(r"(\d{1,2}):(\d{2})", str(value or ""))
     if not match:
         return 0
-    return int(match.group(1)) * 60 + int(match.group(2))
+    hour = int(match.group(1))
+    minutes = hour * 60 + int(match.group(2))
+    if 1 <= hour <= 6:
+        minutes += 12 * 60
+    return minutes
 
 
 def sort_entries(entries):

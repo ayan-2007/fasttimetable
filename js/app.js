@@ -31,7 +31,11 @@
     if (parts.length !== 2 || isNaN(parts[0]) || isNaN(parts[1])) {
       return null;
     }
-    return parts[0] * 60 + parts[1];
+    let minutes = parts[0] * 60 + parts[1];
+    if (parts[0] >= 1 && parts[0] <= 6) {
+      minutes += 12 * 60;
+    }
+    return minutes;
   }
 
   function parseRange(timeValue) {
