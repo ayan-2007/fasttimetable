@@ -58,14 +58,91 @@
     return values;
   }
 
+  function pad(value) {
+    return value < 10 ? "0" + value : String(value);
+  }
+
+  function todayKey() {
+    return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][new Date().getDay()];
+  }
+
+  function esc(value) {
+    const node = document.createElement("div");
+    node.textContent = value == null ? "" : String(value);
+    return node.innerHTML;
+  }
+
   function bindElements() {
     elements.updatedBadge = byId("updated-badge");
     elements.themeToggle = byId("theme-toggle");
+    elements.printBtn = byId("print-btn");
+    elements.resetFilters = byId("reset-filters");
     elements.degree = byId("filter-degree");
     elements.section = byId("filter-section");
     elements.day = byId("filter-day");
     elements.status = byId("status");
     elements.results = byId("results");
+    elements.statPrograms = byId("stat-programs");
+    elements.statBatches = byId("stat-batches");
+    elements.statCourses = byId("stat-courses");
+    elements.statEntries = byId("stat-entries");
+    elements.statClasses = byId("stat-classes");
+    elements.clockTime = byId("clock-time");
+    elements.clockDate = byId("clock-date");
+    elements.marqueeTrack = byId("marquee-track");
+    elements.footerYear = byId("footer-year");
+  }
+
+  function isEntryNow(item) {
+    const range = parseRange(item.time);
+    if (!range) {
+      return false;
+    }
+    const now = new Date();
+    const nowMinutes = now.getHours() * 60 + now.getMinutes();
+    return todayKey() === String(item.day || "").trim() && nowMinutes >= range.start && nowMinutes <= range.end;
+  }
+
+  function startClock() {
+    function tick() {
+      const now = new Date();
+      elements.clockTime.textContent = [now.getHours(), now.getMinutes(), now.getSeconds()].map(pad).join(":");
+      elements.clockDate.textContent = now
+        .toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" })
+        .toUpperCase();
+    }
+    tick();
+    setInterval(tick, 1000);
+  }
+
+  function updateStats() {
+    const values = {
+      programs: uniqueValues(state.data, "department"),
+      batches: uniqueValues(state.data, "batch_section"),
+      courses: uniqueValues(state.data, "course"),
+      entries: state.data.length,
+    };
+    elements.statPrograms.textContent = values.programs.length;
+    elements.statBatches.textContent = values.batches.length;
+    elements.statCourses.textContent = values.courses.length;
+    elements.statEntries.textContent = values.entries;
+    elements.statClasses.textContent = values.entries.toLocaleString();
+  }
+
+  function populateMarquee() {
+    if (!elements.marqueeTrack) {
+      return;
+    }
+    const departments = uniqueValues(state.data, "department");
+    if (departments.length === 0) {
+      return;
+    }
+    const fragment = departments
+      .map(function (name) {
+        return '<span class="mq-item">' + esc(name) + "</span><span class=\"mq-dot\">&#10022;</span>";
+      })
+      .join("");
+    elements.marqueeTrack.innerHTML = fragment + fragment;
   }
 
   function setStatus(message) {
@@ -110,6 +187,8 @@
         state.loading = false;
         populateOptions();
         updateUpdatedBadge(payload);
+        updateStats();
+        populateMarquee();
         render();
       })
       .catch(function (error) {
@@ -278,7 +357,8 @@
 
   function renderRow(item, showDay) {
     const row = document.createElement("div");
-    row.className = "grid-row";
+    const now = isEntryNow(item);
+    row.className = "grid-row" + (now ? " is-now" : "");
 
     if (showDay) {
       const dayCell = document.createElement("div");
@@ -299,12 +379,28 @@
       const div = document.createElement("div");
       div.className = "grid-cell";
       div.setAttribute("data-label", cell.label);
-      const text = document.createElement("span");
-      text.textContent = cell.value;
-      if (cell.dim) {
-        text.classList.add("cell-dim");
+      if (cell.label === "Time") {
+        const timeText = document.createElement("span");
+        timeText.className = "cell-time";
+        timeText.textContent = cell.value;
+        div.appendChild(timeText);
+        if (now) {
+          const tag = document.createElement("span");
+          tag.className = "now-tag";
+          tag.textContent = "NOW";
+          div.appendChild(tag);
+        }
+      } else if (cell.label === "Course") {
+        const courseText = document.createElement("span");
+        courseText.className = "course-name";
+        courseText.textContent = cell.value;
+        div.appendChild(courseText);
+      } else {
+        const text = document.createElement("span");
+        text.className = "room-chip";
+        text.textContent = cell.value;
+        div.appendChild(text);
       }
-      div.appendChild(text);
       row.appendChild(div);
     });
 
@@ -360,6 +456,18 @@
       state.day = elements.day.value;
       render();
     });
+    elements.resetFilters.addEventListener("click", function () {
+      state.degree = "";
+      state.section = "";
+      state.day = "";
+      elements.degree.value = "";
+      elements.section.value = "";
+      elements.day.value = "";
+      render();
+    });
+    elements.printBtn.addEventListener("click", function () {
+      window.print();
+    });
   }
 
   function setupTheme() {
@@ -381,6 +489,10 @@
     bindElements();
     setupTheme();
     setupListeners();
+    startClock();
+    if (elements.footerYear) {
+      elements.footerYear.textContent = new Date().getFullYear();
+    }
     fetchData();
   }
 
