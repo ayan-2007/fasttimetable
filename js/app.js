@@ -168,6 +168,27 @@
     populateSections();
   }
 
+  function batchLabel(value) {
+    const text = String(value == null ? "" : value).trim();
+    let match = /^([A-Z]{2})-(\d+)([A-E])$/.exec(text);
+    if (match) {
+      return "Semester " + match[2] + " · Section " + match[3];
+    }
+    match = /^([A-Z]{2})-(\d+)\s*\(All\)$/.exec(text);
+    if (match) {
+      return "Semester " + match[2] + " · All sections";
+    }
+    match = /^([A-Z]{2})-([A-E])$/.exec(text);
+    if (match) {
+      return match[1] + " · Section " + match[2];
+    }
+    match = /^([A-E])$/.exec(text);
+    if (match) {
+      return "Section " + match[1];
+    }
+    return text;
+  }
+
   function populateSections() {
     const pool = state.degree
       ? state.data.filter(function (item) {
@@ -177,9 +198,7 @@
     const sections = uniqueValues(pool, "batch_section", function (a, b) {
       return normalizeText(a).localeCompare(normalizeText(b));
     });
-    fillSelect(elements.section, sections, "All sections", function (value) {
-      return value === "All" ? "All (combined)" : value;
-    });
+    fillSelect(elements.section, sections, "All sections", batchLabel);
     if (state.section && sections.indexOf(state.section) === -1) {
       state.section = "";
     }

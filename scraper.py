@@ -16,6 +16,7 @@ Fail-safe behavior:
   never written.
 """
 
+import difflib
 import json
 import os
 import re
@@ -126,9 +127,73 @@ PROGRAM_MAP = {
     "PH": "Physics",
 }
 
+PROGRAM_CODES = "CE|EE|CS|SE|AI|DS|ME|BM|BA|PE|PG|PH|MS"
+
+# Section markers: optional program code + optional semester digit + section letter,
+# e.g. "CE-A", "EE-2B", " MS-A", "- A".
 MATRIX_SECTION_RE = re.compile(
-    r"(?:(\b(?:CE|EE|CS|SE|AI|DS|ME|BM|BA|PE|PG|PH)\b)[ ._\-]*)?([A-E])$"
+    r"(?:(\b(?:" + PROGRAM_CODES + r")\b)[ ._\-]*)?(\d)?[ ._\-]*([A-E])$"
 )
+
+# Batch/semester detection ---------------------------------------------------
+# The "Course Allocation" sheet maps every course to its program + semester
+# (e.g. "BS CE 1st Semester" -> Batch BS(CE) 2026). We combine that with the
+# color-coded batch blocks in the schedule sheet so every class gets a batch
+# identifier like "CE-1A" (CE program, 1st semester, section A).
+
+ALLOC_HEADER_RE = re.compile(r"^\s*BS\s+(\w+)\s+(\d+)(?:st|nd|rd|th)\s+Semester")
+ALLOC_SHEET_RE = re.compile(r"allocation|allocated courses", re.IGNORECASE)
+MATCH_THRESHOLD = 0.60
+
+COURSE_ABBR = {
+    "adv": "advanced",
+    "anal": "analysis",
+    "analogue": "analog",
+    "arch": "architecture",
+    "circ": "circuits",
+    "com": "communication",
+    "comm": "communication",
+    "comminity": "community",
+    "comp": "complex",
+    "dev": "devices",
+    "elect": "electronics",
+    "eng": "engineering",
+    "engg": "engineering",
+    "engr": "engineers",
+    "fund": "fundamentals",
+    "inst": "instrumentation",
+    "instru": "instrumentation",
+    "intel": "intelligence",
+    "inter": "interfacing",
+    "mech": "mechanical",
+    "mgmt": "management",
+    "mp": "microprocessor",
+    "net": "network",
+    "netwk": "network",
+    "netwks": "networks",
+    "obj": "object",
+    "ocp": "occupational",
+    "org": "organization",
+    "prog": "programming",
+    "struct": "structures",
+    "strucures": "structures",
+    "sys": "systems",
+    "tech": "technical",
+    "thermo": "thermodynamics",
+    "trans": "transforms",
+    "var": "variable",
+    "vars": "variables",
+}
+
+SECTION_STRIP_RE = re.compile(
+    r"\s+(?:(?:" + PROGRAM_CODES + r")\b[ ._\-]*)?(?:\d[ ._\-]*)?[A-E]"
+    r"(?:\s*,\s*(?:(?:" + PROGRAM_CODES + r")\b[ ._\-]*)?(?:\d[ ._\-]*)?[A-E])*\s*$"
+)
+
+INSTRUCTOR_CUT_RE = re.compile(r"\s+(?:mr\.?|ms\.?|dr\.?|prof\.?)\s+[a-z]", re.IGNORECASE)
+TEACHER_CUT_RE = re.compile(r"\s+teacher\s*:", re.IGNORECASE)
+TIME_CUT_RE = re.compile(r"\d{1,2}:\d{2}")
+PAREN_RE = re.compile(r"\s*\([^)]*\)\s*")
 
 
 def log_alert(message):
@@ -319,31 +384,201 @@ def build_course_rows(worksheet, rows, block_start, block_end, room_col):
     return course_rows
 
 
-def extract_matrix_section(course):
+def extract_section_info(course):
     text = clean_cell(course) or ""
+    text = re.sub(r"\s*\([^)]*\)\s*$", "", text)
     match = MATRIX_SECTION_RE.search(text)
     if not match:
-        return None, None
+        return None, None, None
     program = match.group(1)
-    section = match.group(2)
-    if program:
-        return f"{program}-{section}", program
-    return section, None
+    semester = int(match.group(2)) if match.group(2) else None
+    section = match.group(3)
+    return program, semester, section
 
 
-def build_matrix_entry(day, time_label, course, instructor, room):
-    section, program = extract_matrix_section(course)
-    department = PROGRAM_MAP.get(program, "School of Engineering")
-    entry_type = classify_type(None, course)
+def program_in_name(course):
+    text = clean_cell(course) or ""
+    match = re.search(r"\b(" + PROGRAM_CODES + r")\b", text, re.IGNORECASE)
+    return match.group(1).upper() if match else None
+
+
+def normalize_course(text):
+    text = clean_cell(text) or ""
+    text = text.lower()
+    text = text.replace("&", " and ")
+    text = re.sub(r"\ba & digital\b", "analog and digital", text)
+    text = re.sub(r"[^a-z0-9.\s/]", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    tokens = []
+    for token in text.split():
+        base = token[:-1] if token.endswith(".") and len(token) > 1 else token
+        tokens.append(COURSE_ABBR.get(base, token))
+    return " ".join(tokens)
+
+
+def base_course_name(course):
+    text = clean_cell(course) or ""
+    text = INSTRUCTOR_CUT_RE.split(text, maxsplit=1)[0]
+    text = TEACHER_CUT_RE.split(text, maxsplit=1)[0]
+    text = TIME_CUT_RE.split(text, maxsplit=1)[0]
+    text = PAREN_RE.sub(" ", text)
+    text = SECTION_STRIP_RE.sub("", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def parse_allocation_sheet(worksheet):
+    rows = []
+    current = None
+    for row in worksheet.iter_rows(values_only=True):
+        if not row:
+            continue
+        label = clean_cell(row[0]) if len(row) > 0 else None
+        if label:
+            match = ALLOC_HEADER_RE.match(label)
+            if match:
+                current = (match.group(1).upper(), int(match.group(2)))
+                continue
+        if current:
+            code = clean_cell(row[2]) if len(row) > 2 else None
+            name = clean_cell(row[3]) if len(row) > 3 else None
+            if code and name:
+                normalized = normalize_course(name)
+                if normalized:
+                    rows.append((current[0], current[1], normalized))
+    return rows
+
+
+def match_allocation(name, program_hint, alloc_rows):
+    base = normalize_course(base_course_name(name))
+    if not base:
+        return None, 0.0, False
+    best = None
+    best_ratio = 0.0
+    tied = False
+    for program, semester, alloc_name in alloc_rows:
+        if program_hint and program != program_hint:
+            continue
+        ratio = difflib.SequenceMatcher(None, base, alloc_name).ratio()
+        if ratio > best_ratio + 1e-6:
+            best_ratio = ratio
+            best = (program, semester)
+            tied = False
+        elif abs(ratio - best_ratio) <= 1e-6 and ratio > 0:
+            tied = True
+    if best_ratio < MATCH_THRESHOLD:
+        return None, best_ratio, False
+    return best, best_ratio, tied
+
+
+def cell_fill_key(worksheet, row_index, col_index):
+    try:
+        cell = worksheet.cell(row_index + 1, col_index + 1)
+    except (IndexError, ValueError):
+        return None
+    fill = cell.fill
+    if fill is None or fill.fill_type is None:
+        return None
+    rgb = fill.fgColor.rgb if fill.fgColor else None
+    if not rgb or str(rgb) == "00000000":
+        return None
+    return str(rgb)
+
+
+def first_cell_anchor(row, start, end):
+    for col_index in range(start, min(end, len(row) - 1) + 1):
+        if clean_cell(row[col_index]):
+            return col_index
+    return None
+
+
+def compose_batch(program, semester, section):
+    if semester is not None:
+        prefix = f"{program}-{semester}" if program else str(semester)
+    elif program:
+        prefix = program
+    else:
+        prefix = ""
+    if not section or section == "All":
+        return f"{prefix} (All)" if prefix else "All"
+    if semester is not None:
+        return f"{prefix}{section}"
+    return f"{prefix}-{section}" if prefix else section
+
+
+def enrich_batch_info(entries, alloc_rows):
+    for entry in entries:
+        hint = entry.get("_prog_hint")
+        matched, ratio, tied = match_allocation(entry.get("course"), hint, alloc_rows)
+        entry["_matched_program"] = matched[0] if matched else None
+        entry["_matched_semester"] = matched[1] if matched else None
+        entry["_tied"] = tied and matched is not None
+
+    votes = {}
+    for entry in entries:
+        program = entry.get("_matched_program")
+        semester = entry.get("_matched_semester")
+        color = entry.get("_color")
+        if program is not None and semester is not None and color:
+            key = (program, semester)
+            votes.setdefault(color, {}).setdefault(key, 0)
+            votes[color][key] += 1
+    color_assign = {}
+    for color, counter in votes.items():
+        total = sum(counter.values())
+        top, count = max(counter.items(), key=lambda item: item[1])
+        if count > total / 2.0:
+            color_assign[color] = top
+
+    for entry in entries:
+        name = entry.get("course")
+        hint = entry.get("_prog_hint")
+        semester_digit = entry.get("_sem_digit")
+        section = entry.get("_section")
+        matched_program = entry.get("_matched_program")
+        matched_semester = entry.get("_matched_semester")
+        tied = entry.get("_tied", False)
+
+        program = matched_program if matched_program else hint
+        semester = matched_semester
+        if semester_digit is not None:
+            program = hint or program
+            semester = semester_digit
+        elif not program or semester is None or tied:
+            color = entry.get("_color")
+            if color in color_assign:
+                program, semester = color_assign[color]
+
+        if program or semester is not None or section:
+            if program:
+                entry["department"] = PROGRAM_MAP.get(program, "School of Engineering")
+            entry["semester"] = semester
+            entry["section"] = section or "All"
+            entry["batch_section"] = compose_batch(program, semester, section)
+        else:
+            entry["semester"] = None
+            entry["section"] = entry.get("batch_section") or "All"
+
+        for key in ("_color", "_prog_hint", "_sem_digit", "_section", "_matched_program", "_matched_semester", "_tied"):
+            entry.pop(key, None)
+    return entries
+
+
+def build_matrix_entry(day, time_label, course, instructor, room, color):
+    program, semester_digit, section = extract_section_info(course)
     return {
-        "department": department,
-        "batch_section": section or "All",
+        "department": PROGRAM_MAP.get(program, "School of Engineering"),
+        "batch_section": compose_batch(program, semester_digit, section),
         "day": day,
         "time": time_label,
         "course": course,
         "instructor": instructor or "Not assigned",
         "room": room or "Not specified",
-        "type": entry_type,
+        "type": classify_type(None, course),
+        "_color": color,
+        "_prog_hint": program,
+        "_sem_digit": semester_digit,
+        "_section": section,
     }
 
 
@@ -374,12 +609,19 @@ def parse_matrix(worksheet, rows, header_index):
                 course = first_cell_in_range(row, slot["start"], slot["end"])
                 if not course or has_time_label(course):
                     continue
-                if re.search(r"reserv|resrv", course.lower()):
+                lowered = course.lower()
+                if re.search(r"reserv|resrv|resev", lowered):
+                    continue
+                if re.search(r"faculty\s+meeting", lowered):
                     continue
                 instructor = None
                 if row_index + 1 < len(rows):
                     instructor = first_cell_in_range(rows[row_index + 1], slot["start"], slot["end"])
-                entries.append(build_matrix_entry(day, slot_labels[index], course, instructor, room_value))
+                anchor = first_cell_anchor(row, slot["start"], slot["end"])
+                color = cell_fill_key(worksheet, row_index, anchor) if anchor is not None else None
+                entry = build_matrix_entry(day, slot_labels[index], course, instructor, room_value, color)
+                entry["_prog_hint"] = program_in_name(course) or entry["_prog_hint"]
+                entries.append(entry)
     return entries
 
 
@@ -539,10 +781,17 @@ def scrape_workbook(payload):
         tmp_path = tmp.name
     try:
         workbook = load_workbook(tmp_path, read_only=False, data_only=True)
+        alloc_rows = []
+        for sheet_name in workbook.sheetnames:
+            worksheet = workbook[sheet_name]
+            if ALLOC_SHEET_RE.search(sheet_name):
+                alloc_rows.extend(parse_allocation_sheet(worksheet))
         entries = []
         sheet_stats = {}
         for sheet_name in workbook.sheetnames:
             worksheet = workbook[sheet_name]
+            if ALLOC_SHEET_RE.search(sheet_name):
+                continue
             rows = read_workbook_rows(worksheet, tmp_path, sheet_name)
             if not rows:
                 continue
@@ -554,12 +803,15 @@ def scrape_workbook(payload):
         if os.path.exists(tmp_path):
             os.remove(tmp_path)
 
+    entries = enrich_batch_info(entries, alloc_rows)
+
     entries.sort(key=lambda item: (
         DAY_ORDER.index(item["day"]) if item["day"] in DAY_ORDER else len(DAY_ORDER),
         item["time"],
         item["batch_section"].lower(),
     ))
     print(f"[INFO] Sheets parsed: {sheet_stats}")
+    print(f"[INFO] Allocation rows: {len(alloc_rows)}")
     return entries
 
 
