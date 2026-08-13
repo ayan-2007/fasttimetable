@@ -413,38 +413,59 @@
   }
 
   function setupListeners() {
-    elements.degree.addEventListener("change", function () {
-      state.degree = elements.degree.value;
-      populateSemesters();
-      render();
-    });
-    elements.semester.addEventListener("change", function () {
-      state.semester = elements.semester.value;
-      populateSections();
-      render();
-    });
-    elements.section.addEventListener("change", function () {
-      state.section = elements.section.value;
-      render();
-    });
-    elements.day.addEventListener("change", function () {
-      state.day = elements.day.value;
-      render();
-    });
-    elements.resetFilters.addEventListener("click", function () {
-      state.degree = "";
-      state.semester = "";
-      state.section = "";
-      state.day = "";
-      elements.degree.value = "";
-      elements.semester.value = "";
-      elements.section.value = "";
-      elements.day.value = "";
-      render();
-    });
+    if (elements.degree) {
+      elements.degree.addEventListener("change", function () {
+        state.degree = elements.degree.value;
+        populateSemesters();
+        render();
+      });
+    }
+    if (elements.semester) {
+      elements.semester.addEventListener("change", function () {
+        state.semester = elements.semester.value;
+        populateSections();
+        render();
+      });
+    }
+    if (elements.section) {
+      elements.section.addEventListener("change", function () {
+        state.section = elements.section.value;
+        render();
+      });
+    }
+    if (elements.day) {
+      elements.day.addEventListener("change", function () {
+        state.day = elements.day.value;
+        render();
+      });
+    }
+    if (elements.resetFilters) {
+      elements.resetFilters.addEventListener("click", function () {
+        state.degree = "";
+        state.semester = "";
+        state.section = "";
+        state.day = "";
+        if (elements.degree) {
+          elements.degree.value = "";
+        }
+        if (elements.semester) {
+          elements.semester.value = "";
+        }
+        if (elements.section) {
+          elements.section.value = "";
+        }
+        if (elements.day) {
+          elements.day.value = "";
+        }
+        render();
+      });
+    }
   }
 
   function setupTheme() {
+    if (!elements.themeToggle) {
+      return;
+    }
     function applyTheme(theme) {
       document.documentElement.setAttribute("data-theme", theme);
       try {
