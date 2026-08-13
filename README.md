@@ -2,7 +2,7 @@
 
 **FastSchedule** is a self-updating, zero-maintenance university timetable portal. A resilient Python scraper pulls the live timetable from a public Google Sheet on a nightly schedule (via GitHub Actions), stores it as clean, readable JSON, and serves it through a responsive web frontend hosted on GitHub Pages. No servers, no APIs, no secrets, no manual upkeep.
 
-> Live demo: `https://ayan-2007.github.io/fse-schedule/`
+> Live demo: `https://ayan-2007.github.io/fseschedule/`
 
 ---
 
