@@ -9,6 +9,7 @@
   const state = {
     data: [],
     degree: "",
+    semester: "",
     section: "",
     day: "",
     loading: true,
@@ -58,39 +59,21 @@
     return values;
   }
 
-  function pad(value) {
-    return value < 10 ? "0" + value : String(value);
-  }
-
-  function todayKey() {
-    return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][new Date().getDay()];
-  }
-
-  function esc(value) {
-    const node = document.createElement("div");
-    node.textContent = value == null ? "" : String(value);
-    return node.innerHTML;
-  }
-
   function bindElements() {
     elements.updatedBadge = byId("updated-badge");
     elements.themeToggle = byId("theme-toggle");
-    elements.printBtn = byId("print-btn");
     elements.resetFilters = byId("reset-filters");
     elements.degree = byId("filter-degree");
+    elements.semester = byId("filter-semester");
     elements.section = byId("filter-section");
     elements.day = byId("filter-day");
     elements.status = byId("status");
     elements.results = byId("results");
-    elements.statPrograms = byId("stat-programs");
-    elements.statBatches = byId("stat-batches");
-    elements.statCourses = byId("stat-courses");
-    elements.statEntries = byId("stat-entries");
-    elements.statClasses = byId("stat-classes");
-    elements.clockTime = byId("clock-time");
-    elements.clockDate = byId("clock-date");
-    elements.marqueeTrack = byId("marquee-track");
     elements.footerYear = byId("footer-year");
+  }
+
+  function todayKey() {
+    return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][new Date().getDay()];
   }
 
   function isEntryNow(item) {
@@ -103,46 +86,9 @@
     return todayKey() === String(item.day || "").trim() && nowMinutes >= range.start && nowMinutes <= range.end;
   }
 
-  function startClock() {
-    function tick() {
-      const now = new Date();
-      elements.clockTime.textContent = [now.getHours(), now.getMinutes(), now.getSeconds()].map(pad).join(":");
-      elements.clockDate.textContent = now
-        .toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" })
-        .toUpperCase();
-    }
-    tick();
-    setInterval(tick, 1000);
-  }
-
-  function updateStats() {
-    const values = {
-      programs: uniqueValues(state.data, "department"),
-      batches: uniqueValues(state.data, "batch_section"),
-      courses: uniqueValues(state.data, "course"),
-      entries: state.data.length,
-    };
-    elements.statPrograms.textContent = values.programs.length;
-    elements.statBatches.textContent = values.batches.length;
-    elements.statCourses.textContent = values.courses.length;
-    elements.statEntries.textContent = values.entries;
-    elements.statClasses.textContent = values.entries.toLocaleString();
-  }
-
-  function populateMarquee() {
-    if (!elements.marqueeTrack) {
-      return;
-    }
-    const departments = uniqueValues(state.data, "department");
-    if (departments.length === 0) {
-      return;
-    }
-    const fragment = departments
-      .map(function (name) {
-        return '<span class="mq-item">' + esc(name) + "</span><span class=\"mq-dot\">&#10022;</span>";
-      })
-      .join("");
-    elements.marqueeTrack.innerHTML = fragment + fragment;
+  function semesterLabel(value) {
+    const text = String(value == null ? "" : value).trim();
+    return text ? "Semester " + text : text;
   }
 
   function setStatus(message) {
@@ -187,8 +133,6 @@
         state.loading = false;
         populateOptions();
         updateUpdatedBadge(payload);
-        updateStats();
-        populateMarquee();
         render();
       })
       .catch(function (error) {
@@ -244,6 +188,23 @@
     });
     fillSelect(elements.degree, degrees, "All programs");
     fillSelect(elements.day, days, "All days");
+    populateSemesters();
+  }
+
+  function populateSemesters() {
+    const pool = state.degree
+      ? state.data.filter(function (item) {
+          return String(item.department) === state.degree;
+        })
+      : state.data;
+    const semesters = uniqueValues(pool, "semester", function (a, b) {
+      return Number(a) - Number(b);
+    });
+    fillSelect(elements.semester, semesters, "All semesters", semesterLabel);
+    if (state.semester && semesters.indexOf(state.semester) === -1) {
+      state.semester = "";
+    }
+    elements.semester.value = state.semester;
     populateSections();
   }
 
@@ -269,11 +230,15 @@
   }
 
   function populateSections() {
-    const pool = state.degree
-      ? state.data.filter(function (item) {
-          return String(item.department) === state.degree;
-        })
-      : state.data;
+    const pool = state.data.filter(function (item) {
+      if (state.degree && String(item.department) !== state.degree) {
+        return false;
+      }
+      if (state.semester && String(item.semester) !== state.semester) {
+        return false;
+      }
+      return true;
+    });
     const sections = uniqueValues(pool, "batch_section", function (a, b) {
       return normalizeText(a).localeCompare(normalizeText(b));
     });
@@ -287,6 +252,9 @@
   function getEntries() {
     return state.data.filter(function (item) {
       if (state.degree && String(item.department) !== state.degree) {
+        return false;
+      }
+      if (state.semester && String(item.semester) !== state.semester) {
         return false;
       }
       if (state.section && String(item.batch_section) !== state.section) {
@@ -307,9 +275,9 @@
     elements.results.innerHTML = "";
     const entries = getEntries();
 
-    if (!state.degree && !state.section && !state.day) {
+    if (!state.degree && !state.semester && !state.section && !state.day) {
       setStatus("");
-      elements.results.appendChild(emptyState("Select your program, section and day above to see your timetable.", "🗓️"));
+      elements.results.appendChild(emptyState("Select your program, semester, batch and day above to see your timetable.", "🗓️"));
       return;
     }
 
@@ -319,7 +287,9 @@
       return;
     }
 
-    const summary = [state.day, state.section, state.degree].filter(Boolean).join(" · ");
+    const summary = [state.day, state.semester ? semesterLabel(state.semester) : "", state.section, state.degree]
+      .filter(Boolean)
+      .join(" · ");
     setStatus(summary + " — " + entries.length + (entries.length === 1 ? " class" : " classes"));
 
     const showDay = !state.day;
@@ -445,6 +415,11 @@
   function setupListeners() {
     elements.degree.addEventListener("change", function () {
       state.degree = elements.degree.value;
+      populateSemesters();
+      render();
+    });
+    elements.semester.addEventListener("change", function () {
+      state.semester = elements.semester.value;
       populateSections();
       render();
     });
@@ -458,15 +433,14 @@
     });
     elements.resetFilters.addEventListener("click", function () {
       state.degree = "";
+      state.semester = "";
       state.section = "";
       state.day = "";
       elements.degree.value = "";
+      elements.semester.value = "";
       elements.section.value = "";
       elements.day.value = "";
       render();
-    });
-    elements.printBtn.addEventListener("click", function () {
-      window.print();
     });
   }
 
@@ -489,7 +463,6 @@
     bindElements();
     setupTheme();
     setupListeners();
-    startClock();
     if (elements.footerYear) {
       elements.footerYear.textContent = new Date().getFullYear();
     }
