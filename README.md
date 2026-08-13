@@ -12,11 +12,7 @@
 - **Fuzzy column detection** - columns are located by regex pattern, so staff can rename or reorder columns (`Time|Slot`, `Instructor|Teacher|Faculty`, `Room|Venue|Lab`, `Course|Subject|Title`, `Section|Batch|Class`) without breaking the parser.
 - **Self-healing time normalizer** - every time variant (`8:30-9:50`, `08:30AM to 09:50AM`, `8.30 - 9.50`, separate Start/End columns, etc.) is normalized to canonical `HH:MM - HH:MM`.
 - **Fail-safe database** - if the sheet or network is unavailable, an alert is logged and the last known good `db/timetable.json` is preserved untouched.
-- **Student/faculty portal UI**:
-  - 📅 **Schedule View** - filterable grid by section, day, and live text search.
-  - 🔍 **Free Slot Finder** - pick a day + time and instantly see every free room.
-  - 👨🏫 **Teacher Directory** - search instructors and view all of their classes.
-  - Light/dark theme, skeleton loading, empty states, and print-friendly output.
+- **Simple student portal** - pick your program (degree), section, and day, and the full timetable for that day appears: time, course, and room. Light/dark theme, skeleton loading, empty states, and print-friendly output.
 
 ---
 
@@ -46,7 +42,7 @@
 fastschedule/
 ├── index.html                     UI entry point
 ├── css/styles.css                 responsive theming (light/dark, mobile cards, print)
-├── js/app.js                      fetching, filtering, free-slot + teacher logic
+├── js/app.js                      fetching and day-timetable filtering logic
 ├── db/timetable.json              seed + live database
 ├── scraper.py                     resilient backend scraper engine
 ├── .github/workflows/

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FastSchedule - automated university timetable portal for students and faculty. Browse schedules, find free rooms, and search teacher rosters." />
+  <meta name="description" content="FastSchedule - select your program, section and day to see your university timetable." />
   <meta name="theme-color" content="#2b6cb0" />
-  <title>FastSchedule - Timetable Portal</title>
+  <title>FastSchedule - Timetable</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -35,7 +35,7 @@
         </div>
         <div>
           <h1 class="brand-title">FastSchedule</h1>
-          <p class="brand-tagline">Automated University Timetable Portal</p>
+          <p class="brand-tagline">University Timetable</p>
         </div>
       </div>
       <div class="header-controls">
@@ -60,24 +60,22 @@
     </div>
   </header>
 
-  <nav class="tabs glass" aria-label="Feature views">
-    <button class="tab is-active" type="button" data-tab="schedule">Schedule View</button>
-    <button class="tab" type="button" data-tab="free">Free Slot Finder</button>
-    <button class="tab" type="button" data-tab="teachers">Teacher Directory</button>
-  </nav>
-
   <main class="container">
-
-    <section id="panel-schedule" class="tab-panel is-active" data-panel="schedule" aria-labelledby="schedule-heading">
+    <section class="card glass">
       <div class="panel-heading">
         <div>
-          <h2 id="schedule-heading">Schedule View</h2>
-          <p class="panel-sub">Filter by batch/section, day, or a live search term.</p>
+          <h2>Your Timetable</h2>
+          <p class="panel-sub">Select your program, section and day to see your classes.</p>
         </div>
-        <button id="schedule-reset" class="btn btn-ghost" type="button">Reset filters</button>
       </div>
 
-      <div class="filter-bar glass">
+      <div class="filter-bar">
+        <label class="field">
+          <span class="field-label">Degree / Program</span>
+          <select id="filter-degree" class="input">
+            <option value="">All programs</option>
+          </select>
+        </label>
         <label class="field">
           <span class="field-label">Batch / Section</span>
           <select id="filter-section" class="input">
@@ -90,60 +88,11 @@
             <option value="">All days</option>
           </select>
         </label>
-        <label class="field field-grow">
-          <span class="field-label">Search</span>
-          <input id="filter-search" class="input" type="search" placeholder="Course, instructor or room..." autocomplete="off" />
-        </label>
       </div>
 
-      <div id="schedule-status" class="status-line" role="status" aria-live="polite"></div>
-      <div id="schedule-container" class="schedule-area"></div>
+      <div id="status" class="status-line" role="status" aria-live="polite"></div>
+      <div id="results" class="schedule-area"></div>
     </section>
-
-    <section id="panel-free" class="tab-panel" data-panel="free" aria-labelledby="free-heading">
-      <div class="panel-heading">
-        <div>
-          <h2 id="free-heading">Free Slot Finder</h2>
-          <p class="panel-sub">Pick a day and a time slot to see which classrooms and labs are free.</p>
-        </div>
-        <button id="free-reset" class="btn btn-ghost" type="button">Reset</button>
-      </div>
-
-      <div class="filter-bar glass">
-        <label class="field">
-          <span class="field-label">Day</span>
-          <select id="free-day" class="input"></select>
-        </label>
-        <label class="field">
-          <span class="field-label">Time slot</span>
-          <select id="free-time" class="input"></select>
-        </label>
-        <button id="free-find" class="btn btn-primary" type="button">Find free rooms</button>
-      </div>
-
-      <div id="free-result" class="free-result"></div>
-    </section>
-
-    <section id="panel-teachers" class="tab-panel" data-panel="teachers" aria-labelledby="teachers-heading">
-      <div class="panel-heading">
-        <div>
-          <h2 id="teachers-heading">Teacher Directory</h2>
-          <p class="panel-sub">Search an instructor to see all of their assigned classes.</p>
-        </div>
-        <button id="teachers-reset" class="btn btn-ghost" type="button">Reset</button>
-      </div>
-
-      <div class="filter-bar glass">
-        <label class="field field-grow">
-          <span class="field-label">Instructor</span>
-          <input id="teacher-search" class="input" type="search" placeholder="Type an instructor name..." autocomplete="off" />
-        </label>
-      </div>
-
-      <div id="teacher-status" class="status-line" role="status" aria-live="polite"></div>
-      <div id="teacher-list" class="teacher-list"></div>
-    </section>
-
   </main>
 
   <footer class="footer">
