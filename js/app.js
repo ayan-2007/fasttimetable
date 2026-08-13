@@ -8,6 +8,7 @@
 
   const state = {
     data: [],
+    school: "",
     degree: "",
     semester: "",
     section: "",
@@ -63,6 +64,7 @@
     elements.updatedBadge = byId("updated-badge");
     elements.themeToggle = byId("theme-toggle");
     elements.resetFilters = byId("reset-filters");
+    elements.school = byId("filter-school");
     elements.degree = byId("filter-degree");
     elements.semester = byId("filter-semester");
     elements.section = byId("filter-section");
@@ -179,11 +181,19 @@
     });
   }
 
+  function schoolPool() {
+    return state.school
+      ? state.data.filter(function (item) {
+          return String(item.school) === state.school;
+        })
+      : state.data;
+  }
+
   function populateOptions() {
-    const degrees = uniqueValues(state.data, "department", function (a, b) {
+    const degrees = uniqueValues(schoolPool(), "department", function (a, b) {
       return normalizeText(a).localeCompare(normalizeText(b));
     });
-    const days = uniqueValues(state.data, "day", function (a, b) {
+    const days = uniqueValues(schoolPool(), "day", function (a, b) {
       return sortByDay(a) - sortByDay(b);
     });
     fillSelect(elements.degree, degrees, "All programs");
@@ -192,11 +202,12 @@
   }
 
   function populateSemesters() {
-    const pool = state.degree
-      ? state.data.filter(function (item) {
-          return String(item.department) === state.degree;
-        })
-      : state.data;
+    let pool = schoolPool();
+    if (state.degree) {
+      pool = pool.filter(function (item) {
+        return String(item.department) === state.degree;
+      });
+    }
     const semesters = uniqueValues(pool, "semester", function (a, b) {
       return Number(a) - Number(b);
     });
@@ -210,15 +221,24 @@
 
   function batchLabel(value) {
     const text = String(value == null ? "" : value).trim();
-    let match = /^([A-Z]{2})-(\d+)([A-E])$/.exec(text);
+    let match = /^([A-Z]{2,4})-(\d+)([A-E])(?:\/([A-E]))?(?:\s+\((G\d+)\))?$/.exec(text);
     if (match) {
-      return "Semester " + match[2] + " · Section " + match[3];
+      const section = match[4] ? "Section " + match[3] + "/" + match[4] : "Section " + match[3];
+      return "Semester " + match[2] + " · " + section + (match[5] ? " · Group " + match[5].slice(1) : "");
     }
-    match = /^([A-Z]{2})-(\d+)\s*\(All\)$/.exec(text);
+    match = /^([A-Z]{2,4})-(\d+)\s*\(All\)$/.exec(text);
     if (match) {
       return "Semester " + match[2] + " · All sections";
     }
-    match = /^([A-Z]{2})-([A-E])$/.exec(text);
+    match = /^([A-Z]{2,4})-(\d+)([A-E])\/([A-Z]{2,4})-(\d+)([A-E])$/.exec(text);
+    if (match) {
+      return "Semester " + match[2] + " · Section " + match[3] + " + " + match[5] + " · Section " + match[6];
+    }
+    match = /^([A-Z]{2,4})-(\d+)([A-E])$/.exec(text);
+    if (match) {
+      return "Semester " + match[2] + " · Section " + match[3];
+    }
+    match = /^([A-Z]{2,4})-([A-E])$/.exec(text);
     if (match) {
       return match[1] + " · Section " + match[2];
     }
@@ -230,7 +250,8 @@
   }
 
   function populateSections() {
-    const pool = state.data.filter(function (item) {
+    let pool = schoolPool();
+    pool = pool.filter(function (item) {
       if (state.degree && String(item.department) !== state.degree) {
         return false;
       }
@@ -251,6 +272,9 @@
 
   function getEntries() {
     return state.data.filter(function (item) {
+      if (state.school && String(item.school) !== state.school) {
+        return false;
+      }
       if (state.degree && String(item.department) !== state.degree) {
         return false;
       }
@@ -275,9 +299,9 @@
     elements.results.innerHTML = "";
     const entries = getEntries();
 
-    if (!state.degree && !state.semester && !state.section && !state.day) {
+    if (!state.school && !state.degree && !state.semester && !state.section && !state.day) {
       setStatus("");
-      elements.results.appendChild(emptyState("Select your program, semester, batch and day above to see your timetable.", "🗓️"));
+      elements.results.appendChild(emptyState("Select your department, program, semester, batch and day above to see your timetable.", "🗓️"));
       return;
     }
 
@@ -413,6 +437,25 @@
   }
 
   function setupListeners() {
+    if (elements.school) {
+      elements.school.addEventListener("change", function () {
+        state.school = elements.school.value;
+        state.degree = "";
+        state.semester = "";
+        state.section = "";
+        if (elements.degree) {
+          elements.degree.value = "";
+        }
+        if (elements.semester) {
+          elements.semester.value = "";
+        }
+        if (elements.section) {
+          elements.section.value = "";
+        }
+        populateOptions();
+        render();
+      });
+    }
     if (elements.degree) {
       elements.degree.addEventListener("change", function () {
         state.degree = elements.degree.value;
@@ -441,10 +484,14 @@
     }
     if (elements.resetFilters) {
       elements.resetFilters.addEventListener("click", function () {
+        state.school = "";
         state.degree = "";
         state.semester = "";
         state.section = "";
         state.day = "";
+        if (elements.school) {
+          elements.school.value = "";
+        }
         if (elements.degree) {
           elements.degree.value = "";
         }
@@ -457,6 +504,7 @@
         if (elements.day) {
           elements.day.value = "";
         }
+        populateOptions();
         render();
       });
     }

@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,600;1,9..144,700&family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/styles.css?v=20260813" />
+  <link rel="stylesheet" href="css/styles.css?v=20260813b" />
   <script>
     (function () {
       var stored = null;
@@ -32,7 +32,7 @@
         </div>
         <div class="brand-text">
           <h1 class="brand-title">FastSchedule</h1>
-          <p class="brand-tagline">FSE &middot; Timetable</p>
+          <p class="brand-tagline">FSE &amp; FSM &middot; Timetable</p>
         </div>
       </div>
 
@@ -63,12 +63,20 @@
       <div class="panel-heading">
         <div>
           <h2>Your Timetable</h2>
-          <p class="panel-sub">Pick your program, semester, batch and day.</p>
+          <p class="panel-sub">Pick your department, program, semester, batch and day.</p>
         </div>
         <button id="reset-filters" class="ghost-btn" type="button">Reset</button>
       </div>
 
       <div class="filter-bar">
+        <label class="field">
+          <span class="field-label">Department</span>
+          <select id="filter-school" class="input">
+            <option value="">All departments</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Management">Management</option>
+          </select>
+        </label>
         <label class="field">
           <span class="field-label">Program</span>
           <select id="filter-degree" class="input">
@@ -113,6 +121,6 @@
     <p class="footer-small">&copy; <span id="footer-year">2026</span></p>
   </footer>
 
-  <script src="js/app.js?v=20260813"></script>
+  <script src="js/app.js?v=20260813b"></script>
 </body>
 </html>

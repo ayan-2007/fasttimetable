@@ -1,8 +1,13 @@
 # FastSchedule - Automated University Timetable
 
-**FastSchedule** is a self-updating, zero-maintenance university timetable portal. A resilient Python scraper pulls the live timetable from a public Google Sheet on a nightly schedule (via GitHub Actions), stores it as clean, readable JSON, and serves it through a responsive web frontend hosted on GitHub Pages. No servers, no APIs, no secrets, no manual upkeep.
+**FastSchedule** is a self-updating, zero-maintenance university timetable portal. A resilient Python scraper pulls the live timetables from public Google Sheets (one per school) on a nightly schedule (via GitHub Actions), stores them as clean, readable JSON, and serves them through a responsive web frontend hosted on GitHub Pages. No servers, no APIs, no secrets, no manual upkeep.
 
-> Live demo: `https://ayan-2007.github.io/fseschedule/`
+It currently covers two schools, selectable from a Department dropdown on the portal:
+
+- **FSE** (Engineering) - Computer Engineering & Electrical Engineering
+- **FSM** (Management) - BBA, Accounting & Finance, Business Analytics, and Financial Technology
+
+> Live demo: `https://ayan-2007.github.io/fsemschedule/`
 
 ---
 
@@ -10,7 +15,8 @@
 
 - **Automated scraping** - the backend transforms the Google Sheets *view link* into a direct XLSX export URL and downloads the workbook nightly at `04:00 UTC` (`cron: 0 4 * * *`), with a manual "Run workflow" trigger available anytime.
 - **Fuzzy column detection** - columns are located by regex pattern, so staff can rename or reorder columns (`Time|Slot`, `Instructor|Teacher|Faculty`, `Room|Venue|Lab`, `Course|Subject|Title`, `Section|Batch|Class`) without breaking the parser.
-- **Automatic batch detection** - the color-coded sections of the schedule sheet (each batch is a different color) plus the `Course Allocation` sheet are combined to tag every class with its real batch, e.g. `CE-1A` = Computer Engineering, 1st semester, section A. Students simply pick their program, batch, and day.
+- **Automatic batch detection** - the color-coded sections of the schedule sheet (each batch is a different color) plus the `Course Allocation` sheet are combined to tag every class with its real batch, e.g. `CE-1A` = Computer Engineering, 1st semester, section A, or `AF-1A (G1)` = Accounting & Finance, 1st semester, section A, group 1. Students simply pick their department, program, batch, and day.
+- **Dual-school parsing** - each school's workbook has its own layout (blocked per-day sheets with merged day columns, six fixed time slots, inline batch codes). `scraper.py` detects the school from the source URL and applies the matching matrix parser, tagging every entry with its `school` so the portal can filter by department.
 - **Self-healing time normalizer** - every time variant (`8:30-9:50`, `08:30AM to 09:50AM`, `8.30 - 9.50`, separate Start/End columns, etc.) is normalized to canonical `HH:MM - HH:MM`.
 - **Fail-safe database** - if the sheet or network is unavailable, an alert is logged and the last known good `db/timetable.json` is preserved untouched.
 - **Simple student portal** - pick your program (degree), section, and day, and the full timetable for that day appears: time, course, and room. Light/dark theme, skeleton loading, empty states, and print-friendly output.
@@ -21,8 +27,8 @@
 
 ```
 ┌──────────────────────┐      ┌───────────────────────────┐
-│ Google Sheet (public)│─────▶│  scraper.py  (GitHub      │
-│  view URL            │xlsx  │  Actions, daily 04:00 UTC)│
+│ Google Sheets        │      │  scraper.py  (GitHub      │
+│  FSE + FSM view URLs │─────▶│  Actions, daily 04:00 UTC)│
 └──────────────────────┘      └─────────────┬─────────────┘
                                             │ writes
                                             ▼

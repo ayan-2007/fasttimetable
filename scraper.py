@@ -30,6 +30,10 @@ from openpyxl import load_workbook
 
 SHEET_URL = "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing"
 
+FSM_SHEET_URL = "https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing"
+
+SOURCE_URLS = [SHEET_URL, FSM_SHEET_URL]
+
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(SCRIPT_DIR, "db", "timetable.json")
 
@@ -126,6 +130,30 @@ PROGRAM_MAP = {
     "PG": "Physics",
     "PH": "Physics",
 }
+
+FSM_PROGRAM_MAP = {
+    "BBA": "Bachelor of Business Administration",
+    "AF": "Bachelor of Science (Accounting & Finance)",
+    "BSAF": "Bachelor of Science (Accounting & Finance)",
+    "BSBA": "Bachelor of Science (Business Analytics)",
+    "BA": "Bachelor of Science (Business Analytics)",
+    "FT": "Bachelor of Science (Financial Technology)",
+    "BSFT": "Bachelor of Science (Financial Technology)",
+    "MBA": "MBA",
+    "MSBA": "MS Business Analytics",
+    "MS": "MS Business Analytics",
+    "PhD": "PhD",
+}
+
+FSM_BATCH_RE = re.compile(
+    r"^(?P<prog>BBA|BSBA|BSFT|BSAF|AF|BA|FT|MBA|MSBA|MS|PhD)"
+    r"[- ]*(?P<sem>\d{1,2})(?P<sec>[A-E])?"
+    r"(?:/(?P<sec2>[A-E]))?"
+    r"(?:/(?P<comb>(?:BBA|BSBA|BSFT|BSAF|AF|BA|FT|MBA|MSBA|MS|PhD)[- ]*\d{1,2}[A-E]?))?"
+    r"(?P<grp>\d)?$"
+)
+
+FSM_EMBED_TIME_RE = re.compile(r"\((\d{1,2}:\d{2})\s*(?:-|–|—)\s*(\d{1,2}:\d{2})\)")
 
 PROGRAM_CODES = "CE|EE|CS|SE|AI|DS|ME|BM|BA|PE|PG|PH|MS"
 
@@ -420,8 +448,8 @@ def base_course_name(course):
     text = clean_cell(course) or ""
     text = INSTRUCTOR_CUT_RE.split(text, maxsplit=1)[0]
     text = TEACHER_CUT_RE.split(text, maxsplit=1)[0]
-    text = TIME_CUT_RE.split(text, maxsplit=1)[0]
     text = PAREN_RE.sub(" ", text)
+    text = TIME_CUT_RE.split(text, maxsplit=1)[0]
     text = SECTION_STRIP_RE.sub("", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
@@ -625,6 +653,144 @@ def parse_matrix(worksheet, rows, header_index):
     return entries
 
 
+FSM_BATCH_TOKEN_RE = re.compile(
+    r"^(?P<prog>BBA|BSBA|BSFT|BSAF|AF|BA|FT|MBA|MSBA|MS|PhD)[- ]*(?P<sem>\d{1,2})(?P<sec>[A-E])?(?P<grp>\d)?$"
+)
+
+
+def is_fsm_subheader(row):
+    hits = 0
+    for col_index in range(3, 64):
+        if col_index < len(row) and has_time_label(clean_cell(row[col_index])):
+            hits += 1
+    return hits >= 4
+
+
+def fsm_logical_cells(worksheet, row_index):
+    r1 = row_index + 1
+    merged = []
+    for rng in worksheet.merged_cells.ranges:
+        if rng.min_row == r1:
+            merged.append((rng.min_col - 1, rng.max_col - 1))
+    used = set()
+    for start, end in merged:
+        for col_index in range(start, end + 1):
+            used.add(col_index)
+    cells = []
+    for start, end in sorted(merged):
+        value = clean_cell(worksheet.cell(r1, start + 1).value)
+        cells.append((start, end, value))
+    for col_index in range(0, worksheet.max_column):
+        if col_index in used:
+            continue
+        value = clean_cell(worksheet.cell(r1, col_index + 1).value)
+        if value:
+            cells.append((col_index, col_index, value))
+    cells.sort()
+    return cells
+
+
+def format_fsm_batch(code):
+    parts = [part.strip() for part in str(code).split("/") if part.strip()]
+    out = []
+    prev = None
+    for part in parts:
+        if re.fullmatch(r"[A-E]", part) and prev is not None:
+            out[-1] = out[-1] + "/" + part
+            continue
+        token = FSM_BATCH_TOKEN_RE.fullmatch(part)
+        if not token:
+            return None
+        label = f"{token.group('prog')}-{int(token.group('sem'))}".replace(".0", "")
+        label = f"{token.group('prog')}-{int(token.group('sem'))}"
+        if token.group("sec"):
+            label += token.group("sec")
+        if token.group("grp"):
+            label = f"{label} (G{token.group('grp')})"
+        out.append(label)
+        prev = token
+    return "/".join(out) if out else None
+
+
+def parse_fsm_batch(code):
+    token = FSM_BATCH_TOKEN_RE.fullmatch(str(code))
+    if not token:
+        return None
+    prog = token.group("prog")
+    semester = int(token.group("sem"))
+    section = token.group("sec") or "All"
+    return prog, semester, section
+
+
+def fsm_time_for(course, start_col, header_row):
+    text = clean_cell(course) or ""
+    embedded = FSM_EMBED_TIME_RE.search(text)
+    if embedded:
+        return normalize_time(f"{embedded.group(1)}-{embedded.group(2)}")
+    best = None
+    for col_index, raw in enumerate(header_row):
+        if col_index >= 3 and col_index <= start_col and has_time_label(clean_cell(raw)):
+            best = col_index
+    if best is not None and best < len(header_row):
+        return normalize_time(header_row[best])
+    return None
+
+
+def parse_fsm_matrix(worksheet, rows, header_index):
+    header_row = rows[header_index]
+    entries = []
+    for block_start, block_end, day in find_day_blocks(rows):
+        for row_index in range(block_start, block_end + 1):
+            row = rows[row_index]
+            if is_fsm_subheader(row):
+                continue
+            room = row[2] if len(row) > 2 else None
+            if not room:
+                continue
+            cells = [cell for cell in fsm_logical_cells(worksheet, row_index) if cell[1] >= 3]
+            pending_course = None
+            pending_slot = None
+            skipped_fillers = ("MS", "CS")
+            for start, end, value in cells:
+                if not value:
+                    continue
+                if value in skipped_fillers:
+                    continue
+                if has_time_label(value):
+                    continue
+                if format_fsm_batch(value) is not None:
+                    if pending_course is not None:
+                        batch = parse_fsm_batch(value)
+                        if batch is not None:
+                            prog, semester, section = batch
+                            time_label = fsm_time_for(pending_course, pending_slot, header_row)
+                            department = FSM_PROGRAM_MAP.get(prog, "FAST School of Management")
+                            entries.append(
+                                {
+                                    "department": department,
+                                    "batch_section": format_fsm_batch(value),
+                                    "day": day,
+                                    "time": time_label,
+                                    "course": base_course_name(pending_course),
+                                    "instructor": "Not assigned",
+                                    "room": room,
+                                    "type": classify_type(None, pending_course),
+                                    "semester": semester,
+                                    "section": section,
+                                    "school": "Management",
+                                }
+                            )
+                        pending_course = None
+                        pending_slot = None
+                    continue
+                if pending_course is not None:
+                    pending_course = None
+                    pending_slot = None
+                pending_course = value
+                pending_slot = start
+    return entries
+
+
 def resolve_merged_cells(worksheet, rows):
     if not worksheet.merged_cells.ranges:
         return rows
@@ -775,35 +941,52 @@ def read_workbook_rows(worksheet, workbook_path, sheet_name):
     return [[clean_cell(cell) for cell in row] for row in rows]
 
 
-def scrape_workbook(payload):
+def scrape_workbook(payload, school="Engineering"):
     with tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False) as tmp:
         tmp.write(payload)
         tmp_path = tmp.name
     try:
         workbook = load_workbook(tmp_path, read_only=False, data_only=True)
-        alloc_rows = []
-        for sheet_name in workbook.sheetnames:
-            worksheet = workbook[sheet_name]
-            if ALLOC_SHEET_RE.search(sheet_name):
-                alloc_rows.extend(parse_allocation_sheet(worksheet))
         entries = []
         sheet_stats = {}
-        for sheet_name in workbook.sheetnames:
-            worksheet = workbook[sheet_name]
-            if ALLOC_SHEET_RE.search(sheet_name):
-                continue
-            rows = read_workbook_rows(worksheet, tmp_path, sheet_name)
-            if not rows:
-                continue
-            sheet_entries = parse_sheet(worksheet, sheet_name, rows)
-            sheet_stats[sheet_name] = len(sheet_entries)
-            entries.extend(sheet_entries)
+        if school == "Management":
+            for sheet_name in workbook.sheetnames:
+                worksheet = workbook[sheet_name]
+                if not re.search(r"timetable", sheet_name, re.IGNORECASE):
+                    continue
+                rows = read_workbook_rows(worksheet, tmp_path, sheet_name)
+                if not rows:
+                    continue
+                matrix_header = find_matrix_header_row(rows)
+                if matrix_header < 0:
+                    continue
+                sheet_entries = parse_fsm_matrix(worksheet, rows, matrix_header)
+                sheet_stats[sheet_name] = len(sheet_entries)
+                entries.extend(sheet_entries)
+        else:
+            alloc_rows = []
+            for sheet_name in workbook.sheetnames:
+                worksheet = workbook[sheet_name]
+                if ALLOC_SHEET_RE.search(sheet_name):
+                    alloc_rows.extend(parse_allocation_sheet(worksheet))
+            for sheet_name in workbook.sheetnames:
+                worksheet = workbook[sheet_name]
+                if ALLOC_SHEET_RE.search(sheet_name):
+                    continue
+                rows = read_workbook_rows(worksheet, tmp_path, sheet_name)
+                if not rows:
+                    continue
+                sheet_entries = parse_sheet(worksheet, sheet_name, rows)
+                sheet_stats[sheet_name] = len(sheet_entries)
+                entries.extend(sheet_entries)
+            entries = enrich_batch_info(entries, alloc_rows)
+            for entry in entries:
+                entry["school"] = "Engineering"
+            print(f"[INFO] Allocation rows: {len(alloc_rows)}")
         workbook.close()
     finally:
         if os.path.exists(tmp_path):
             os.remove(tmp_path)
-
-    entries = enrich_batch_info(entries, alloc_rows)
 
     entries.sort(key=lambda item: (
         DAY_ORDER.index(item["day"]) if item["day"] in DAY_ORDER else len(DAY_ORDER),
@@ -811,14 +994,13 @@ def scrape_workbook(payload):
         item["batch_section"].lower(),
     ))
     print(f"[INFO] Sheets parsed: {sheet_stats}")
-    print(f"[INFO] Allocation rows: {len(alloc_rows)}")
     return entries
 
 
 def write_db(entries):
     payload = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S%z"),
-        "source": SHEET_URL,
+        "source": ", ".join(SOURCE_URLS),
         "count": len(entries),
         "entries": entries,
     }
@@ -830,8 +1012,8 @@ def write_db(entries):
     print(f"[INFO] Wrote {len(entries)} entries to {DB_PATH}")
 
 
-def scrape():
-    export_url = get_export_url(SHEET_URL)
+def download_workbook(url):
+    export_url = get_export_url(url)
     print(f"[INFO] Export URL: {export_url}")
     response = requests.get(export_url, timeout=DOWNLOAD_TIMEOUT, headers=REQUEST_HEADERS)
     response.raise_for_status()
@@ -842,7 +1024,16 @@ def scrape():
         )
     if response.content[:2] not in (b"PK", b"<?") and b"<html" in response.content[:512].lower():
         raise RuntimeError("Export returned an HTML page instead of a workbook.")
-    return scrape_workbook(response.content)
+    return response.content
+
+
+def scrape():
+    entries = []
+    for source_url in SOURCE_URLS:
+        payload = download_workbook(source_url)
+        school = "Management" if source_url == FSM_SHEET_URL else "Engineering"
+        entries.extend(scrape_workbook(payload, school=school))
+    return entries
 
 
 def main():
