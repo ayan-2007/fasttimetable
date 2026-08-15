@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FastSchedule — you no longer have to scroll thorugh that confusing excel sheet anymore." />
+<meta name="description" content="FastSchedule — you no longer have to scroll thorugh that confusing excel sheet anymore." />
   <meta name="theme-color" content="#c5501f" />
   <title>FastSchedule — Timetable</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,600;1,9..144,700&family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/styles.css?v=20260813b" />
+  <link rel="stylesheet" href="css/styles.css?v=20260815a" />
   <script>
     (function () {
       var stored = null;
@@ -65,7 +65,7 @@
       <div class="panel-heading">
         <div>
           <h2>Your Timetable</h2>
-          <p class="panel-sub">Pick your department, program, semester, batch and day.</p>
+          <p class="panel-sub">Pick your department, degree, batch, section and day.</p>
         </div>
         <button id="reset-filters" class="ghost-btn" type="button">Reset</button>
       </div>
@@ -74,33 +74,33 @@
         <label class="field">
           <span class="field-label">Department</span>
           <select id="filter-school" class="input">
-            <option value="">All departments</option>
+            <option value="">Select a department</option>
             <option value="Engineering">Engineering</option>
             <option value="Management">Management</option>
           </select>
         </label>
         <label class="field">
-          <span class="field-label">Program</span>
+          <span class="field-label">Degree</span>
           <select id="filter-degree" class="input">
-            <option value="">All programs</option>
-          </select>
-        </label>
-        <label class="field">
-          <span class="field-label">Semester</span>
-          <select id="filter-semester" class="input">
-            <option value="">All semesters</option>
+            <option value="">Select a degree</option>
           </select>
         </label>
         <label class="field">
           <span class="field-label">Batch</span>
+          <select id="filter-batch" class="input">
+            <option value="">Select a batch</option>
+          </select>
+        </label>
+        <label class="field">
+          <span class="field-label">Section</span>
           <select id="filter-section" class="input">
-            <option value="">All sections</option>
+            <option value="">Select a section</option>
           </select>
         </label>
         <label class="field">
           <span class="field-label">Day</span>
           <select id="filter-day" class="input">
-            <option value="">All days</option>
+            <option value="">Select a day</option>
           </select>
         </label>
       </div>
@@ -124,6 +124,6 @@
     <p class="footer-small">&copy; <span id="footer-year">2026</span></p>
   </footer>
 
-  <script src="js/app.js?v=20260813b"></script>
+  <script src="js/app.js?v=20260815a"></script>
 </body>
 </html>

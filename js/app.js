@@ -6,14 +6,24 @@
 
   const DAY_ORDER = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
+  const DEGREE_CODES = {
+    "Electrical Engineering": "EE",
+    "Computer Engineering": "CE",
+    "Bachelor of Business Administration": "BBA",
+    "Bachelor of Science (Accounting & Finance)": "AF",
+    "Bachelor of Science (Business Analytics)": "BSBA",
+    "Bachelor of Science (Financial Technology)": "FT",
+  };
+
   const state = {
     data: [],
     school: "",
     degree: "",
-    semester: "",
+    batch: "",
     section: "",
     day: "",
     loading: true,
+    baseYear: new Date().getFullYear(),
   };
 
   const elements = {};
@@ -70,7 +80,7 @@
     elements.resetFilters = byId("reset-filters");
     elements.school = byId("filter-school");
     elements.degree = byId("filter-degree");
-    elements.semester = byId("filter-semester");
+    elements.batch = byId("filter-batch");
     elements.section = byId("filter-section");
     elements.day = byId("filter-day");
     elements.status = byId("status");
@@ -92,9 +102,18 @@
     return todayKey() === String(item.day || "").trim() && nowMinutes >= range.start && nowMinutes <= range.end;
   }
 
-  function semesterLabel(value) {
+  function degreeCode(value) {
     const text = String(value == null ? "" : value).trim();
-    return text ? "Semester " + text : text;
+    return DEGREE_CODES[text] || text;
+  }
+
+  function batchForSemester(semester) {
+    const sem = Number(semester);
+    if (isNaN(sem) || !state.baseYear) {
+      return "";
+    }
+    const batch = String((state.baseYear - Math.floor((sem - 1) / 2)) % 100).padStart(2, "0");
+    return batch;
   }
 
   function setStatus(message) {
@@ -136,6 +155,10 @@
       .then(function (payload) {
         const source = payload && Array.isArray(payload.entries) ? payload.entries : payload;
         state.data = Array.isArray(source) ? source : [];
+        const stamp = payload && payload.generated_at && new Date(payload.generated_at);
+        if (stamp && !isNaN(stamp.getTime()) && stamp.getFullYear() >= 2000) {
+          state.baseYear = stamp.getFullYear();
+        }
         state.loading = false;
         populateOptions();
         updateUpdatedBadge(payload);
@@ -200,51 +223,50 @@
     const days = uniqueValues(schoolPool(), "day", function (a, b) {
       return sortByDay(a) - sortByDay(b);
     });
-    fillSelect(elements.degree, degrees, "All programs");
-    fillSelect(elements.day, days, "All days");
-    populateSemesters();
+    fillSelect(elements.degree, degrees, "Select a degree", degreeCode);
+    fillSelect(elements.day, days, "Select a day");
+    populateBatches();
   }
 
-  function populateSemesters() {
+  function batchFromItem(item) {
+    return batchForSemester(item.semester);
+  }
+
+  function populateBatches() {
     let pool = schoolPool();
     if (state.degree) {
       pool = pool.filter(function (item) {
         return String(item.department) === state.degree;
       });
     }
-    const semesters = uniqueValues(pool, "semester", function (a, b) {
+    const batches = uniqueValues(pool, "semester", function (a, b) {
       return Number(a) - Number(b);
+    })
+      .map(function (sem) {
+        return batchForSemester(sem);
+      })
+      .filter(function (value, index, array) {
+        return value && array.indexOf(value) === index;
+      })
+      .sort(function (a, b) {
+        return Number(b) - Number(a);
+      });
+    fillSelect(elements.batch, batches, "Select a batch", function (value) {
+      return "Batch " + value;
     });
-    fillSelect(elements.semester, semesters, "All semesters", semesterLabel);
-    if (state.semester && semesters.indexOf(state.semester) === -1) {
-      state.semester = "";
+    if (state.batch && batches.indexOf(state.batch) === -1) {
+      state.batch = "";
     }
-    elements.semester.value = state.semester;
+    elements.batch.value = state.batch;
     populateSections();
   }
 
   function batchLabel(value) {
     const text = String(value == null ? "" : value).trim();
-    let match = /^([A-Z]{2,4})-(\d+)([A-E])(?:\/([A-E]))?(?:\s+\((G\d+)\))?$/.exec(text);
-    if (match) {
-      const section = match[4] ? "Section " + match[3] + "/" + match[4] : "Section " + match[3];
-      return "Semester " + match[2] + " · " + section + (match[5] ? " · Group " + match[5].slice(1) : "");
-    }
-    match = /^([A-Z]{2,4})-(\d+)\s*\(All\)$/.exec(text);
-    if (match) {
-      return "Semester " + match[2] + " · All sections";
-    }
-    match = /^([A-Z]{2,4})-(\d+)([A-E])\/([A-Z]{2,4})-(\d+)([A-E])$/.exec(text);
-    if (match) {
-      return "Semester " + match[2] + " · Section " + match[3] + " + " + match[5] + " · Section " + match[6];
-    }
-    match = /^([A-Z]{2,4})-(\d+)([A-E])$/.exec(text);
-    if (match) {
-      return "Semester " + match[2] + " · Section " + match[3];
-    }
-    match = /^([A-Z]{2,4})-([A-E])$/.exec(text);
-    if (match) {
-      return match[1] + " · Section " + match[2];
+    const match = /^([A-Z]{2,4})-(\d+)/.exec(text);
+    const batch = match ? batchForSemester(match[2]) : "";
+    if (batch) {
+      return "Batch " + batch + " · " + text;
     }
     match = /^([A-E])$/.exec(text);
     if (match) {
@@ -259,19 +281,36 @@
       if (state.degree && String(item.department) !== state.degree) {
         return false;
       }
-      if (state.semester && String(item.semester) !== state.semester) {
+      if (state.batch && batchFromItem(item) !== state.batch) {
         return false;
       }
       return true;
     });
     const sections = uniqueValues(pool, "batch_section", function (a, b) {
       return normalizeText(a).localeCompare(normalizeText(b));
+    }).filter(function (value) {
+      return !/\(All\)$/.test(value);
     });
-    fillSelect(elements.section, sections, "All sections", batchLabel);
+    fillSelect(elements.section, sections, "Select a section", batchLabel);
     if (state.section && sections.indexOf(state.section) === -1) {
       state.section = "";
     }
     elements.section.value = state.section;
+  }
+
+  function sectionMatches(item, selected) {
+    const section = String(item.batch_section || "");
+    if (section === selected) {
+      return true;
+    }
+    const combined = /^([A-Z]{2,4})-(\d+)\s*\(All\)$/.exec(section);
+    if (combined) {
+      const check = /^([A-Z]{2,4})-(\d+)[A-E]/.exec(selected);
+      if (check && check[1] === combined[1] && check[2] === combined[2]) {
+        return true;
+      }
+    }
+    return false;
   }
 
   function getEntries() {
@@ -282,10 +321,10 @@
       if (state.degree && String(item.department) !== state.degree) {
         return false;
       }
-      if (state.semester && String(item.semester) !== state.semester) {
+      if (state.batch && batchFromItem(item) !== state.batch) {
         return false;
       }
-      if (state.section && String(item.batch_section) !== state.section) {
+      if (state.section && !sectionMatches(item, state.section)) {
         return false;
       }
       if (state.day && String(item.day) !== state.day) {
@@ -303,9 +342,9 @@
     elements.results.innerHTML = "";
     const entries = getEntries();
 
-    if (!state.school && !state.degree && !state.semester && !state.section && !state.day) {
+    if (!state.school && !state.degree && !state.batch && !state.section && !state.day) {
       setStatus("");
-      elements.results.appendChild(emptyState("Select your department, program, semester, batch and day above to see your timetable.", "🗓️"));
+      elements.results.appendChild(emptyState("Select your department, degree, batch, section and day above to see your timetable.", "🗓️"));
       return;
     }
 
@@ -315,7 +354,12 @@
       return;
     }
 
-    const summary = [state.day, state.semester ? semesterLabel(state.semester) : "", state.section, state.degree]
+    const summary = [
+      state.day,
+      state.batch ? "Batch " + state.batch : "",
+      state.section ? batchLabel(state.section) : "",
+      state.degree ? degreeCode(state.degree) : "",
+    ]
       .filter(Boolean)
       .join(" · ");
     setStatus(summary + " — " + entries.length + (entries.length === 1 ? " class" : " classes"));
@@ -445,13 +489,13 @@
       elements.school.addEventListener("change", function () {
         state.school = elements.school.value;
         state.degree = "";
-        state.semester = "";
+        state.batch = "";
         state.section = "";
         if (elements.degree) {
           elements.degree.value = "";
         }
-        if (elements.semester) {
-          elements.semester.value = "";
+        if (elements.batch) {
+          elements.batch.value = "";
         }
         if (elements.section) {
           elements.section.value = "";
@@ -463,13 +507,13 @@
     if (elements.degree) {
       elements.degree.addEventListener("change", function () {
         state.degree = elements.degree.value;
-        populateSemesters();
+        populateBatches();
         render();
       });
     }
-    if (elements.semester) {
-      elements.semester.addEventListener("change", function () {
-        state.semester = elements.semester.value;
+    if (elements.batch) {
+      elements.batch.addEventListener("change", function () {
+        state.batch = elements.batch.value;
         populateSections();
         render();
       });
@@ -490,7 +534,7 @@
       elements.resetFilters.addEventListener("click", function () {
         state.school = "";
         state.degree = "";
-        state.semester = "";
+        state.batch = "";
         state.section = "";
         state.day = "";
         if (elements.school) {
@@ -499,8 +543,8 @@
         if (elements.degree) {
           elements.degree.value = "";
         }
-        if (elements.semester) {
-          elements.semester.value = "";
+        if (elements.batch) {
+          elements.batch.value = "";
         }
         if (elements.section) {
           elements.section.value = "";
