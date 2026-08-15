@@ -342,7 +342,11 @@
     elements.results.innerHTML = "";
     const entries = getEntries();
 
-    if (!state.school && !state.degree && !state.batch && !state.section && !state.day) {
+    const selectionsComplete = Boolean(
+      state.school && state.degree && state.batch && state.section && state.day
+    );
+
+    if (!selectionsComplete) {
       setStatus("");
       elements.results.appendChild(emptyState("Select your department, degree, batch, section and day above to see your timetable.", "🗓️"));
       return;
