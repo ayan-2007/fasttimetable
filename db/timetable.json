@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-15T04:31:55+0000",
+  "generated_at": "2026-08-16T04:36:38+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 821,
+  "count": 819,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -6855,19 +6855,6 @@
       "school": "Management"
     },
     {
-      "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-3A",
-      "day": "Wed",
-      "time": "02:25 - 03:45",
-      "course": "Fundamentals of Accouting",
-      "instructor": "Not assigned",
-      "room": "A-305",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "A",
-      "school": "Management"
-    },
-    {
       "department": "Bachelor of Business Administration",
       "batch_section": "BBA-3D",
       "day": "Wed",
@@ -7138,19 +7125,6 @@
       "type": "Lab",
       "semester": 5,
       "section": "B",
-      "school": "Management"
-    },
-    {
-      "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-3A",
-      "day": "Wed",
-      "time": "03:50 - 05:10",
-      "course": "Fundamentals of Accouting",
-      "instructor": "Not assigned",
-      "room": "A-305",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "A",
       "school": "Management"
     },
     {
@@ -9949,6 +9923,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Bachelor of Science (Accounting & Finance)",
+      "batch_section": "AF-3A",
+      "day": "Fri",
+      "time": "10:00 - 11:20",
+      "course": "AF 1001 Fundamentals of Accounting",
+      "instructor": "Not assigned",
+      "room": "A--211",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "A",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Business Administration",
       "batch_section": "BBA-1A",
       "day": "Fri",
@@ -10158,19 +10145,6 @@
     },
     {
       "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-3A",
-      "day": "Fri",
-      "time": "10:00 - 11:20",
-      "course": "SS1006 English II",
-      "instructor": "Not assigned",
-      "room": "A--211",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "A",
-      "school": "Management"
-    },
-    {
-      "department": "Bachelor of Science (Financial Technology)",
       "batch_section": "FT-5C",
       "day": "Fri",
       "time": "10:00 - 11:20",
@@ -10300,6 +10274,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Bachelor of Science (Accounting & Finance)",
+      "batch_section": "AF-3A",
+      "day": "Fri",
+      "time": "11:30 - 12:50",
+      "course": "AF 1001 Fundamentals of Accounting",
+      "instructor": "Not assigned",
+      "room": "A--211",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "A",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Science (Financial Technology)",
       "batch_section": "FT-5B",
       "day": "Fri",
@@ -10349,19 +10336,6 @@
       "type": "Lecture",
       "semester": 5,
       "section": "C",
-      "school": "Management"
-    },
-    {
-      "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-3A",
-      "day": "Fri",
-      "time": "11:30 - 12:50",
-      "course": "SS1006 English II",
-      "instructor": "Not assigned",
-      "room": "A--211",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "A",
       "school": "Management"
     },
     {
