@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="FastSchedule" />
-  <meta name="theme-color" content="#60a5fa" />
+  <meta name="description" content="FastSchedule — the FSM &amp; FSE timetable, sorted without the spreadsheet." />
+  <meta name="theme-color" content="#14110e" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <title>FastSchedule — Timetable</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/styles.css?v=20260815d" />
+  <link rel="stylesheet" href="css/styles.css?v=20260819" />
   <script>
     (function () {
       var stored = null;
@@ -27,104 +27,111 @@
   <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="header-inner">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true">
-          <span class="brand-glyph">F</span>
+  <div class="page-frame">
+    <header class="header">
+      <div class="header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <span class="brand-glyph">F</span>
+          </div>
+          <div class="brand-text">
+            <p class="brand-kicker">FSM · FSE</p>
+            <h1 class="brand-title">Fast<span class="brand-title-accent">Schedule</span></h1>
+            <p class="brand-tagline">No more spreadsheet archaeology</p>
+          </div>
         </div>
-        <div class="brand-text">
-          <h1 class="brand-title">FastSchedule</h1>
-          <p class="brand-tagline"> — you no longer have to scroll through that confusing excel sheet .</p>
+
+        <div class="header-controls">
+          <span id="updated-badge" class="badge badge-updated">Last updated: loading&hellip;</span>
+          <button id="theme-toggle" class="icon-button" type="button" aria-label="Toggle light / dark theme" title="Toggle theme">
+            <svg id="icon-moon" class="theme-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg id="icon-sun" class="theme-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
         </div>
       </div>
+    </header>
 
-      <div class="header-controls">
-        <span id="updated-badge" class="badge badge-updated">Last updated: loading&hellip;</span>
-        <button id="theme-toggle" class="icon-button" type="button" aria-label="Toggle light / dark theme" title="Toggle theme">
-          <svg id="icon-moon" class="theme-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-          <svg id="icon-sun" class="theme-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="card">
-      <div class="panel-heading">
-        <div>
-          <h2>Your Timetable</h2>
-          <p class="panel-sub">Pick your department, degree, batch, section and day.</p>
+    <main class="container">
+      <section class="card">
+        <div class="panel-heading">
+          <div>
+            <p class="kicker">Class schedule</p>
+            <h2 class="panel-title">Your Timetable</h2>
+            <p class="panel-sub">Department &rarr; degree &rarr; batch &rarr; section &rarr; day. Each choice unlocks the next.</p>
+          </div>
+          <button id="reset-filters" class="ghost-btn" type="button">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"></path>
+              <path d="M3 3v5h5"></path>
+            </svg>
+            <span>Reset</span>
+          </button>
         </div>
-        <button id="reset-filters" class="ghost-btn" type="button">Reset</button>
-      </div>
 
-      <div class="filter-bar">
-        <label class="field">
-          <span class="field-label">Department</span>
-          <select id="filter-school" class="input">
-            <option value="">Select a department</option>
-            <option value="Engineering">Engineering</option>
-            <option value="Management">Management</option>
-          </select>
-        </label>
-        <label class="field">
-          <span class="field-label">Degree</span>
-          <select id="filter-degree" class="input">
-            <option value="">Select a degree</option>
-          </select>
-        </label>
-        <label class="field">
-          <span class="field-label">Batch</span>
-          <select id="filter-batch" class="input">
-            <option value="">Select a batch</option>
-          </select>
-        </label>
-        <label class="field">
-          <span class="field-label">Section</span>
-          <select id="filter-section" class="input">
-            <option value="">Select a section</option>
-          </select>
-        </label>
-        <label class="field">
-          <span class="field-label">Day</span>
-          <select id="filter-day" class="input">
-            <option value="">Select a day</option>
-          </select>
-        </label>
-      </div>
+        <div class="filter-bar">
+          <label class="field">
+            <span class="field-label">01 · Department</span>
+            <select id="filter-school" class="input">
+              <option value="">Select a department</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Management">Management</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field-label">02 · Degree</span>
+            <select id="filter-degree" class="input">
+              <option value="">Select a degree</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field-label">03 · Batch</span>
+            <select id="filter-batch" class="input">
+              <option value="">Select a batch</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field-label">04 · Section</span>
+            <select id="filter-section" class="input">
+              <option value="">Select a section</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field-label">05 · Day</span>
+            <select id="filter-day" class="input">
+              <option value="">Select a day</option>
+            </select>
+          </label>
+        </div>
 
-      <div id="status" class="status-line" role="status" aria-live="polite"></div>
-      <div id="results" class="schedule-area"></div>
-    </section>
-  </main>
+        <div id="status" class="status-line" role="status" aria-live="polite"></div>
+        <div id="results" class="schedule-area"></div>
+      </section>
+    </main>
 
-  <footer class="footer">
-    <p>
-      FastSchedule &middot; FSM n FSE timetable &mdash;
-    </p>
-    <p class="footer-small">
-      Ayan Malik &middot;
-      <a href="https://github.com/ayan-2007" target="_blank" rel="noopener noreferrer">github.com/ayan-2007</a> &middot;
-        Your feedback and suggestions would be highly appreciated . &middot;
-      <a href="mailto:i250585@isb.nu.edu.pk">i250585@isb.nu.edu.pk</a>
-      <a href="https://www.linkedin.com/in/ahmed-ayan-704b72392/">LinkedIn</a>
-    </p>
-    <p class="footer-small">&copy; <span id="footer-year">2026</span></p>
-  </footer>
+    <footer class="footer">
+      <p class="footer-main">FastSchedule &middot; FSM &times; FSE timetable</p>
+      <p class="footer-small">
+        Ayan Malik &middot;
+        <a href="https://github.com/ayan-2007" target="_blank" rel="noopener noreferrer">github.com/ayan-2007</a> &middot;
+        <a href="mailto:i250585@isb.nu.edu.pk">i250585@isb.nu.edu.pk</a> &middot;
+        <a href="https://www.linkedin.com/in/ahmed-ayan-704b72392/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+      <p class="footer-small">&copy; <span id="footer-year">2026</span></p>
+    </footer>
+  </div>
 
-  <script src="js/app.js?v=20260815d"></script>
+  <script src="js/app.js?v=20260819"></script>
 </body>
 </html>

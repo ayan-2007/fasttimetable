@@ -125,13 +125,21 @@
     wrapper.className = "empty-state";
     const iconEl = document.createElement("div");
     iconEl.className = "empty-icon";
-    iconEl.textContent = icon || "🗓️";
+    iconEl.setAttribute("aria-hidden", "true");
+    iconEl.innerHTML = icon;
     const text = document.createElement("p");
     text.textContent = message;
     wrapper.appendChild(iconEl);
     wrapper.appendChild(text);
     return wrapper;
   }
+
+  const ICON_CALENDAR =
+    '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M8 2v4M16 2v4M3 9h18"></path><path d="M7 13h2M11 13h2M15 13h2M7 17h2M11 17h2"></path></svg>';
+  const ICON_EMPTY =
+    '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h8l4 4v15H6z"></path><path d="M14 2.5v4h4"></path><path d="M9.5 12h5"></path><path d="M12 12v4a2 2 0 0 0 2 2"></path></svg>';
+  const ICON_ALERT =
+    '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.6 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"></path><path d="M12 9v4M12 17h.01"></path></svg>';
 
   function typeBadge(type) {
     const span = document.createElement("span");
@@ -168,7 +176,7 @@
         state.loading = false;
         setStatus("Could not load timetable data: " + error.message);
         elements.results.innerHTML = "";
-        elements.results.appendChild(emptyState("Unable to fetch the timetable. Check the network or refresh.", "⚠️"));
+        elements.results.appendChild(emptyState("Unable to fetch the timetable. Check the network or refresh.", ICON_ALERT));
         updateUpdatedBadge(null);
       });
   }
@@ -348,13 +356,13 @@
 
     if (!selectionsComplete) {
       setStatus("");
-      elements.results.appendChild(emptyState("Select your department, degree, batch, section and day above to see your timetable.", "🗓️"));
+      elements.results.appendChild(emptyState("Select your department, degree, batch, section and day above to see your timetable.", ICON_CALENDAR));
       return;
     }
 
     if (entries.length === 0) {
       setStatus("No classes scheduled for these selections.");
-      elements.results.appendChild(emptyState("Nothing scheduled here. Try another day or section.", "📭"));
+      elements.results.appendChild(emptyState("Nothing scheduled here. Try another day or section.", ICON_EMPTY));
       return;
     }
 
