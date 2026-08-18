@@ -296,16 +296,10 @@
     });
     const sections = uniqueValues(pool, "batch_section", function (a, b) {
       return normalizeText(a).localeCompare(normalizeText(b));
-    })
-      .map(function (value) {
-        const match = /^[A-Z]{2,4}-\d+([A-E])/.exec(String(value).trim());
-        return match ? match[1] : "";
-      })
-      .filter(function (value, index, array) {
-        return value && array.indexOf(value) === index;
-      })
-      .sort();
-    fillSelect(elements.section, sections, "Select a section");
+    }).filter(function (value) {
+      return !/\(All\)$/.test(value);
+    });
+    fillSelect(elements.section, sections, "Select a section", batchLabel);
     if (state.section && sections.indexOf(state.section) === -1) {
       state.section = "";
     }
@@ -313,13 +307,18 @@
   }
 
   function sectionMatches(item, selected) {
-    const section = String(item.batch_section || "").trim();
-    const combined = /^[A-Z]{2,4}-\d+\s*\(All\)$/.exec(section);
-    if (combined) {
+    const section = String(item.batch_section || "");
+    if (section === selected) {
       return true;
     }
-    const match = /^[A-Z]{2,4}-\d+([A-E])/.exec(section);
-    return Boolean(match && selected && match[1] === selected);
+    const combined = /^([A-Z]{2,4})-(\d+)\s*\(All\)$/.exec(section);
+    if (combined) {
+      const check = /^([A-Z]{2,4})-(\d+)[A-E]/.exec(selected);
+      if (check && check[1] === combined[1] && check[2] === combined[2]) {
+        return true;
+      }
+    }
+    return false;
   }
 
   function getEntries() {
@@ -340,60 +339,6 @@
         return false;
       }
       return true;
-    });
-  }
-
-  /* Merge consecutive blocks that are really one continuous session:
-     same day/course/type/room/section with a small (<=15m) gap between
-     blocks (e.g. a lab split as 11:30-12:50 + 01:00-02:20).
-     Presentation-only — the source data is never modified. */
-  function mergeSessions(entries) {
-    const groupsByKey = {};
-    entries.forEach(function (item) {
-      const key = normalizeText(
-        [item.day, item.batch_section, item.course, item.type, item.room].join("|")
-      );
-      if (!groupsByKey[key]) {
-        groupsByKey[key] = [];
-      }
-      groupsByKey[key].push(item);
-    });
-
-    const merged = [];
-    Object.keys(groupsByKey).forEach(function (key) {
-      const group = groupsByKey[key].slice().sort(function (a, b) {
-        const ra = parseRange(a.time);
-        const rb = parseRange(b.time);
-        return (ra ? ra.start : 0) - (rb ? rb.start : 0);
-      });
-      const chain = [];
-      let last = null;
-      group.forEach(function (item) {
-        const range = parseRange(item.time);
-        if (last) {
-          const lastRange = parseRange(last.time);
-          const gap = lastRange && range ? range.start - lastRange.end : Infinity;
-          if (gap >= 0 && gap <= 15) {
-            const endToken = String(item.time).split(" - ").pop().trim();
-            last.time = String(last.time).split(" - ")[0].trim() + " - " + endToken;
-            return;
-          }
-        }
-        const copy = Object.assign({}, item);
-        chain.push(copy);
-        last = copy;
-      });
-      merged.push.apply(merged, chain);
-    });
-
-    return merged.sort(function (a, b) {
-      const dayDiff = sortByDay(a.day) - sortByDay(b.day);
-      if (dayDiff !== 0) {
-        return dayDiff;
-      }
-      const ra = parseRange(a.time);
-      const rb = parseRange(b.time);
-      return (ra ? ra.start : 0) - (rb ? rb.start : 0);
     });
   }
 
@@ -421,8 +366,6 @@
       return;
     }
 
-    const merged = mergeSessions(entries);
-
     const summary = [
       state.day,
       state.batch ? "Batch " + state.batch : "",
@@ -431,7 +374,7 @@
     ]
       .filter(Boolean)
       .join(" · ");
-    setStatus(summary + " — " + merged.length + (merged.length === 1 ? " class" : " classes"));
+    setStatus(summary + " — " + entries.length + (entries.length === 1 ? " class" : " classes"));
 
     const showDay = !state.day;
     const labels = showDay ? ["Day", "Time", "Course", "Room", "Type"] : ["Time", "Course", "Room", "Type"];
@@ -448,7 +391,7 @@
     });
     grid.appendChild(headerRow);
 
-    merged
+    entries
       .slice()
       .sort(function (a, b) {
         const dayDiff = sortByDay(a.day) - sortByDay(b.day);
