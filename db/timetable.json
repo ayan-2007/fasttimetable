@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T04:38:49+0000",
+  "generated_at": "2026-08-20T04:39:06+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
   "count": 819,
   "entries": [
@@ -4684,19 +4684,6 @@
       "school": "Management"
     },
     {
-      "department": "Bachelor of Business Administration",
-      "batch_section": "BBA-5A",
-      "day": "Tue",
-      "time": "03:50 - 05:10",
-      "course": "Microeconomics",
-      "instructor": "Not assigned",
-      "room": "A-210",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "A",
-      "school": "Management"
-    },
-    {
       "department": "Bachelor of Science (Financial Technology)",
       "batch_section": "FT-3A",
       "day": "Tue",
@@ -4732,6 +4719,19 @@
       "room": "Cal-II lab",
       "type": "Lab",
       "semester": 1,
+      "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Business Administration",
+      "batch_section": "BBA-5A",
+      "day": "Tue",
+      "time": "03:50 - 05:10",
+      "course": "SS2002 Microeconomics",
+      "instructor": "Not assigned",
+      "room": "A-210",
+      "type": "Lecture",
+      "semester": 5,
       "section": "A",
       "school": "Management"
     },
@@ -4858,7 +4858,7 @@
       "day": "Wed",
       "time": "08:30 - 09:50",
       "course": "Blockchain Technologies CE-A",
-      "instructor": "Dr. Muhammad Tariq (Cancelled)",
+      "instructor": "Dr. Muhammad Tariq",
       "room": "B-230",
       "type": "Lecture",
       "semester": 5,
@@ -5686,15 +5686,15 @@
     },
     {
       "department": "Computer Engineering",
-      "batch_section": "CE-7A",
+      "batch_section": "CE-7C",
       "day": "Wed",
       "time": "11:25 - 12:45",
-      "course": "Comp. Variables & Trans. 7A",
+      "course": "Comp. Variables & Trans.3C/5C/7C",
       "instructor": "Ms Javeria Azmat",
       "room": "B-030",
       "type": "Lecture",
       "semester": 7,
-      "section": "A",
+      "section": "C",
       "school": "Engineering"
     },
     {
@@ -7328,7 +7328,7 @@
       "day": "Thu",
       "time": "08:30 - 09:50",
       "course": "Digital Logic Design Lab A",
-      "instructor": "Engr. Abu Bakar",
+      "instructor": "Engr. Abur Rehman",
       "room": "DLD",
       "type": "Lab",
       "semester": 3,
@@ -9417,15 +9417,15 @@
     },
     {
       "department": "Computer Engineering",
-      "batch_section": "CE-7A",
+      "batch_section": "CE-7C",
       "day": "Thu",
       "time": "03:45 - 05:05",
-      "course": "Comp. Variables & Trans. 7A",
+      "course": "Comp. Variables & Trans.3C/5C/7C",
       "instructor": "Ms Javeria Azmat",
       "room": "B-028",
       "type": "Lecture",
       "semester": 7,
-      "section": "A",
+      "section": "C",
       "school": "Engineering"
     },
     {
@@ -9534,19 +9534,6 @@
     },
     {
       "department": "Bachelor of Business Administration",
-      "batch_section": "BBA-5A",
-      "day": "Thu",
-      "time": "03:50 - 05:10",
-      "course": "Microeconomics",
-      "instructor": "Not assigned",
-      "room": "A-101",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "A",
-      "school": "Management"
-    },
-    {
-      "department": "Bachelor of Business Administration",
       "batch_section": "BBA-1B (G1)",
       "day": "Thu",
       "time": "03:50 - 05:10",
@@ -9569,6 +9556,19 @@
       "type": "Lab",
       "semester": 1,
       "section": "B",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Business Administration",
+      "batch_section": "BBA-5A",
+      "day": "Thu",
+      "time": "03:50 - 05:10",
+      "course": "SS2002 Microeconomics",
+      "instructor": "Not assigned",
+      "room": "A-101",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "A",
       "school": "Management"
     },
     {
@@ -10383,7 +10383,7 @@
       "day": "Fri",
       "time": "02:00 - 03:20",
       "course": "Digital Logic Design Lab D",
-      "instructor": "Engr. Abdur Rehman",
+      "instructor": "Engr. Abu Bakar",
       "room": "DLD",
       "type": "Lab",
       "semester": 3,
@@ -10415,19 +10415,6 @@
       "semester": 7,
       "section": "A",
       "school": "Engineering"
-    },
-    {
-      "department": "Bachelor of Business Administration",
-      "batch_section": "BBA-3A",
-      "day": "Fri",
-      "time": "02:25 - 03:45",
-      "course": "Business Math I",
-      "instructor": "Not assigned",
-      "room": "A-103",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "A",
-      "school": "Management"
     },
     {
       "department": "Bachelor of Science (Financial Technology)",
@@ -10465,6 +10452,19 @@
       "room": "KK-I",
       "type": "Lab",
       "semester": 1,
+      "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Business Administration",
+      "batch_section": "BBA-3A",
+      "day": "Fri",
+      "time": "02:25 - 03:45",
+      "course": "MT1002 Business Math I",
+      "instructor": "Not assigned",
+      "room": "A-103",
+      "type": "Lecture",
+      "semester": 3,
       "section": "A",
       "school": "Management"
     },
@@ -10560,19 +10560,6 @@
       "school": "Management"
     },
     {
-      "department": "Bachelor of Business Administration",
-      "batch_section": "BBA-3A",
-      "day": "Fri",
-      "time": "03:50 - 05:10",
-      "course": "Business Math I",
-      "instructor": "Not assigned",
-      "room": "A-103",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "A",
-      "school": "Management"
-    },
-    {
       "department": "Bachelor of Science (Financial Technology)",
       "batch_section": "FT-5A",
       "day": "Fri",
@@ -10595,6 +10582,19 @@
       "room": "KK-I",
       "type": "Lab",
       "semester": 1,
+      "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Business Administration",
+      "batch_section": "BBA-3A",
+      "day": "Fri",
+      "time": "03:50 - 05:10",
+      "course": "MT1002 Business Math I",
+      "instructor": "Not assigned",
+      "room": "A-103",
+      "type": "Lecture",
+      "semester": 3,
       "section": "A",
       "school": "Management"
     },
