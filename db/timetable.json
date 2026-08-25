@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-24T04:47:20+0000",
+  "generated_at": "2026-08-25T04:40:32+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 818,
+  "count": 824,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -108,13 +108,26 @@
       "school": "Engineering"
     },
     {
+      "department": "Computer Engineering",
+      "batch_section": "CE-5A",
+      "day": "Mon",
+      "time": "08:30 - 09:50",
+      "course": "Blockchain Technologies CE-A",
+      "instructor": "Dr. Muhammad Tariq",
+      "room": "B-230",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-1A",
       "day": "Mon",
       "time": "08:30 - 09:50",
       "course": "CL1001 IT in Business-Lab",
       "instructor": "Not assigned",
-      "room": "KK-I",
+      "room": "KK-II",
       "type": "Lab",
       "semester": 1,
       "section": "A",
@@ -157,6 +170,19 @@
       "type": "Lecture",
       "semester": 3,
       "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-3D",
+      "day": "Mon",
+      "time": "08:30 - 09:50",
+      "course": "Elect. Netwk. Analysis Lab D",
+      "instructor": "Engr. Abdullah Zaheer Week 3",
+      "room": "Koh",
+      "type": "Lab",
+      "semester": 3,
+      "section": "D",
       "school": "Engineering"
     },
     {
@@ -512,19 +538,6 @@
     },
     {
       "department": "Computer Engineering",
-      "batch_section": "CE-5A",
-      "day": "Mon",
-      "time": "09:55 - 11:15",
-      "course": "Blockchain Technologies CE-A",
-      "instructor": "Dr. Muhammad Tariq",
-      "room": "B-230",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Computer Engineering",
       "batch_section": "CE-3A",
       "day": "Mon",
       "time": "09:55 - 11:15",
@@ -647,7 +660,7 @@
       "time": "10:00 - 11:20",
       "course": "CL1001 IT in Business-Lab",
       "instructor": "Not assigned",
-      "room": "KK-I",
+      "room": "KK-II",
       "type": "Lab",
       "semester": 1,
       "section": "A",
@@ -1356,19 +1369,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1B",
-      "day": "Mon",
-      "time": "12:50 - 02:10",
-      "course": "Applications of ICT Lab EE-B",
-      "instructor": "Engr. Esha Rizwan",
-      "room": "Comp-II",
-      "type": "Lab",
-      "semester": 1,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
       "department": "Computer Engineering",
       "batch_section": "CE-3 (All)",
       "day": "Mon",
@@ -1746,6 +1746,19 @@
       "school": "Management"
     },
     {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-7A",
+      "day": "Mon",
+      "time": "01:00 - 02:20",
+      "course": "Programming for Finance",
+      "instructor": "Not assigned",
+      "room": "B-227",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "A",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-1C (G1)",
       "day": "Mon",
@@ -1830,7 +1843,7 @@
       "time": "02:20 - 03:40",
       "course": "Analogue and Digital Communication - Lab A",
       "instructor": "Engr. Abdur Rehman",
-      "room": "Comp-III",
+      "room": "Comp-III/ Comm Lab",
       "type": "Lab",
       "semester": 5,
       "section": "A",
@@ -1872,19 +1885,6 @@
       "room": "B-230",
       "type": "Lecture",
       "semester": 5,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-7A",
-      "day": "Mon",
-      "time": "02:20 - 03:40",
-      "course": "Instrumentation and Measurements - Lab A",
-      "instructor": "Engr. Shahmeer Hussain",
-      "room": "Cont",
-      "type": "Lab",
-      "semester": 7,
       "section": "A",
       "school": "Engineering"
     },
@@ -2124,6 +2124,19 @@
     },
     {
       "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-7A",
+      "day": "Mon",
+      "time": "02:25 - 03:45",
+      "course": "Programming for Finance",
+      "instructor": "Not assigned",
+      "room": "B-227",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Financial Technology)",
       "batch_section": "FT-1C (G1)",
       "day": "Mon",
       "time": "02:25 - 03:45",
@@ -2236,6 +2249,19 @@
       "room": "B-019",
       "type": "Lecture",
       "semester": 7,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-5A",
+      "day": "Mon",
+      "time": "03:45 - 05:05",
+      "course": "Digital Signal Processing CE-A",
+      "instructor": "Engr. Shehzad Ahmed",
+      "room": "B-230",
+      "type": "Lecture",
+      "semester": 5,
       "section": "A",
       "school": "Engineering"
     },
@@ -2627,6 +2653,19 @@
       "type": "Lab",
       "semester": 3,
       "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-3A",
+      "day": "Tue",
+      "time": "08:30 - 09:50",
+      "course": "Elect. Netwk. Analysis Lab A",
+      "instructor": "Engr. Abdullah Zaheer Week 3",
+      "room": "Comm Lab/ Koh",
+      "type": "Lab",
+      "semester": 3,
+      "section": "A",
       "school": "Engineering"
     },
     {
@@ -3312,7 +3351,7 @@
       "time": "11:25 - 12:45",
       "course": "Analogue and Digital Communication - Lab B",
       "instructor": "Engr. Abdur Rehman",
-      "room": "Koh",
+      "room": "Comm Lab/ Koh",
       "type": "Lab",
       "semester": 5,
       "section": "B",
@@ -3390,7 +3429,7 @@
       "time": "11:25 - 12:45",
       "course": "Object Oriented Programming Lab CE-B",
       "instructor": "Engr. Ayesha Nadeem",
-      "room": "Comp-III",
+      "room": "Comp-II",
       "type": "Lab",
       "semester": 3,
       "section": "B",
@@ -4902,6 +4941,19 @@
       "type": "Lecture",
       "semester": 5,
       "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-3B",
+      "day": "Wed",
+      "time": "08:30 - 09:50",
+      "course": "Elect. Netwk. Analysis Lab B",
+      "instructor": "Engr. Abdullah Zaheer Week 3",
+      "room": "Comp-II",
+      "type": "Lab",
+      "semester": 3,
+      "section": "B",
       "school": "Engineering"
     },
     {
@@ -9092,6 +9144,19 @@
     },
     {
       "department": "Electrical Engineering",
+      "batch_section": "EE-7C",
+      "day": "Thu",
+      "time": "02:20 - 03:40",
+      "course": "Applied Machine Learning Lab C",
+      "instructor": "Engr. Fasih Ahmed Janjua",
+      "room": "Comp-I",
+      "type": "Lab",
+      "semester": 7,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
       "batch_section": "EE-2A",
       "day": "Thu",
       "time": "02:20 - 03:40",
@@ -9137,6 +9202,19 @@
       "course": "Fund. Database Systems Lab A",
       "instructor": "Dr. M. Ibrar Khan",
       "room": "Poth",
+      "type": "Lab",
+      "semester": 7,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-7A",
+      "day": "Thu",
+      "time": "02:20 - 03:40",
+      "course": "Instrumentation and Measurements - Lab A",
+      "instructor": "Not assigned",
+      "room": "Comp-II",
       "type": "Lab",
       "semester": 7,
       "section": "A",
@@ -9243,6 +9321,19 @@
       "room": "A-03",
       "type": "Lecture",
       "semester": 3,
+      "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-7A",
+      "day": "Thu",
+      "time": "02:25 - 03:45",
+      "course": "Programming for Finance Lab",
+      "instructor": "Not assigned",
+      "room": "KK-II",
+      "type": "Lab",
+      "semester": 7,
       "section": "A",
       "school": "Management"
     },
@@ -9377,19 +9468,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-7A",
-      "day": "Thu",
-      "time": "03:45 - 05:05",
-      "course": "Data Structures & Algo. A",
-      "instructor": "Not assigned",
-      "room": "B-028",
-      "type": "Lecture",
-      "semester": 7,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
       "department": "Computer Engineering",
       "batch_section": "CE-1A",
       "day": "Thu",
@@ -9516,6 +9594,19 @@
       "room": "A-104",
       "type": "Lecture",
       "semester": 3,
+      "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-7A",
+      "day": "Thu",
+      "time": "03:50 - 05:10",
+      "course": "Programming for Finance",
+      "instructor": "Not assigned",
+      "room": "KK-II",
+      "type": "Lecture",
+      "semester": 7,
       "section": "A",
       "school": "Management"
     },
@@ -10271,19 +10362,6 @@
       "type": "Lecture",
       "semester": 5,
       "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-7A",
-      "day": "Fri",
-      "time": "11:25 - 12:45",
-      "course": "Data Structures & Algo. A",
-      "instructor": "Not assigned",
-      "room": "B-027",
-      "type": "Lecture",
-      "semester": 7,
-      "section": "A",
       "school": "Engineering"
     },
     {
