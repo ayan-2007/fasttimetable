@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-31T10:39:28+0000",
+  "generated_at": "2026-09-01T09:15:39+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 826,
+  "count": 830,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -2240,6 +2240,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-7A",
+      "day": "Mon",
+      "time": "03:45 - 05:05",
+      "course": "Industrial Processes Control A",
+      "instructor": "Dr. Muhammad Awais",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-5C",
       "day": "Mon",
@@ -3723,6 +3736,19 @@
     },
     {
       "department": "Electrical Engineering",
+      "batch_section": "EE-7A",
+      "day": "Tue",
+      "time": "12:50 - 02:10",
+      "course": "Industrial Processes Control A",
+      "instructor": "Dr. Muhammad Awais",
+      "room": "B-030",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
       "batch_section": "EE-3A",
       "day": "Tue",
       "time": "12:50 - 02:10",
@@ -5046,6 +5072,19 @@
       "semester": 1,
       "section": "C",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-7A",
+      "day": "Wed",
+      "time": "08:30 - 09:50",
+      "course": "Industrial Processes Control - Lab A",
+      "instructor": "Engr. Abu Bakar",
+      "room": "Comp-III",
+      "type": "Lab",
+      "semester": 7,
+      "section": "A",
+      "school": "Engineering"
     },
     {
       "department": "Bachelor of Science (Business Analytics)",
@@ -8217,6 +8256,19 @@
       "type": "Lecture",
       "semester": 3,
       "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1C",
+      "day": "Thu",
+      "time": "11:25 - 12:45",
+      "course": "Pakistan Studies EE-C",
+      "instructor": "Ms. Zahida Amin Reschedule Class",
+      "room": "B-030",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
       "school": "Engineering"
     },
     {
