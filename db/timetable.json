@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T09:15:39+0000",
+  "generated_at": "2026-09-02T08:31:53+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
   "count": 830,
   "entries": [
@@ -1817,7 +1817,7 @@
       "time": "02:20 - 03:40",
       "course": "Analogue and Digital Communication - Lab A",
       "instructor": "Engr. Abdur Rehman",
-      "room": "Comp-III/ Comm Lab",
+      "room": "Comp-III/ Comm",
       "type": "Lab",
       "semester": 5,
       "section": "A",
@@ -2687,7 +2687,7 @@
       "day": "Tue",
       "time": "08:30 - 09:50",
       "course": "English Language Skills EE-B",
-      "instructor": "Ms. Hajra Khalid",
+      "instructor": "Ms. Hajra Khalid 09:00 - 10:20",
       "room": "B-028",
       "type": "Lecture",
       "semester": 1,
@@ -8784,7 +8784,7 @@
       "day": "Thu",
       "time": "12:50 - 02:10",
       "course": "English Language Skills CE-A",
-      "instructor": "Ms. Hajra Khalid",
+      "instructor": "Ms. Hajra Khalid 2 Hours Class",
       "room": "B-119",
       "type": "Lecture",
       "semester": 1,
