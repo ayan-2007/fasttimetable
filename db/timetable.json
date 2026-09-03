@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-02T08:31:53+0000",
+  "generated_at": "2026-09-03T08:40:17+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 830,
+  "count": 833,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -937,6 +937,19 @@
       "type": "Lecture",
       "semester": 7,
       "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-5B",
+      "day": "Mon",
+      "time": "11:25 - 12:45",
+      "course": "Microprocessor. Lab B",
+      "instructor": "Reschedule 7 Spt, 2026",
+      "room": "MDEL",
+      "type": "Lab",
+      "semester": 5,
+      "section": "B",
       "school": "Engineering"
     },
     {
@@ -2232,23 +2245,10 @@
       "day": "Mon",
       "time": "03:45 - 05:05",
       "course": "Digital Signal Processing CE-A",
-      "instructor": "Engr. Shehzad Ahmed",
+      "instructor": "Dr. Shahzad Saleem",
       "room": "B-230",
       "type": "Lecture",
       "semester": 5,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-7A",
-      "day": "Mon",
-      "time": "03:45 - 05:05",
-      "course": "Industrial Processes Control A",
-      "instructor": "Dr. Muhammad Awais",
-      "room": "B-027",
-      "type": "Lecture",
-      "semester": 7,
       "section": "A",
       "school": "Engineering"
     },
@@ -3026,7 +3026,7 @@
       "time": "09:55 - 11:15",
       "course": "Electromagnetic Theory B",
       "instructor": "Dr. Irum Saba",
-      "room": "B-020",
+      "room": "B-019",
       "type": "Lecture",
       "semester": 5,
       "section": "B",
@@ -3065,7 +3065,7 @@
       "time": "09:55 - 11:15",
       "course": "MP Inter. & Prog A",
       "instructor": "Engr. Shehzad Ahmed",
-      "room": "B-019",
+      "room": "B-020",
       "type": "Lecture",
       "semester": 5,
       "section": "A",
@@ -3732,19 +3732,6 @@
       "type": "Lecture",
       "semester": 3,
       "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-7A",
-      "day": "Tue",
-      "time": "12:50 - 02:10",
-      "course": "Industrial Processes Control A",
-      "instructor": "Dr. Muhammad Awais",
-      "room": "B-030",
-      "type": "Lecture",
-      "semester": 7,
-      "section": "A",
       "school": "Engineering"
     },
     {
@@ -4949,7 +4936,7 @@
       "day": "Wed",
       "time": "08:30 - 09:50",
       "course": "Digital Signal Processing CE-A",
-      "instructor": "Engr. Shehzad Ahmed",
+      "instructor": "Dr. Shahzad Saleem",
       "room": "B-230",
       "type": "Lecture",
       "semester": 5,
@@ -5078,10 +5065,10 @@
       "batch_section": "EE-7A",
       "day": "Wed",
       "time": "08:30 - 09:50",
-      "course": "Industrial Processes Control - Lab A",
-      "instructor": "Engr. Abu Bakar",
-      "room": "Comp-III",
-      "type": "Lab",
+      "course": "Intro to Internet of Things. A",
+      "instructor": "Not assigned",
+      "room": "B-027",
+      "type": "Lecture",
       "semester": 7,
       "section": "A",
       "school": "Engineering"
@@ -5256,19 +5243,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Computer Engineering",
-      "batch_section": "CE-1A",
-      "day": "Wed",
-      "time": "08:30 - 09:50",
-      "course": "Physics for Engr. CE-A",
-      "instructor": "Dr. Shahzad Saleem",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
       "department": "Electrical Engineering",
       "batch_section": "EE-1B",
       "day": "Wed",
@@ -5383,6 +5357,19 @@
       "type": "Lecture",
       "semester": 5,
       "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-1A",
+      "day": "Wed",
+      "time": "09:55 - 11:15",
+      "course": "Physics for Engr. CE-A",
+      "instructor": "Dr. Shahzad Saleem",
+      "room": "B-119",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
       "school": "Engineering"
     },
     {
@@ -5841,19 +5828,6 @@
       "school": "Management"
     },
     {
-      "department": "Bachelor of Science (Business Analytics)",
-      "batch_section": "BSBA-1C",
-      "day": "Wed",
-      "time": "11:30 - 12:50",
-      "course": "CL1001 IT in Business-Lab",
-      "instructor": "Not assigned",
-      "room": "KK-I",
-      "type": "Lab",
-      "semester": 1,
-      "section": "C",
-      "school": "Management"
-    },
-    {
       "department": "Bachelor of Science (Accounting & Finance)",
       "batch_section": "AF-5C",
       "day": "Wed",
@@ -6166,19 +6140,6 @@
       "school": "Management"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-5C",
-      "day": "Wed",
-      "time": "12:50 - 02:10",
-      "course": "Analogue and Digital Communication - Lab C",
-      "instructor": "Engr.Islamuddin",
-      "room": "Comp-I",
-      "type": "Lab",
-      "semester": 5,
-      "section": "C",
-      "school": "Engineering"
-    },
-    {
       "department": "Computer Engineering",
       "batch_section": "CE-1A",
       "day": "Wed",
@@ -6270,19 +6231,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-5B",
-      "day": "Wed",
-      "time": "12:50 - 02:10",
-      "course": "Microprocessor Interfacing & Prog. Lab B",
-      "instructor": "Engr. Maryam Zafar",
-      "room": "MDEL",
-      "type": "Lab",
-      "semester": 5,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
       "department": "Computer Engineering",
       "batch_section": "CE-3B",
       "day": "Wed",
@@ -6361,19 +6309,6 @@
       "school": "Management"
     },
     {
-      "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-1B",
-      "day": "Wed",
-      "time": "01:00 - 02:20",
-      "course": "AF1003 Intro to Financial Accounting",
-      "instructor": "Not assigned",
-      "room": "A--211",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "B",
-      "school": "Management"
-    },
-    {
       "department": "Bachelor of Business Administration",
       "batch_section": "BBA-7A",
       "day": "Wed",
@@ -6397,19 +6332,6 @@
       "type": "Lecture",
       "semester": 7,
       "section": "B",
-      "school": "Management"
-    },
-    {
-      "department": "Bachelor of Science (Business Analytics)",
-      "batch_section": "BSBA-1C",
-      "day": "Wed",
-      "time": "01:00 - 02:20",
-      "course": "CL1001 IT in Business-Lab",
-      "instructor": "Not assigned",
-      "room": "KK-I",
-      "type": "Lab",
-      "semester": 1,
-      "section": "C",
       "school": "Management"
     },
     {
@@ -6621,19 +6543,6 @@
       "school": "Management"
     },
     {
-      "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-1C",
-      "day": "Wed",
-      "time": "01:00 - 02:50",
-      "course": "SS1007 Islamic Studies/Ethics",
-      "instructor": "Not assigned",
-      "room": "A- 203",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "C",
-      "school": "Management"
-    },
-    {
       "department": "Bachelor of Business Administration",
       "batch_section": "BBA-1C",
       "day": "Wed",
@@ -6648,12 +6557,25 @@
     },
     {
       "department": "Electrical Engineering",
+      "batch_section": "EE-5C",
+      "day": "Wed",
+      "time": "02:20 - 03:40",
+      "course": "Analogue and Digital Communication - Lab C",
+      "instructor": "Engr.Islamuddin",
+      "room": "Comp-I",
+      "type": "Lab",
+      "semester": 5,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
       "batch_section": "EE-1D",
       "day": "Wed",
       "time": "02:20 - 03:40",
       "course": "Applications of ICT Lab EE-D",
       "instructor": "Engr. Alina Gulzar",
-      "room": "Comp-II",
+      "room": "Koh",
       "type": "Lab",
       "semester": 1,
       "section": "D",
@@ -6700,19 +6622,6 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-1E",
-      "day": "Wed",
-      "time": "02:20 - 03:40",
-      "course": "Engineering Drawing EE-E",
-      "instructor": "Engr. Ammar Ali",
-      "room": "Koh",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "E",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
       "batch_section": "EE-7B",
       "day": "Wed",
       "time": "02:20 - 03:40",
@@ -6735,6 +6644,32 @@
       "type": "Lecture",
       "semester": 1,
       "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-7A",
+      "day": "Wed",
+      "time": "02:20 - 03:40",
+      "course": "Intro to Internet of Things - Lab A",
+      "instructor": "Engr.",
+      "room": "Comp-II",
+      "type": "Lab",
+      "semester": 7,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-5B",
+      "day": "Wed",
+      "time": "02:20 - 03:40",
+      "course": "Microprocessor Interfacing & Prog. Lab B",
+      "instructor": "Engr. Maryam Zafar",
+      "room": "MDEL",
+      "type": "Lab",
+      "semester": 5,
+      "section": "B",
       "school": "Engineering"
     },
     {
@@ -6803,6 +6738,19 @@
       "school": "Management"
     },
     {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-1B",
+      "day": "Wed",
+      "time": "02:25 - 03:45",
+      "course": "AF1003 Intro to Financial Accounting",
+      "instructor": "Not assigned",
+      "room": "A-104",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "B",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Business Administration",
       "batch_section": "BBA-7B",
       "day": "Wed",
@@ -6813,6 +6761,19 @@
       "type": "Lecture",
       "semester": 7,
       "section": "B",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Business Analytics)",
+      "batch_section": "BSBA-1C",
+      "day": "Wed",
+      "time": "02:25 - 03:45",
+      "course": "CL1001 IT in Business-Lab",
+      "instructor": "Not assigned",
+      "room": "Mehran-I",
+      "type": "Lab",
+      "semester": 1,
+      "section": "C",
       "school": "Management"
     },
     {
@@ -6986,6 +6947,19 @@
     },
     {
       "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-1C",
+      "day": "Wed",
+      "time": "02:25 - 04:15",
+      "course": "SS1007 Islamic Studies/Ethics",
+      "instructor": "Not assigned",
+      "room": "A- 203",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Financial Technology)",
       "batch_section": "FT-3C",
       "day": "Wed",
       "time": "02:25 - 04:15",
@@ -7037,19 +7011,6 @@
       "school": "Management"
     },
     {
-      "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-1C",
-      "day": "Wed",
-      "time": "02:25 - 03:45",
-      "course": "U-Sirat Nabi",
-      "instructor": "Not assigned",
-      "room": "A- 203",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "C",
-      "school": "Management"
-    },
-    {
       "department": "Electrical Engineering",
       "batch_section": "EE-7A",
       "day": "Wed",
@@ -7087,6 +7048,19 @@
       "semester": 2,
       "section": "A",
       "school": "Engineering"
+    },
+    {
+      "department": "Bachelor of Science (Business Analytics)",
+      "batch_section": "BSBA-1C",
+      "day": "Wed",
+      "time": "03:50 - 05:10",
+      "course": "CL1001 IT in Business-Lab",
+      "instructor": "Not assigned",
+      "room": "Mehran-I",
+      "type": "Lab",
+      "semester": 1,
+      "section": "C",
+      "school": "Management"
     },
     {
       "department": "Bachelor of Science (Financial Technology)",
@@ -7255,6 +7229,19 @@
       "type": "Lecture",
       "semester": 5,
       "section": "D",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-1C",
+      "day": "Wed",
+      "time": "03:50 - 05:10",
+      "course": "U-Sirat Nabi",
+      "instructor": "Not assigned",
+      "room": "A- 203",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
       "school": "Management"
     },
     {
@@ -9734,7 +9721,7 @@
       "time": "08:30 - 09:50",
       "course": "A & Digital Comm. B",
       "instructor": "Dr. Shahzad Saleem",
-      "room": "B-020",
+      "room": "B-019",
       "type": "Lecture",
       "semester": 5,
       "section": "B",
@@ -9929,10 +9916,23 @@
       "time": "08:30 - 09:50",
       "course": "MP Inter. & Prog A",
       "instructor": "Engr. Shehzad Ahmed",
-      "room": "B-019",
+      "room": "B-020",
       "type": "Lecture",
       "semester": 5,
       "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1E",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "OBE Seminar BSEE & BSCE",
+      "instructor": "Auditorium A Block 4th Sep 2026",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "E",
       "school": "Engineering"
     },
     {
@@ -10102,6 +10102,19 @@
       "type": "Lecture",
       "semester": 3,
       "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1E",
+      "day": "Fri",
+      "time": "09:55 - 11:15",
+      "course": "OBE Seminar BSEE & BSCE",
+      "instructor": "Auditorium A Block 4th Sep 2026",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "E",
       "school": "Engineering"
     },
     {
@@ -10456,6 +10469,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1E",
+      "day": "Fri",
+      "time": "11:25 - 12:45",
+      "course": "OBE Seminar BSEE & BSCE",
+      "instructor": "Auditorium A Block 4th Sep 2026",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "E",
+      "school": "Engineering"
+    },
+    {
       "department": "Computer Engineering",
       "batch_section": "CE-3B",
       "day": "Fri",
@@ -10541,6 +10567,19 @@
       "course": "Applied Thermodynamics A",
       "instructor": "Mr. Albara Shalaby",
       "room": "B-020",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-7A",
+      "day": "Fri",
+      "time": "12:50 - 02:10",
+      "course": "Intro to Internet of Things. A",
+      "instructor": "Not assigned",
+      "room": "B-027",
       "type": "Lecture",
       "semester": 7,
       "section": "A",
