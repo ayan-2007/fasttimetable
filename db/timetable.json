@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-03T08:40:17+0000",
+  "generated_at": "2026-09-04T08:35:05+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 833,
+  "count": 839,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -1980,6 +1980,19 @@
       "school": "Management"
     },
     {
+      "department": "Bachelor of Science (Business Analytics)",
+      "batch_section": "BSBA-1E",
+      "day": "Mon",
+      "time": "02:25 - 03:45",
+      "course": "FL1003 Introduction to Financial Accounting- Lab",
+      "instructor": "Not assigned",
+      "room": "KK-III",
+      "type": "Lab",
+      "semester": 1,
+      "section": "E",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Business Administration",
       "batch_section": "BBA-5A",
       "day": "Mon",
@@ -2302,6 +2315,19 @@
       "type": "Lecture",
       "semester": 5,
       "section": "B",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Business Analytics)",
+      "batch_section": "BSBA-1E",
+      "day": "Mon",
+      "time": "03:50 - 05:10",
+      "course": "FL1003 Introduction to Financial Accounting- Lab",
+      "instructor": "Not assigned",
+      "room": "KK-III",
+      "type": "Lab",
+      "semester": 1,
+      "section": "E",
       "school": "Management"
     },
     {
@@ -5066,8 +5092,8 @@
       "day": "Wed",
       "time": "08:30 - 09:50",
       "course": "Intro to Internet of Things. A",
-      "instructor": "Not assigned",
-      "room": "B-027",
+      "instructor": "Engr. Aleena Shafiq",
+      "room": "B-130",
       "type": "Lecture",
       "semester": 7,
       "section": "A",
@@ -5828,6 +5854,19 @@
       "school": "Management"
     },
     {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-1E",
+      "day": "Wed",
+      "time": "11:30 - 12:50",
+      "course": "CL1001 IT in Business-Lab",
+      "instructor": "Not assigned",
+      "room": "KK-I",
+      "type": "Lab",
+      "semester": 1,
+      "section": "E",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Science (Accounting & Finance)",
       "batch_section": "AF-5C",
       "day": "Wed",
@@ -5838,6 +5877,19 @@
       "type": "Lab",
       "semester": 5,
       "section": "C",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Business Administration",
+      "batch_section": "BBA-1A",
+      "day": "Wed",
+      "time": "11:30 - 01:20",
+      "course": "CS1001 IT in Business",
+      "instructor": "Not assigned",
+      "room": "A--211",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
       "school": "Management"
     },
     {
@@ -5877,6 +5929,19 @@
       "type": "Lab",
       "semester": 1,
       "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-1E",
+      "day": "Wed",
+      "time": "11:30 - 12:50",
+      "course": "FL1003 Introduction to Financial Accounting- Lab",
+      "instructor": "Not assigned",
+      "room": "Mehran-I",
+      "type": "Lab",
+      "semester": 1,
+      "section": "E",
       "school": "Management"
     },
     {
@@ -6029,7 +6094,7 @@
       "time": "11:30 - 12:50",
       "course": "MT2004 Business Math-II/MG1004Calulus-II",
       "instructor": "Not assigned",
-      "room": "A--211",
+      "room": "A-104",
       "type": "Lecture",
       "semester": 3,
       "section": "C",
@@ -6231,6 +6296,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-7A",
+      "day": "Wed",
+      "time": "12:50 - 02:10",
+      "course": "Intro to Internet of Things. A",
+      "instructor": "Engr. Aleena Shafiq",
+      "room": "B-230",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Computer Engineering",
       "batch_section": "CE-3B",
       "day": "Wed",
@@ -6335,6 +6413,19 @@
       "school": "Management"
     },
     {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-1E",
+      "day": "Wed",
+      "time": "01:00 - 02:20",
+      "course": "CL1001 IT in Business-Lab",
+      "instructor": "Not assigned",
+      "room": "KK-I",
+      "type": "Lab",
+      "semester": 1,
+      "section": "E",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Science (Accounting & Finance)",
       "batch_section": "AF-5C",
       "day": "Wed",
@@ -6371,6 +6462,19 @@
       "type": "Lab",
       "semester": 1,
       "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-1E",
+      "day": "Wed",
+      "time": "01:00 - 02:20",
+      "course": "FL1003 Introduction to Financial Accounting- Lab",
+      "instructor": "Not assigned",
+      "room": "Mehran-I",
+      "type": "Lab",
+      "semester": 1,
+      "section": "E",
       "school": "Management"
     },
     {
@@ -6652,7 +6756,7 @@
       "day": "Wed",
       "time": "02:20 - 03:40",
       "course": "Intro to Internet of Things - Lab A",
-      "instructor": "Engr.",
+      "instructor": "Engr. Ammar Ali",
       "room": "Comp-II",
       "type": "Lab",
       "semester": 7,
@@ -6774,6 +6878,19 @@
       "type": "Lab",
       "semester": 1,
       "section": "C",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Business Analytics)",
+      "batch_section": "BSBA-1E",
+      "day": "Wed",
+      "time": "02:25 - 03:45",
+      "course": "CL1001 IT in Business-Lab",
+      "instructor": "Not assigned",
+      "room": "Khyber III",
+      "type": "Lab",
+      "semester": 1,
+      "section": "E",
       "school": "Management"
     },
     {
@@ -7060,6 +7177,19 @@
       "type": "Lab",
       "semester": 1,
       "section": "C",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Business Analytics)",
+      "batch_section": "BSBA-1E",
+      "day": "Wed",
+      "time": "03:50 - 05:10",
+      "course": "CL1001 IT in Business-Lab",
+      "instructor": "Not assigned",
+      "room": "Khyber III",
+      "type": "Lab",
+      "semester": 1,
+      "section": "E",
       "school": "Management"
     },
     {
@@ -8243,19 +8373,6 @@
       "type": "Lecture",
       "semester": 3,
       "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1C",
-      "day": "Thu",
-      "time": "11:25 - 12:45",
-      "course": "Pakistan Studies EE-C",
-      "instructor": "Ms. Zahida Amin Reschedule Class",
-      "room": "B-030",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "C",
       "school": "Engineering"
     },
     {
@@ -9494,19 +9611,6 @@
       "school": "Management"
     },
     {
-      "department": "Bachelor of Business Administration",
-      "batch_section": "BBA-1A",
-      "day": "Thu",
-      "time": "03:00 - 04:50",
-      "course": "CS1001 IT in Business",
-      "instructor": "Not assigned",
-      "room": "A-310",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "A",
-      "school": "Management"
-    },
-    {
       "department": "Computer Engineering",
       "batch_section": "CE-7C",
       "day": "Thu",
@@ -9773,7 +9877,7 @@
       "time": "08:30 - 09:50",
       "course": "CL1001 IT in Business-Lab",
       "instructor": "Not assigned",
-      "room": "KK-I",
+      "room": "Khyber I",
       "type": "Lab",
       "semester": 1,
       "section": "A",
@@ -9851,7 +9955,7 @@
       "time": "08:30 - 09:50",
       "course": "LG3003 Basic Econometrics Lab",
       "instructor": "Not assigned",
-      "room": "Khyber I",
+      "room": "KK-I",
       "type": "Lab",
       "semester": 5,
       "section": "A",
@@ -9920,19 +10024,6 @@
       "type": "Lecture",
       "semester": 5,
       "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1E",
-      "day": "Fri",
-      "time": "08:30 - 09:50",
-      "course": "OBE Seminar BSEE & BSCE",
-      "instructor": "Auditorium A Block 4th Sep 2026",
-      "room": "B-027",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "E",
       "school": "Engineering"
     },
     {
@@ -10105,15 +10196,15 @@
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1E",
+      "department": "School of Engineering",
+      "batch_section": "E",
       "day": "Fri",
       "time": "09:55 - 11:15",
       "course": "OBE Seminar BSEE & BSCE",
       "instructor": "Auditorium A Block 4th Sep 2026",
       "room": "B-027",
       "type": "Lecture",
-      "semester": 1,
+      "semester": null,
       "section": "E",
       "school": "Engineering"
     },
@@ -10137,7 +10228,7 @@
       "time": "10:00 - 11:20",
       "course": "CL1001 IT in Business-Lab",
       "instructor": "Not assigned",
-      "room": "KK-I",
+      "room": "Khyber I",
       "type": "Lab",
       "semester": 1,
       "section": "A",
@@ -10241,7 +10332,7 @@
       "time": "10:00 - 11:20",
       "course": "LG3003 Basic Econometrics Lab",
       "instructor": "Not assigned",
-      "room": "Khyber I",
+      "room": "KK-I",
       "type": "Lab",
       "semester": 5,
       "section": "A",
@@ -10469,15 +10560,15 @@
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1E",
+      "department": "School of Engineering",
+      "batch_section": "E",
       "day": "Fri",
       "time": "11:25 - 12:45",
       "course": "OBE Seminar BSEE & BSCE",
       "instructor": "Auditorium A Block 4th Sep 2026",
       "room": "B-027",
       "type": "Lecture",
-      "semester": 1,
+      "semester": null,
       "section": "E",
       "school": "Engineering"
     },
@@ -10567,19 +10658,6 @@
       "course": "Applied Thermodynamics A",
       "instructor": "Mr. Albara Shalaby",
       "room": "B-020",
-      "type": "Lecture",
-      "semester": 7,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-7A",
-      "day": "Fri",
-      "time": "12:50 - 02:10",
-      "course": "Intro to Internet of Things. A",
-      "instructor": "Not assigned",
-      "room": "B-027",
       "type": "Lecture",
       "semester": 7,
       "section": "A",
