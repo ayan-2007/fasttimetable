@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-04T08:35:05+0000",
+  "generated_at": "2026-09-05T08:09:40+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 839,
+  "count": 847,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -3411,6 +3411,19 @@
     },
     {
       "department": "Electrical Engineering",
+      "batch_section": "EE-2 (All)",
+      "day": "Tue",
+      "time": "11:25 - 12:45",
+      "course": "LA & Diff. Equations",
+      "instructor": "Dr. Irfan Shah",
+      "room": "B-130",
+      "type": "Lecture",
+      "semester": 2,
+      "section": "All",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
       "batch_section": "EE-5A",
       "day": "Tue",
       "time": "11:25 - 12:45",
@@ -3733,6 +3746,45 @@
       "semester": 3,
       "section": "B",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1A",
+      "day": "Tue",
+      "time": "12:50 - 02:10",
+      "course": "Application of ICT -EE-A",
+      "instructor": "Quiz 1 8 Sep 2026",
+      "room": "B-129",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1B",
+      "day": "Tue",
+      "time": "12:50 - 02:10",
+      "course": "Application of ICT -EE-B",
+      "instructor": "Quiz 1 8 Sep 2026",
+      "room": "B-130",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1C",
+      "day": "Tue",
+      "time": "12:50 - 02:10",
+      "course": "Application of ICT -EE-C",
+      "instructor": "Quiz 1 8 Sep 2026",
+      "room": "B-230",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
+      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
@@ -4957,19 +5009,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Computer Engineering",
-      "batch_section": "CE-5A",
-      "day": "Wed",
-      "time": "08:30 - 09:50",
-      "course": "Digital Signal Processing CE-A",
-      "instructor": "Dr. Shahzad Saleem",
-      "room": "B-230",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
       "department": "Electrical Engineering",
       "batch_section": "EE-3B",
       "day": "Wed",
@@ -5269,6 +5308,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Computer Engineering",
+      "batch_section": "CE-1A",
+      "day": "Wed",
+      "time": "08:30 - 09:50",
+      "course": "Physics for Engr. CE-A",
+      "instructor": "Dr. Shahzad Saleem",
+      "room": "B-119",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Electrical Engineering",
       "batch_section": "EE-1B",
       "day": "Wed",
@@ -5383,19 +5435,6 @@
       "type": "Lecture",
       "semester": 5,
       "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Computer Engineering",
-      "batch_section": "CE-1A",
-      "day": "Wed",
-      "time": "09:55 - 11:15",
-      "course": "Physics for Engr. CE-A",
-      "instructor": "Dr. Shahzad Saleem",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "A",
       "school": "Engineering"
     },
     {
@@ -7154,6 +7193,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Computer Engineering",
+      "batch_section": "CE-5A",
+      "day": "Wed",
+      "time": "03:45 - 05:05",
+      "course": "Digital Signal Processing CE-A",
+      "instructor": "Dr. Shahzad Saleem",
+      "room": "B-230",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Electrical Engineering",
       "batch_section": "EE-2A",
       "day": "Wed",
@@ -8382,7 +8434,7 @@
       "time": "11:25 - 12:45",
       "course": "Programming Fundamentals A",
       "instructor": "Engr. Nimra Fatima",
-      "room": "B-119",
+      "room": "B-030",
       "type": "Lecture",
       "semester": 2,
       "section": "A",
@@ -8935,6 +8987,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-2A",
+      "day": "Thu",
+      "time": "12:50 - 02:10",
+      "course": "Programming Fundamentals A",
+      "instructor": "Quiz 1 10 Spt",
+      "room": "B-030",
+      "type": "Lecture",
+      "semester": 2,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-5C",
       "day": "Thu",
@@ -9377,6 +9442,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Computer Engineering",
+      "batch_section": "CE-5A",
+      "day": "Thu",
+      "time": "02:20 - 03:40",
+      "course": "Digital Signal Processing CE-A",
+      "instructor": "Dr. Shahzad Saleem Wk 4&5",
+      "room": "B-230",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Electrical Engineering",
       "batch_section": "EE-7A",
       "day": "Thu",
@@ -9625,6 +9703,19 @@
     },
     {
       "department": "Computer Engineering",
+      "batch_section": "CE-5A",
+      "day": "Thu",
+      "time": "03:45 - 05:05",
+      "course": "Digital Signal Processing CE-A",
+      "instructor": "Dr. Shahzad Saleem Wk 4 &5",
+      "room": "B-230",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
       "batch_section": "CE-1A",
       "day": "Thu",
       "time": "03:45 - 05:05",
@@ -9647,6 +9738,19 @@
       "type": "Lecture",
       "semester": 7,
       "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-2 (All)",
+      "day": "Thu",
+      "time": "03:45 - 05:05",
+      "course": "LA & Diff. Equations",
+      "instructor": "Dr. Irfan Shah",
+      "room": "B-129",
+      "type": "Lecture",
+      "semester": 2,
+      "section": "All",
       "school": "Engineering"
     },
     {
