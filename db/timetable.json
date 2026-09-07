@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-06T08:26:55+0000",
+  "generated_at": "2026-09-07T09:03:47+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 847,
+  "count": 844,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -937,19 +937,6 @@
       "type": "Lecture",
       "semester": 7,
       "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-5B",
-      "day": "Mon",
-      "time": "11:25 - 12:45",
-      "course": "Microprocessor. Lab B",
-      "instructor": "Reschedule 7 Spt, 2026",
-      "room": "MDEL",
-      "type": "Lab",
-      "semester": 5,
-      "section": "B",
       "school": "Engineering"
     },
     {
@@ -10300,19 +10287,6 @@
       "school": "Engineering"
     },
     {
-      "department": "School of Engineering",
-      "batch_section": "E",
-      "day": "Fri",
-      "time": "09:55 - 11:15",
-      "course": "OBE Seminar BSEE & BSCE",
-      "instructor": "Auditorium A Block 4th Sep 2026",
-      "room": "B-027",
-      "type": "Lecture",
-      "semester": null,
-      "section": "E",
-      "school": "Engineering"
-    },
-    {
       "department": "Computer Engineering",
       "batch_section": "CE-3A",
       "day": "Fri",
@@ -10661,19 +10635,6 @@
       "type": "Lecture",
       "semester": 3,
       "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "School of Engineering",
-      "batch_section": "E",
-      "day": "Fri",
-      "time": "11:25 - 12:45",
-      "course": "OBE Seminar BSEE & BSCE",
-      "instructor": "Auditorium A Block 4th Sep 2026",
-      "room": "B-027",
-      "type": "Lecture",
-      "semester": null,
-      "section": "E",
       "school": "Engineering"
     },
     {
