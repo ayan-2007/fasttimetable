@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07T09:03:47+0000",
+  "generated_at": "2026-09-08T08:41:21+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 844,
+  "count": 845,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -954,6 +954,19 @@
     },
     {
       "department": "Electrical Engineering",
+      "batch_section": "EE-1E",
+      "day": "Mon",
+      "time": "11:25 - 12:45",
+      "course": "Physics for Engineers Lab EE-E",
+      "instructor": "Engr. Sajjal Mudassar",
+      "room": "Phy",
+      "type": "Lab",
+      "semester": 1,
+      "section": "E",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
       "batch_section": "EE-7B",
       "day": "Mon",
       "time": "11:25 - 12:45",
@@ -1330,32 +1343,6 @@
       "school": "Management"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1A",
-      "day": "Mon",
-      "time": "12:50 - 02:10",
-      "course": "Applications of ICT Lab EE-A",
-      "instructor": "Engr. Alina Gulzar",
-      "room": "Comp-I",
-      "type": "Lab",
-      "semester": 1,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1B",
-      "day": "Mon",
-      "time": "12:50 - 02:10",
-      "course": "Applications of ICT Lab EE-B",
-      "instructor": "Engr. Esha Rizwan",
-      "room": "Comp-II",
-      "type": "Lab",
-      "semester": 1,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
       "department": "Computer Engineering",
       "batch_section": "CE-3 (All)",
       "day": "Mon",
@@ -1392,32 +1379,6 @@
       "type": "Lecture",
       "semester": 3,
       "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1C",
-      "day": "Mon",
-      "time": "12:50 - 02:10",
-      "course": "Engineering Drawing EE-C",
-      "instructor": "Engr. Ammar Ali",
-      "room": "Poth",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "C",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1D",
-      "day": "Mon",
-      "time": "12:50 - 02:10",
-      "course": "Engineering Drawing EE-D",
-      "instructor": "Engr. Moiza Eman",
-      "room": "Koh",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "D",
       "school": "Engineering"
     },
     {
@@ -1824,6 +1785,32 @@
       "school": "Engineering"
     },
     {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1A",
+      "day": "Mon",
+      "time": "02:20 - 03:40",
+      "course": "Applications of ICT Lab EE-A",
+      "instructor": "Engr. Alina Gulzar",
+      "room": "Comp-I",
+      "type": "Lab",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1B",
+      "day": "Mon",
+      "time": "02:20 - 03:40",
+      "course": "Applications of ICT Lab EE-B",
+      "instructor": "Engr. Esha Rizwan",
+      "room": "Comp-II",
+      "type": "Lab",
+      "semester": 1,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
       "department": "Computer Engineering",
       "batch_section": "CE-1A",
       "day": "Mon",
@@ -1864,10 +1851,36 @@
     },
     {
       "department": "Electrical Engineering",
+      "batch_section": "EE-1C",
+      "day": "Mon",
+      "time": "02:20 - 03:40",
+      "course": "Engineering Drawing EE-C",
+      "instructor": "Engr. Ammar Ali",
+      "room": "Poth",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1D",
+      "day": "Mon",
+      "time": "02:20 - 03:40",
+      "course": "Engineering Drawing EE-D",
+      "instructor": "Engr. Moiza Eman",
+      "room": "Koh",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "D",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
       "batch_section": "EE-3 (All)",
       "day": "Mon",
       "time": "02:20 - 03:40",
-      "course": "Understanding of Holy Quran I/Ethics I & II A,B Mr. Faisal 03:00 - 04:50 (Main Auditoriam A-Block)",
+      "course": "Understanding of Holy Quran I/Ethics I & II A,B Mr. Faisal Ur Rehman 03:00 - 04:50 (Main Auditoriam A-Block)",
       "instructor": "Not assigned",
       "room": "B-129",
       "type": "Lecture",
@@ -2864,19 +2877,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-3A",
-      "day": "Tue",
-      "time": "08:30 - 09:50",
-      "course": "MT2004 Business Math-II",
-      "instructor": "Not assigned",
-      "room": "A-315",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "A",
-      "school": "Management"
-    },
-    {
       "department": "Computer Engineering",
       "batch_section": "CE-5A",
       "day": "Tue",
@@ -3398,15 +3398,15 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-2 (All)",
+      "batch_section": "EE-2A",
       "day": "Tue",
       "time": "11:25 - 12:45",
-      "course": "LA & Diff. Equations",
+      "course": "LA & Diff. Equations A",
       "instructor": "Dr. Irfan Shah",
       "room": "B-130",
       "type": "Lecture",
       "semester": 2,
-      "section": "All",
+      "section": "A",
       "school": "Engineering"
     },
     {
@@ -4775,6 +4775,19 @@
       "school": "Management"
     },
     {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-3A",
+      "day": "Tue",
+      "time": "03:50 - 05:10",
+      "course": "MT2004 Business Math-II",
+      "instructor": "Not assigned",
+      "room": "A-310",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "A",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Science (Accounting & Finance)",
       "batch_section": "AF-1A (G1)",
       "day": "Tue",
@@ -5081,19 +5094,6 @@
       "course": "FL1003 Introduction to Financial Accounting- Lab",
       "instructor": "Not assigned",
       "room": "KK-I",
-      "type": "Lab",
-      "semester": 1,
-      "section": "B",
-      "school": "Management"
-    },
-    {
-      "department": "Bachelor of Science (Business Analytics)",
-      "batch_section": "BSBA-1B",
-      "day": "Wed",
-      "time": "08:30 - 09:50",
-      "course": "FL1003 Introduction to Financial Accounting- Lab",
-      "instructor": "Not assigned",
-      "room": "KK-III",
       "type": "Lab",
       "semester": 1,
       "section": "B",
@@ -5575,19 +5575,6 @@
       "course": "FL1003 Introduction to Financial Accounting- Lab",
       "instructor": "Not assigned",
       "room": "KK-I",
-      "type": "Lab",
-      "semester": 1,
-      "section": "B",
-      "school": "Management"
-    },
-    {
-      "department": "Bachelor of Science (Business Analytics)",
-      "batch_section": "BSBA-1B",
-      "day": "Wed",
-      "time": "10:00 - 11:20",
-      "course": "FL1003 Introduction to Financial Accounting- Lab",
-      "instructor": "Not assigned",
-      "room": "KK-III",
       "type": "Lab",
       "semester": 1,
       "section": "B",
@@ -9546,6 +9533,19 @@
       "school": "Management"
     },
     {
+      "department": "Bachelor of Science (Business Analytics)",
+      "batch_section": "BSBA-1B",
+      "day": "Thu",
+      "time": "02:25 - 03:45",
+      "course": "FL1003 Introduction to Financial Accounting- Lab",
+      "instructor": "Not assigned",
+      "room": "Mehran-I",
+      "type": "Lab",
+      "semester": 1,
+      "section": "B",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Science (Accounting & Finance)",
       "batch_section": "AF-3B",
       "day": "Thu",
@@ -9729,15 +9729,15 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-2 (All)",
+      "batch_section": "EE-2A",
       "day": "Thu",
       "time": "03:45 - 05:05",
-      "course": "LA & Diff. Equations",
+      "course": "LA & Diff. Equations A",
       "instructor": "Dr. Irfan Shah",
       "room": "B-129",
       "type": "Lecture",
       "semester": 2,
-      "section": "All",
+      "section": "A",
       "school": "Engineering"
     },
     {
@@ -9803,6 +9803,19 @@
       "type": "Lecture",
       "semester": 3,
       "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Business Analytics)",
+      "batch_section": "BSBA-1B",
+      "day": "Thu",
+      "time": "03:50 - 05:10",
+      "course": "FL1003 Introduction to Financial Accounting- Lab",
+      "instructor": "Not assigned",
+      "room": "Mehran-I",
+      "type": "Lab",
+      "semester": 1,
+      "section": "B",
       "school": "Management"
     },
     {
