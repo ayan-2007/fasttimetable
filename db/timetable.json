@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-08T08:41:21+0000",
+  "generated_at": "2026-09-09T08:46:39+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 845,
+  "count": 847,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -1448,6 +1448,19 @@
     },
     {
       "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-1A",
+      "day": "Mon",
+      "time": "01:00 - 02:20",
+      "course": "AF1003 Intro to Financial Accounting",
+      "instructor": "Not assigned",
+      "room": "A- 202",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Financial Technology)",
       "batch_section": "FT-1B",
       "day": "Mon",
       "time": "01:00 - 02:20",
@@ -1912,19 +1925,6 @@
       "type": "Lecture",
       "semester": 5,
       "section": "B",
-      "school": "Management"
-    },
-    {
-      "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-1A",
-      "day": "Mon",
-      "time": "02:25 - 03:45",
-      "course": "AF1003 Intro to Financial Accounting",
-      "instructor": "Not assigned",
-      "room": "A- 210",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "A",
       "school": "Management"
     },
     {
@@ -4775,19 +4775,6 @@
       "school": "Management"
     },
     {
-      "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-3A",
-      "day": "Tue",
-      "time": "03:50 - 05:10",
-      "course": "MT2004 Business Math-II",
-      "instructor": "Not assigned",
-      "room": "A-310",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "A",
-      "school": "Management"
-    },
-    {
       "department": "Bachelor of Science (Accounting & Finance)",
       "batch_section": "AF-1A (G1)",
       "day": "Tue",
@@ -5253,6 +5240,19 @@
       "type": "Lecture",
       "semester": 5,
       "section": "D",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-3A",
+      "day": "Wed",
+      "time": "08:30 - 09:50",
+      "course": "MT2004 Business Math-II",
+      "instructor": "Not assigned",
+      "room": "A-101",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "A",
       "school": "Management"
     },
     {
@@ -5811,6 +5811,19 @@
       "room": "B-028",
       "type": "Lecture",
       "semester": 3,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-5A",
+      "day": "Wed",
+      "time": "11:25 - 12:45",
+      "course": "MP Inter. & Prog A",
+      "instructor": "Engr. Shehzad Ahmed",
+      "room": "B-020",
+      "type": "Lecture",
+      "semester": 5,
       "section": "A",
       "school": "Engineering"
     },
@@ -7654,7 +7667,7 @@
       "time": "08:30 - 09:50",
       "course": "FL3001 Financial Management Lab",
       "instructor": "Not assigned",
-      "room": "Khyber I",
+      "room": "Mehran-I",
       "type": "Lab",
       "semester": 5,
       "section": "B",
@@ -7680,7 +7693,7 @@
       "time": "08:30 - 09:50",
       "course": "LG3003 Basic Econometrics Lab",
       "instructor": "Not assigned",
-      "room": "Mehran-I",
+      "room": "Khyber I",
       "type": "Lab",
       "semester": 5,
       "section": "C",
@@ -8161,7 +8174,7 @@
       "time": "10:00 - 11:20",
       "course": "FL3001 Financial Management Lab",
       "instructor": "Not assigned",
-      "room": "Khyber I",
+      "room": "Mehran-I",
       "type": "Lab",
       "semester": 5,
       "section": "B",
@@ -8174,7 +8187,7 @@
       "time": "10:00 - 11:20",
       "course": "LG3003 Basic Econometrics Lab",
       "instructor": "Not assigned",
-      "room": "Mehran-I",
+      "room": "Khyber I",
       "type": "Lab",
       "semester": 5,
       "section": "C",
@@ -8361,6 +8374,19 @@
       "semester": 1,
       "section": "A",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1C",
+      "day": "Thu",
+      "time": "11:25 - 12:45",
+      "course": "Applied Calculus EE-C",
+      "instructor": "Dr. Farah Jabeen Awan 10 Sep 26",
+      "room": "B-119",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
+      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
@@ -9916,7 +9942,7 @@
       "time": "04:20 - 05:10",
       "course": "SS 1018U-Holy Quran",
       "instructor": "Not assigned",
-      "room": "A-301",
+      "room": "A-03",
       "type": "Lecture",
       "semester": 7,
       "section": "A",
