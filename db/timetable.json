@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T08:46:39+0000",
+  "generated_at": "2026-09-10T08:44:20+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
   "count": 847,
   "entries": [
@@ -361,7 +361,7 @@
       "time": "08:30 - 09:50",
       "course": "MG4011 Entrepreneurship",
       "instructor": "Not assigned",
-      "room": "A-311",
+      "room": "A-303",
       "type": "Lecture",
       "semester": 5,
       "section": "D",
@@ -829,7 +829,7 @@
       "time": "10:00 - 11:20",
       "course": "MG4011 Entrepreneurship",
       "instructor": "Not assigned",
-      "room": "A-310",
+      "room": "A-302",
       "type": "Lecture",
       "semester": 5,
       "section": "C",
@@ -1655,6 +1655,19 @@
       "school": "Management"
     },
     {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-5D",
+      "day": "Mon",
+      "time": "01:00 - 02:20",
+      "course": "MG3012 Blockchain Technology for Business",
+      "instructor": "Not assigned",
+      "room": "A-04",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "D",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Business Administration",
       "batch_section": "BBA-7B",
       "day": "Mon",
@@ -1791,7 +1804,7 @@
       "time": "02:20 - 03:40",
       "course": "Analogue and Digital Communication - Lab A",
       "instructor": "Engr. Abdur Rehman",
-      "room": "Comp-III/ Comm",
+      "room": "Comp-III",
       "type": "Lab",
       "semester": 5,
       "section": "A",
@@ -2445,19 +2458,6 @@
       "type": "Lecture",
       "semester": 5,
       "section": "A",
-      "school": "Management"
-    },
-    {
-      "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-5D",
-      "day": "Mon",
-      "time": "03:50 - 05:10",
-      "course": "MG3012 Blockchain Technology for Business",
-      "instructor": "Not assigned",
-      "room": "A-311",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "D",
       "school": "Management"
     },
     {
@@ -5236,7 +5236,7 @@
       "time": "08:30 - 09:50",
       "course": "MG4011 Entrepreneurship",
       "instructor": "Not assigned",
-      "room": "A-302",
+      "room": "A-301",
       "type": "Lecture",
       "semester": 5,
       "section": "D",
@@ -6621,6 +6621,19 @@
       "school": "Management"
     },
     {
+      "department": "Bachelor of Science (Financial Technology)",
+      "batch_section": "FT-5D",
+      "day": "Wed",
+      "time": "01:00 - 02:20",
+      "course": "MG3012 Blockchain Technology for Business",
+      "instructor": "Not assigned",
+      "room": "A- 203",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "D",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-7A",
       "day": "Wed",
@@ -7385,19 +7398,6 @@
       "type": "Lecture",
       "semester": 5,
       "section": "C",
-      "school": "Management"
-    },
-    {
-      "department": "Bachelor of Science (Financial Technology)",
-      "batch_section": "FT-5D",
-      "day": "Wed",
-      "time": "03:50 - 05:10",
-      "course": "MG3012 Blockchain Technology for Business",
-      "instructor": "Not assigned",
-      "room": "A-303",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "D",
       "school": "Management"
     },
     {
@@ -8374,19 +8374,6 @@
       "semester": 1,
       "section": "A",
       "school": "Management"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1C",
-      "day": "Thu",
-      "time": "11:25 - 12:45",
-      "course": "Applied Calculus EE-C",
-      "instructor": "Dr. Farah Jabeen Awan 10 Sep 26",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "C",
-      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
@@ -10285,6 +10272,19 @@
       "semester": 3,
       "section": "D",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1D",
+      "day": "Fri",
+      "time": "09:55 - 11:15",
+      "course": "Applications of ICT Lab EE-D",
+      "instructor": "Engr. Alina Gulzar (Reschedule) 11 Sept, 2026",
+      "room": "Koh",
+      "type": "Lab",
+      "semester": 1,
+      "section": "D",
+      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
