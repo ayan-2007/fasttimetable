@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-10T08:44:20+0000",
+  "generated_at": "2026-09-11T08:42:49+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 847,
+  "count": 844,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -3733,45 +3733,6 @@
       "semester": 3,
       "section": "B",
       "school": "Management"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1A",
-      "day": "Tue",
-      "time": "12:50 - 02:10",
-      "course": "Application of ICT -EE-A",
-      "instructor": "Quiz 1 8 Sep 2026",
-      "room": "B-129",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1B",
-      "day": "Tue",
-      "time": "12:50 - 02:10",
-      "course": "Application of ICT -EE-B",
-      "instructor": "Quiz 1 8 Sep 2026",
-      "room": "B-130",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1C",
-      "day": "Tue",
-      "time": "12:50 - 02:10",
-      "course": "Application of ICT -EE-C",
-      "instructor": "Quiz 1 8 Sep 2026",
-      "room": "B-230",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "C",
-      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
@@ -8975,15 +8936,15 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-2A",
+      "batch_section": "EE-1B",
       "day": "Thu",
       "time": "12:50 - 02:10",
-      "course": "Programming Fundamentals A",
-      "instructor": "Quiz 1 10 Spt",
-      "room": "B-030",
+      "course": "Pakistan Studies EE-B",
+      "instructor": "Ms. Zahida Amin (Makeup) Sept 17, 2026",
+      "room": "B-028",
       "type": "Lecture",
-      "semester": 2,
-      "section": "A",
+      "semester": 1,
+      "section": "B",
       "school": "Engineering"
     },
     {
@@ -9759,7 +9720,7 @@
       "day": "Thu",
       "time": "03:45 - 05:05",
       "course": "Linear Algebra A",
-      "instructor": "Dr. Sumaira Azhar",
+      "instructor": "Dr. Sumaira Azhar 03:55 - 05:15",
       "room": "B-027",
       "type": "Lecture",
       "semester": 3,
@@ -10141,19 +10102,6 @@
       "type": "Lecture",
       "semester": 5,
       "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1E",
-      "day": "Fri",
-      "time": "08:30 - 09:50",
-      "course": "Physics for Engineers Lab EE-E",
-      "instructor": "Engr. Sajjal Mudassar",
-      "room": "Phy",
-      "type": "Lab",
-      "semester": 1,
-      "section": "E",
       "school": "Engineering"
     },
     {
@@ -10661,6 +10609,19 @@
       "type": "Lecture",
       "semester": 5,
       "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-5A",
+      "day": "Fri",
+      "time": "11:25 - 12:45",
+      "course": "Electronic Circuit Design A",
+      "instructor": "Engr. Izza Jamal (Makeup) 18-Sep-2026",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "A",
       "school": "Engineering"
     },
     {
