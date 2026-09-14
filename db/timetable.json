@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-12T08:28:35+0000",
+  "generated_at": "2026-09-14T09:40:36+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 843,
+  "count": 846,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -2298,7 +2298,7 @@
       "time": "03:50 - 05:10",
       "course": "AF3003 Financial Institutions & Markets",
       "instructor": "Not assigned",
-      "room": "A-315",
+      "room": "A-02",
       "type": "Lecture",
       "semester": 7,
       "section": "A",
@@ -8335,6 +8335,45 @@
       "semester": 1,
       "section": "A",
       "school": "Management"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-5A",
+      "day": "Thu",
+      "time": "11:25 - 12:45",
+      "course": "Appl.Cal Quiz EE-A",
+      "instructor": "12:00-12:15 17sep",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-5B",
+      "day": "Thu",
+      "time": "11:25 - 12:45",
+      "course": "Appl.Cal Quiz EE-B",
+      "instructor": "12:00-12:15 17sep",
+      "room": "B-028",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-5C",
+      "day": "Thu",
+      "time": "11:25 - 12:45",
+      "course": "Appl.Cal Quiz EE-C",
+      "instructor": "12:00-12:15 17sep",
+      "room": "B-119",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "C",
+      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
