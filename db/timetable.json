@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-14T09:40:36+0000",
+  "generated_at": "2026-09-15T09:16:25+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 846,
+  "count": 850,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -2734,6 +2734,19 @@
       "school": "Management"
     },
     {
+      "department": "Bachelor of Science (Accounting & Finance)",
+      "batch_section": "AF-7A",
+      "day": "Tue",
+      "time": "08:30 - 09:50",
+      "course": "Islamic Banking and Finance",
+      "instructor": "Not assigned",
+      "room": "A-301",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "A",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-5A",
       "day": "Tue",
@@ -3147,6 +3160,19 @@
       "type": "Lab",
       "semester": 1,
       "section": "C",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Accounting & Finance)",
+      "batch_section": "AF-7A",
+      "day": "Tue",
+      "time": "10:00 - 11:20",
+      "course": "Islamic Banking and Finance",
+      "instructor": "Not assigned",
+      "room": "A-301",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "A",
       "school": "Management"
     },
     {
@@ -4221,7 +4247,7 @@
       "day": "Tue",
       "time": "02:20 - 03:40",
       "course": "Obj. Oriented Data Struct. Lab C",
-      "instructor": "Not assigned",
+      "instructor": "Abdullah Zaheer",
       "room": "Comp-III",
       "type": "Lab",
       "semester": 3,
@@ -10859,6 +10885,19 @@
       "school": "Management"
     },
     {
+      "department": "Bachelor of Science (Accounting & Finance)",
+      "batch_section": "AF-7B",
+      "day": "Fri",
+      "time": "02:25 - 03:45",
+      "course": "Islamic Banking and Finance",
+      "instructor": "Not assigned",
+      "room": "A-303",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "B",
+      "school": "Management"
+    },
+    {
       "department": "Bachelor of Business Administration",
       "batch_section": "BBA-3A",
       "day": "Fri",
@@ -10960,6 +10999,19 @@
       "type": "Lab",
       "semester": 1,
       "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Science (Accounting & Finance)",
+      "batch_section": "AF-7B",
+      "day": "Fri",
+      "time": "03:50 - 05:10",
+      "course": "Islamic Banking and Finance",
+      "instructor": "Not assigned",
+      "room": "A-303",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "B",
       "school": "Management"
     },
     {
