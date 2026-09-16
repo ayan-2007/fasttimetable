@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-15T09:16:25+0000",
+  "generated_at": "2026-09-16T09:09:11+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 850,
+  "count": 851,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -4983,6 +4983,19 @@
       "school": "Engineering"
     },
     {
+      "department": "School of Engineering",
+      "batch_section": "C",
+      "day": "Wed",
+      "time": "08:30 - 09:50",
+      "course": "DLD C",
+      "instructor": "AbuBakar",
+      "room": "Comp-III",
+      "type": "Lecture",
+      "semester": null,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
       "department": "Electrical Engineering",
       "batch_section": "EE-3B",
       "day": "Wed",
@@ -5248,7 +5261,7 @@
       "day": "Wed",
       "time": "08:30 - 09:50",
       "course": "Obj. Oriented Data Struct. Lab A",
-      "instructor": "Not assigned",
+      "instructor": "Mr. M. Ammar Masood (V)",
       "room": "Koh",
       "type": "Lab",
       "semester": 3,
@@ -7822,7 +7835,7 @@
       "day": "Thu",
       "time": "08:30 - 09:50",
       "course": "Obj. Oriented Data Struct. Lab B",
-      "instructor": "Not assigned",
+      "instructor": "Mr. M. Ammar Masood (V)",
       "room": "Poth",
       "type": "Lab",
       "semester": 3,
