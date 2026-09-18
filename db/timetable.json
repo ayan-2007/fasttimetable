@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-17T09:17:41+0000",
+  "generated_at": "2026-09-18T08:52:45+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 848,
+  "count": 847,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -10648,19 +10648,6 @@
       "type": "Lecture",
       "semester": 5,
       "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-5A",
-      "day": "Fri",
-      "time": "11:25 - 12:45",
-      "course": "Electronic Circuit Design A",
-      "instructor": "Engr. Izza Jamal (Makeup) 18-Sep-2026",
-      "room": "B-027",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "A",
       "school": "Engineering"
     },
     {
