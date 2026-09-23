@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-22T09:08:41+0000",
+  "generated_at": "2026-09-23T09:09:36+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 847,
+  "count": 845,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -4983,15 +4983,15 @@
       "school": "Engineering"
     },
     {
-      "department": "School of Engineering",
-      "batch_section": "C",
+      "department": "Computer Engineering",
+      "batch_section": "CE-5C",
       "day": "Wed",
       "time": "08:30 - 09:50",
       "course": "DLD C",
       "instructor": "AbuBakar",
       "room": "Comp-III",
       "type": "Lecture",
-      "semester": null,
+      "semester": 5,
       "section": "C",
       "school": "Engineering"
     },
@@ -8974,19 +8974,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1B",
-      "day": "Thu",
-      "time": "12:50 - 02:10",
-      "course": "Pakistan Studies EE-B",
-      "instructor": "Ms. Zahida Amin (Makeup) Sept 17, 2026",
-      "room": "B-028",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-5C",
       "day": "Thu",
@@ -9416,6 +9403,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Computer Engineering",
+      "batch_section": "CE-5A",
+      "day": "Thu",
+      "time": "02:20 - 03:40",
+      "course": "Data Com. & Netwks. CE-A",
+      "instructor": "03:00 - 04:20 (resh) Sep 24, 2026",
+      "room": "B-230",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Electrical Engineering",
       "batch_section": "EE-3C",
       "day": "Thu",
@@ -9426,19 +9426,6 @@
       "type": "Lecture",
       "semester": 3,
       "section": "C",
-      "school": "Engineering"
-    },
-    {
-      "department": "Computer Engineering",
-      "batch_section": "CE-5A",
-      "day": "Thu",
-      "time": "02:20 - 03:40",
-      "course": "Digital Signal Processing CE-A",
-      "instructor": "Dr. Shahzad Saleem Wk 4&5",
-      "room": "B-230",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "A",
       "school": "Engineering"
     },
     {
@@ -9699,19 +9686,6 @@
       "type": "Lecture",
       "semester": 7,
       "section": "C",
-      "school": "Engineering"
-    },
-    {
-      "department": "Computer Engineering",
-      "batch_section": "CE-5A",
-      "day": "Thu",
-      "time": "03:45 - 05:05",
-      "course": "Digital Signal Processing CE-A",
-      "instructor": "Dr. Shahzad Saleem Wk 4 &5",
-      "room": "B-230",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "A",
       "school": "Engineering"
     },
     {
