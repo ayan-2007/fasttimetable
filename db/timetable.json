@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T09:09:36+0000",
+  "generated_at": "2026-09-24T09:05:22+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
   "count": 845,
   "entries": [
@@ -7752,19 +7752,6 @@
       "school": "Management"
     },
     {
-      "department": "Bachelor of Business Administration",
-      "batch_section": "BBA-5C",
-      "day": "Thu",
-      "time": "08:30 - 09:50",
-      "course": "MG2003 Consumer Behaviour",
-      "instructor": "Not assigned",
-      "room": "A-101",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "C",
-      "school": "Management"
-    },
-    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-3C",
       "day": "Thu",
@@ -9218,6 +9205,19 @@
       "type": "Lecture",
       "semester": 3,
       "section": "A",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Business Administration",
+      "batch_section": "BBA-5C",
+      "day": "Thu",
+      "time": "01:00 - 02:20",
+      "course": "MG2003 Consumer Behaviour",
+      "instructor": "Not assigned",
+      "room": "A-104",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "C",
       "school": "Management"
     },
     {
@@ -10878,7 +10878,7 @@
       "time": "02:25 - 04:15",
       "course": "SS2041 Critical Thinking",
       "instructor": "Not assigned",
-      "room": "A-311",
+      "room": "A-03",
       "type": "Lecture",
       "semester": 3,
       "section": "A",
