@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T09:53:10+0000",
+  "generated_at": "2026-09-28T10:41:03+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 845,
+  "count": 850,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -3052,7 +3052,7 @@
       "time": "09:55 - 11:15",
       "course": "Electromagnetic Theory B",
       "instructor": "Dr. Irum Saba",
-      "room": "B-019",
+      "room": "B-020",
       "type": "Lecture",
       "semester": 5,
       "section": "B",
@@ -3091,7 +3091,7 @@
       "time": "09:55 - 11:15",
       "course": "MP Inter. & Prog A",
       "instructor": "Engr. Shehzad Ahmed",
-      "room": "B-020",
+      "room": "B-019",
       "type": "Lecture",
       "semester": 5,
       "section": "A",
@@ -3419,6 +3419,19 @@
       "room": "B-019",
       "type": "Lecture",
       "semester": 3,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1A",
+      "day": "Tue",
+      "time": "11:25 - 12:45",
+      "course": "English Language Skills EE-A",
+      "instructor": "Ms. Hajra Khalid (Resch) Sept 29, 2026",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": 1,
       "section": "A",
       "school": "Engineering"
     },
@@ -4983,19 +4996,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Computer Engineering",
-      "batch_section": "CE-5C",
-      "day": "Wed",
-      "time": "08:30 - 09:50",
-      "course": "DLD C",
-      "instructor": "AbuBakar",
-      "room": "Comp-III",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "C",
-      "school": "Engineering"
-    },
-    {
       "department": "Electrical Engineering",
       "batch_section": "EE-3B",
       "day": "Wed",
@@ -5821,7 +5821,7 @@
       "time": "11:25 - 12:45",
       "course": "MP Inter. & Prog A",
       "instructor": "Engr. Shehzad Ahmed",
-      "room": "B-020",
+      "room": "B-019",
       "type": "Lecture",
       "semester": 5,
       "section": "A",
@@ -8390,6 +8390,19 @@
     },
     {
       "department": "Electrical Engineering",
+      "batch_section": "EE-1C",
+      "day": "Thu",
+      "time": "11:25 - 12:45",
+      "course": "English Language Skills EE-C",
+      "instructor": "Ms. Hajra Khalid (Resch) Oct 01, 2026",
+      "room": "B-129",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
       "batch_section": "EE-3A",
       "day": "Thu",
       "time": "11:25 - 12:45",
@@ -8914,7 +8927,7 @@
       "day": "Thu",
       "time": "12:50 - 02:10",
       "course": "English Language Skills CE-A",
-      "instructor": "Ms. Hajra Khalid 2 Hours Class",
+      "instructor": "Ms. Hajra Khalid",
       "room": "B-119",
       "type": "Lecture",
       "semester": 1,
@@ -9403,19 +9416,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Computer Engineering",
-      "batch_section": "CE-5A",
-      "day": "Thu",
-      "time": "02:20 - 03:40",
-      "course": "Data Com. & Netwks. CE-A",
-      "instructor": "03:00 - 04:20 (resh) Sep 24, 2026",
-      "room": "B-230",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
       "department": "Electrical Engineering",
       "batch_section": "EE-3C",
       "day": "Thu",
@@ -9676,6 +9676,19 @@
       "school": "Management"
     },
     {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-5B",
+      "day": "Thu",
+      "time": "03:45 - 05:05",
+      "course": "Basic Mechanical Engg. B",
+      "instructor": "Dr. M. Adnan (Resch) Oct 01, 2026",
+      "room": "B-020",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
       "department": "Computer Engineering",
       "batch_section": "CE-7C",
       "day": "Thu",
@@ -9686,6 +9699,19 @@
       "type": "Lecture",
       "semester": 7,
       "section": "C",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1B",
+      "day": "Thu",
+      "time": "03:45 - 05:05",
+      "course": "English Language Skills EE-B",
+      "instructor": "Ms. Hajra Khalid (Resch) Oct 01, 2026",
+      "room": "B-028",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "B",
       "school": "Engineering"
     },
     {
@@ -9916,7 +9942,7 @@
       "time": "08:30 - 09:50",
       "course": "A & Digital Comm. B",
       "instructor": "Dr. Shahzad Saleem",
-      "room": "B-019",
+      "room": "B-020",
       "type": "Lecture",
       "semester": 5,
       "section": "B",
@@ -9960,6 +9986,32 @@
       "semester": 3,
       "section": "B",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-7A",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "Applied Machine Learning A",
+      "instructor": "Engr. Aleena Shafiq (Resch) Oct 02, 26",
+      "room": "B-129",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-5A",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "Basic Mechanical Engg. A",
+      "instructor": "Dr. M. Adnan (Resch) Oct 2, 2026",
+      "room": "B-028",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "A",
+      "school": "Engineering"
     },
     {
       "department": "Bachelor of Business Administration",
@@ -10111,7 +10163,7 @@
       "time": "08:30 - 09:50",
       "course": "MP Inter. & Prog A",
       "instructor": "Engr. Shehzad Ahmed",
-      "room": "B-020",
+      "room": "B-019",
       "type": "Lecture",
       "semester": 5,
       "section": "A",
@@ -10610,6 +10662,19 @@
       "semester": 3,
       "section": "A",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-7B",
+      "day": "Fri",
+      "time": "11:25 - 12:45",
+      "course": "Applied Machine Learning B",
+      "instructor": "Engr. Aleena Shafiq (Resch) Oct 02, 26",
+      "room": "B-019",
+      "type": "Lecture",
+      "semester": 7,
+      "section": "B",
+      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
