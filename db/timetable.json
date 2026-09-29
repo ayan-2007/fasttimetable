@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-28T10:41:03+0000",
+  "generated_at": "2026-09-29T10:28:42+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 850,
+  "count": 851,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -1144,6 +1144,19 @@
       "room": "A-101",
       "type": "Lecture",
       "semester": 3,
+      "section": "C",
+      "school": "Management"
+    },
+    {
+      "department": "Bachelor of Business Administration",
+      "batch_section": "BBA-5C",
+      "day": "Mon",
+      "time": "11:30 - 12:50",
+      "course": "MG2003 Consumer Behaviour",
+      "instructor": "Not assigned",
+      "room": "A- 202",
+      "type": "Lecture",
+      "semester": 5,
       "section": "C",
       "school": "Management"
     },
@@ -2812,19 +2825,6 @@
       "school": "Management"
     },
     {
-      "department": "Bachelor of Business Administration",
-      "batch_section": "BBA-5C",
-      "day": "Tue",
-      "time": "08:30 - 09:50",
-      "course": "MG2003 Consumer Behaviour",
-      "instructor": "Not assigned",
-      "room": "A-101",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "C",
-      "school": "Management"
-    },
-    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-3C",
       "day": "Tue",
@@ -3424,19 +3424,6 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-1A",
-      "day": "Tue",
-      "time": "11:25 - 12:45",
-      "course": "English Language Skills EE-A",
-      "instructor": "Ms. Hajra Khalid (Resch) Sept 29, 2026",
-      "room": "B-027",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
       "batch_section": "EE-2A",
       "day": "Tue",
       "time": "11:25 - 12:45",
@@ -3772,6 +3759,19 @@
       "semester": 3,
       "section": "B",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1C",
+      "day": "Tue",
+      "time": "12:50 - 02:10",
+      "course": "Applications of ICT EE-C",
+      "instructor": "Reschedule 6th Oct 2026",
+      "room": "B-030",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
+      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
@@ -8855,6 +8855,19 @@
       "semester": 1,
       "section": "A",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1A",
+      "day": "Thu",
+      "time": "12:50 - 02:10",
+      "course": "Applications of ICT EE-A",
+      "instructor": "1st Oct 2026",
+      "room": "B-030",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
     },
     {
       "department": "Computer Engineering",
