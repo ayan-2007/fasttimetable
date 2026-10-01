@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30T10:20:32+0000",
+  "generated_at": "2026-10-01T10:47:00+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 851,
+  "count": 849,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -8390,19 +8390,6 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-1C",
-      "day": "Thu",
-      "time": "11:25 - 12:45",
-      "course": "English Language Skills EE-C",
-      "instructor": "Ms. Hajra Khalid (Resch) Oct 01, 2026",
-      "room": "B-129",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "C",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
       "batch_section": "EE-3A",
       "day": "Thu",
       "time": "11:25 - 12:45",
@@ -8855,19 +8842,6 @@
       "semester": 1,
       "section": "A",
       "school": "Management"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1A",
-      "day": "Thu",
-      "time": "12:50 - 02:10",
-      "course": "Applications of ICT EE-A",
-      "instructor": "1st Oct 2026",
-      "room": "B-030",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "A",
-      "school": "Engineering"
     },
     {
       "department": "Computer Engineering",
@@ -9409,7 +9383,7 @@
       "time": "02:20 - 03:40",
       "course": "Applied Machine Learning Lab C",
       "instructor": "Engr. Ammar Ali",
-      "room": "Comp-I",
+      "room": "Comp-II",
       "type": "Lab",
       "semester": 7,
       "section": "C",
@@ -9461,7 +9435,7 @@
       "time": "02:20 - 03:40",
       "course": "Instrumentation and Measurements - Lab A",
       "instructor": "Engr. Shahmeer Hussain",
-      "room": "Comp-II",
+      "room": "Comp-I",
       "type": "Lab",
       "semester": 7,
       "section": "A",
