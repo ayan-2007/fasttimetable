@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-05T11:15:17+0000",
+  "generated_at": "2026-10-06T11:04:50+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 849,
+  "count": 854,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -3424,19 +3424,6 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-7A",
-      "day": "Tue",
-      "time": "11:25 - 12:45",
-      "course": "Engineering Management A",
-      "instructor": "Dr. M. Saeed (Resch) Oct 06, 2026",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 7,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
       "batch_section": "EE-2A",
       "day": "Tue",
       "time": "11:25 - 12:45",
@@ -3772,19 +3759,6 @@
       "semester": 3,
       "section": "B",
       "school": "Management"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1C",
-      "day": "Tue",
-      "time": "12:50 - 02:10",
-      "course": "Applications of ICT EE-C",
-      "instructor": "Reschedule 6th Oct 2026",
-      "room": "B-030",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "C",
-      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
@@ -5824,6 +5798,19 @@
       "room": "B-028",
       "type": "Lecture",
       "semester": 3,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-5A",
+      "day": "Wed",
+      "time": "11:25 - 12:45",
+      "course": "MP Inter. & Prog A",
+      "instructor": "Engr. Shehzad Ahmed",
+      "room": "B-020",
+      "type": "Lecture",
+      "semester": 5,
       "section": "A",
       "school": "Engineering"
     },
@@ -8377,6 +8364,45 @@
     },
     {
       "department": "Electrical Engineering",
+      "batch_section": "EE-C",
+      "day": "Thu",
+      "time": "11:25 - 12:45",
+      "course": "App.ICT Quiz 2 Sec EE-C",
+      "instructor": "12:00 pm 8/10/26",
+      "room": "B-119",
+      "type": "Lecture",
+      "semester": null,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
+      "department": "School of Engineering",
+      "batch_section": "A",
+      "day": "Thu",
+      "time": "11:25 - 12:45",
+      "course": "App.ICT Quiz 2 Sec EEA",
+      "instructor": "12:00 pm 8/10/26",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": null,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "School of Engineering",
+      "batch_section": "B",
+      "day": "Thu",
+      "time": "11:25 - 12:45",
+      "course": "App.ICT Quiz 2 Sec EEB",
+      "instructor": "12:00 pm 8/10/26",
+      "room": "B-028",
+      "type": "Lecture",
+      "semester": null,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
       "batch_section": "EE-7A",
       "day": "Thu",
       "time": "11:25 - 12:45",
@@ -8855,6 +8881,45 @@
       "semester": 1,
       "section": "A",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1A",
+      "day": "Thu",
+      "time": "12:50 - 02:10",
+      "course": "Applied Cal Quiz EE-A",
+      "instructor": "12:30pm 8/10/26",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1B",
+      "day": "Thu",
+      "time": "12:50 - 02:10",
+      "course": "Applied Cal Quiz EE-B",
+      "instructor": "12:30pm 8/10/26",
+      "room": "B-028",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1C",
+      "day": "Thu",
+      "time": "12:50 - 02:10",
+      "course": "Applied Cal Quiz EE-C",
+      "instructor": "12:30pm 8/10/26",
+      "room": "B-030",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
+      "school": "Engineering"
     },
     {
       "department": "Computer Engineering",
