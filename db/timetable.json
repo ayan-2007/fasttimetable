@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-11T10:39:36+0000",
+  "generated_at": "2026-10-12T11:44:04+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 848,
+  "count": 849,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -608,7 +608,7 @@
       "time": "10:00 - 11:20",
       "course": "AF1003 Introduction to Financial Accounting",
       "instructor": "Not assigned",
-      "room": "A-104",
+      "room": "A- 210",
       "type": "Lecture",
       "semester": 1,
       "section": "B",
@@ -621,7 +621,7 @@
       "time": "10:00 - 11:20",
       "course": "AF2004 Business Finance",
       "instructor": "Not assigned",
-      "room": "A- 210",
+      "room": "A-104",
       "type": "Lecture",
       "semester": 3,
       "section": "A",
@@ -1864,19 +1864,6 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-7B",
-      "day": "Mon",
-      "time": "02:20 - 03:40",
-      "course": "Applied Machine Learning B",
-      "instructor": "Engr. Aleena Shafiq (Resch) Oct 12, 2026",
-      "room": "B-028",
-      "type": "Lecture",
-      "semester": 7,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
       "batch_section": "EE-7A",
       "day": "Mon",
       "time": "02:20 - 03:40",
@@ -1908,10 +1895,36 @@
       "time": "02:20 - 03:40",
       "course": "Engineering Drawing EE-C",
       "instructor": "Engr. Ammar Ali",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1C",
+      "day": "Mon",
+      "time": "02:20 - 03:40",
+      "course": "Engineering Drawing EE-C",
+      "instructor": "Engr. Ammar Ali",
       "room": "Poth",
       "type": "Lecture",
       "semester": 1,
       "section": "C",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1D",
+      "day": "Mon",
+      "time": "02:20 - 03:40",
+      "course": "Engineering Drawing EE-D",
+      "instructor": "Engr. Moiza Eman",
+      "room": "B-028",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "D",
       "school": "Engineering"
     },
     {
@@ -4235,10 +4248,36 @@
       "time": "02:20 - 03:40",
       "course": "Engineering Drawing EE-A",
       "instructor": "Engr. Ammar Ali",
+      "room": "B-129",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1A",
+      "day": "Tue",
+      "time": "02:20 - 03:40",
+      "course": "Engineering Drawing EE-A",
+      "instructor": "Engr. Ammar Ali",
       "room": "Poth",
       "type": "Lecture",
       "semester": 1,
       "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1B",
+      "day": "Tue",
+      "time": "02:20 - 03:40",
+      "course": "Engineering Drawing EE-B",
+      "instructor": "Engr. Moiza Eman",
+      "room": "B-130",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "B",
       "school": "Engineering"
     },
     {
@@ -10630,23 +10669,10 @@
       "day": "Fri",
       "time": "11:25 - 12:45",
       "course": "Electronic Circuit Design A",
-      "instructor": "Engr. Izza Jamal (Resch) Oct 09 & Oct 16,2026",
+      "instructor": "Engr. Izza Jamal (Resch) Oct 16, 2026",
       "room": "B-027",
       "type": "Lecture",
       "semester": 5,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "School of Engineering",
-      "batch_section": "A",
-      "day": "Fri",
-      "time": "11:25 - 12:45",
-      "course": "EMT -A",
-      "instructor": "2026-10-09 00:00:00",
-      "room": "B-028",
-      "type": "Lecture",
-      "semester": null,
       "section": "A",
       "school": "Engineering"
     },
@@ -10739,19 +10765,6 @@
       "type": "Lecture",
       "semester": 7,
       "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "School of Engineering",
-      "batch_section": "B",
-      "day": "Fri",
-      "time": "12:50 - 02:10",
-      "course": "EMT -B",
-      "instructor": "2026-10-09 00:00:00",
-      "room": "B-028",
-      "type": "Lecture",
-      "semester": null,
-      "section": "B",
       "school": "Engineering"
     },
     {
