@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-18T08:40:08+0000",
+  "generated_at": "2026-10-19T09:41:41+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 853,
+  "count": 856,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -1885,6 +1885,19 @@
       "room": "Mehran-1 A- Block",
       "type": "Lab",
       "semester": 7,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "School of Engineering",
+      "batch_section": "A",
+      "day": "Mon",
+      "time": "02:20 - 03:40",
+      "course": "CVT A",
+      "instructor": "till 3 pm on 19 th Oct 2026",
+      "room": "B-019",
+      "type": "Lecture",
+      "semester": null,
       "section": "A",
       "school": "Engineering"
     },
@@ -8974,41 +8987,41 @@
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-A",
+      "department": "Computer Engineering",
+      "batch_section": "CE-3A",
       "day": "Thu",
       "time": "12:50 - 02:10",
       "course": "ICT Quiz 3 EE-A",
       "instructor": "15/10/26 at 02:20 pm",
       "room": "B-027",
       "type": "Lecture",
-      "semester": null,
+      "semester": 3,
       "section": "A",
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-B",
+      "department": "Computer Engineering",
+      "batch_section": "CE-3B",
       "day": "Thu",
       "time": "12:50 - 02:10",
       "course": "ICT Quiz 3 EE-B",
       "instructor": "15/10/26 at 02:20 pm",
       "room": "B-028",
       "type": "Lecture",
-      "semester": null,
+      "semester": 3,
       "section": "B",
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-C",
+      "department": "Computer Engineering",
+      "batch_section": "CE-3C",
       "day": "Thu",
       "time": "12:50 - 02:10",
       "course": "ICT Quiz 3 EE-C",
       "instructor": "15/10/26 at 02:20 pm",
       "room": "B-030",
       "type": "Lecture",
-      "semester": null,
+      "semester": 3,
       "section": "C",
       "school": "Engineering"
     },
@@ -10079,6 +10092,19 @@
       "school": "Management"
     },
     {
+      "department": "Computer Engineering",
+      "batch_section": "CE-3A",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "Elect Devices & Circuits CE-A",
+      "instructor": "Engr. Maria Nasir (Resch) Nov 23, 2026",
+      "room": "B-129",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-1D",
       "day": "Fri",
@@ -10791,6 +10817,19 @@
       "type": "Lecture",
       "semester": 7,
       "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-3B",
+      "day": "Fri",
+      "time": "12:50 - 02:10",
+      "course": "Elect Devices & Circuits CE-B",
+      "instructor": "Engr. Maria Nasir (Resch) Nov 23, 2026",
+      "room": "B-130",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "B",
       "school": "Engineering"
     },
     {
