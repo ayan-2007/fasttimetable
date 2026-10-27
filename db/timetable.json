@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T09:52:16+0000",
+  "generated_at": "2026-10-27T09:40:05+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
   "count": 852,
   "entries": [
@@ -1872,19 +1872,6 @@
       "room": "Mehran-1 A- Block",
       "type": "Lab",
       "semester": 7,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "School of Engineering",
-      "batch_section": "A",
-      "day": "Mon",
-      "time": "02:20 - 03:40",
-      "course": "CVT A",
-      "instructor": "till 3 pm 26/10/26",
-      "room": "B-019",
-      "type": "Lecture",
-      "semester": null,
       "section": "A",
       "school": "Engineering"
     },
@@ -4702,7 +4689,7 @@
       "day": "Tue",
       "time": "03:45 - 05:05",
       "course": "Linear Algebra EE-A",
-      "instructor": "Reschedule 20 & 27 Oct, 2026",
+      "instructor": "Reschedule 27 Oct, 2026",
       "room": "B-119",
       "type": "Lecture",
       "semester": 2,
@@ -5813,6 +5800,19 @@
       "semester": 1,
       "section": "D",
       "school": "Management"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-1A",
+      "day": "Wed",
+      "time": "11:25 - 12:45",
+      "course": "Applied Calculus CE-A",
+      "instructor": "2026-10-28 00:00:00",
+      "room": "B-119",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
     },
     {
       "department": "Computer Engineering",
