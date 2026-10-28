@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-27T09:40:05+0000",
+  "generated_at": "2026-10-28T10:24:56+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 852,
+  "count": 849,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -4684,19 +4684,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-2A",
-      "day": "Tue",
-      "time": "03:45 - 05:05",
-      "course": "Linear Algebra EE-A",
-      "instructor": "Reschedule 27 Oct, 2026",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 2,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
       "department": "Bachelor of Business Administration",
       "batch_section": "BBA-1B",
       "day": "Tue",
@@ -5803,19 +5790,6 @@
     },
     {
       "department": "Computer Engineering",
-      "batch_section": "CE-1A",
-      "day": "Wed",
-      "time": "11:25 - 12:45",
-      "course": "Applied Calculus CE-A",
-      "instructor": "2026-10-28 00:00:00",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Computer Engineering",
       "batch_section": "CE-7C",
       "day": "Wed",
       "time": "11:25 - 12:45",
@@ -5825,19 +5799,6 @@
       "type": "Lecture",
       "semester": 7,
       "section": "C",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-5B",
-      "day": "Wed",
-      "time": "11:25 - 12:45",
-      "course": "Electromagnetic Theory B",
-      "instructor": "Dr. Irum Saba (Resch) Oct 28, 2026",
-      "room": "B-020",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "B",
       "school": "Engineering"
     },
     {
@@ -10057,10 +10018,10 @@
       "batch_section": "C",
       "day": "Fri",
       "time": "08:30 - 09:50",
-      "course": "ENA Sec C",
+      "course": "ENA Lab Sec C",
       "instructor": "2026-11-06 00:00:00",
       "room": "Circuit Lab",
-      "type": "Lecture",
+      "type": "Lab",
       "semester": null,
       "section": "C",
       "school": "Engineering"
