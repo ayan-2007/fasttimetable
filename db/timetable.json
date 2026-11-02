@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T11:05:50+0000",
+  "generated_at": "2026-11-02T12:05:06+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 849,
+  "count": 848,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -6761,19 +6761,6 @@
       "type": "Lecture",
       "semester": 3,
       "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-3C",
-      "day": "Wed",
-      "time": "02:20 - 03:40",
-      "course": "Digital Logic Design C (Resch)",
-      "instructor": "Dr. Nasir Ali Shah 28-Oct-26",
-      "room": "B-027",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "C",
       "school": "Engineering"
     },
     {
