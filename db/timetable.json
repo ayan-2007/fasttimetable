@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T12:05:06+0000",
+  "generated_at": "2026-11-03T11:42:18+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
   "count": 848,
   "entries": [
@@ -5023,45 +5023,6 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-3C",
-      "day": "Wed",
-      "time": "08:30 - 09:50",
-      "course": "Digital Logic Design Lab C",
-      "instructor": "Engr. Abu Bakar",
-      "room": "DLD",
-      "type": "Lab",
-      "semester": 3,
-      "section": "C",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-3B",
-      "day": "Wed",
-      "time": "08:30 - 09:50",
-      "course": "Elect. Netwk. Analysis Lab B",
-      "instructor": "Engr. Abdullah Zaheer",
-      "room": "Comp-II",
-      "type": "Lab",
-      "semester": 3,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-3B",
-      "day": "Wed",
-      "time": "08:30 - 09:50",
-      "course": "Elect. Netwk. Analysis Lab B",
-      "instructor": "Engr. Abdullah Zaheer",
-      "room": "Circuit Lab",
-      "type": "Lab",
-      "semester": 3,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
       "batch_section": "EE-5A",
       "day": "Wed",
       "time": "08:30 - 09:50",
@@ -5071,19 +5032,6 @@
       "type": "Lecture",
       "semester": 5,
       "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Computer Engineering",
-      "batch_section": "CE-3C",
-      "day": "Wed",
-      "time": "08:30 - 09:50",
-      "course": "Electronic Devices and Circuits - Lab CE-C",
-      "instructor": "Engr. Shahmeer Hussain",
-      "room": "Elect",
-      "type": "Lab",
-      "semester": 3,
-      "section": "C",
       "school": "Engineering"
     },
     {
@@ -5280,32 +5228,6 @@
       "semester": 3,
       "section": "A",
       "school": "Management"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-3A",
-      "day": "Wed",
-      "time": "08:30 - 09:50",
-      "course": "Obj. Oriented Data Struct. Lab A",
-      "instructor": "Mr. M. Ammar Masood",
-      "room": "Koh",
-      "type": "Lab",
-      "semester": 3,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Computer Engineering",
-      "batch_section": "CE-3A",
-      "day": "Wed",
-      "time": "08:30 - 09:50",
-      "course": "Object Oriented Programming Lab CE-A",
-      "instructor": "Engr. Ayesha Nadeem",
-      "room": "Poth",
-      "type": "Lab",
-      "semester": 3,
-      "section": "A",
-      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
@@ -5568,6 +5490,58 @@
       "school": "Management"
     },
     {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-3C",
+      "day": "Wed",
+      "time": "10:00 - 12:00",
+      "course": "Digital Logic Design Lab C",
+      "instructor": "Engr. Abu Bakar",
+      "room": "DLD",
+      "type": "Lab",
+      "semester": 3,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-3B",
+      "day": "Wed",
+      "time": "10:00 - 12:00",
+      "course": "Elect. Netwk. Analysis Lab B",
+      "instructor": "Engr. Abdullah Zaheer",
+      "room": "Comp-II",
+      "type": "Lab",
+      "semester": 3,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-3B",
+      "day": "Wed",
+      "time": "10:00 - 12:00",
+      "course": "Elect. Netwk. Analysis Lab B",
+      "instructor": "Engr. Abdullah Zaheer",
+      "room": "Circuit Lab",
+      "type": "Lab",
+      "semester": 3,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-3C",
+      "day": "Wed",
+      "time": "10:00 - 12:00",
+      "course": "Electronic Devices and Circuits - Lab CE-C",
+      "instructor": "Engr. Shahmeer Hussain",
+      "room": "Elect",
+      "type": "Lab",
+      "semester": 3,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
       "department": "Bachelor of Science (Financial Technology)",
       "batch_section": "FT-3A",
       "day": "Wed",
@@ -5761,6 +5735,32 @@
       "semester": 5,
       "section": "C",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-3A",
+      "day": "Wed",
+      "time": "10:00 - 12:00",
+      "course": "Obj. Oriented Data Struct. Lab A",
+      "instructor": "Mr. M. Ammar Masood",
+      "room": "Koh",
+      "type": "Lab",
+      "semester": 3,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-3A",
+      "day": "Wed",
+      "time": "10:00 - 12:00",
+      "course": "Object Oriented Programming Lab CE-A",
+      "instructor": "Engr. Ayesha Nadeem",
+      "room": "Comp-III",
+      "type": "Lab",
+      "semester": 3,
+      "section": "A",
+      "school": "Engineering"
     },
     {
       "department": "Bachelor of Science (Financial Technology)",
@@ -6887,7 +6887,7 @@
       "time": "02:25 - 03:45",
       "course": "AF1003 Intro to Financial Accounting",
       "instructor": "Not assigned",
-      "room": "A-104",
+      "room": "A-101",
       "type": "Lecture",
       "semester": 1,
       "section": "B",
