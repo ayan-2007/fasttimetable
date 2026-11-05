@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T11:55:11+0000",
+  "generated_at": "2026-11-05T11:58:01+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
   "count": 850,
   "entries": [
@@ -7860,7 +7860,7 @@
       "batch_section": "FT-1A",
       "day": "Thu",
       "time": "08:30 - 10:20",
-      "course": "SS1007 Islamic Studies/Ethics Cancelled",
+      "course": "SS1007 Islamic Studies/Ethics",
       "instructor": "Not assigned",
       "room": "A--211",
       "type": "Lecture",
@@ -9953,7 +9953,7 @@
       "batch_section": "BBA-3B",
       "day": "Fri",
       "time": "08:30 - 09:50",
-      "course": "AF2003 Management Accounting",
+      "course": "AF2003 Management Accounting Cancelled",
       "instructor": "Not assigned",
       "room": "A-310",
       "type": "Lecture",
@@ -10019,8 +10019,8 @@
       "day": "Fri",
       "time": "08:30 - 09:50",
       "course": "ENA Lab Sec C",
-      "instructor": "2026-11-06 00:00:00",
-      "room": "Circuit Lab",
+      "instructor": "6-11-26 08:30 - 10:30 am",
+      "room": "Comp-II",
       "type": "Lab",
       "semester": null,
       "section": "C",
@@ -10677,6 +10677,19 @@
       "school": "Engineering"
     },
     {
+      "department": "School of Engineering",
+      "batch_section": "C",
+      "day": "Fri",
+      "time": "11:25 - 12:45",
+      "course": "OODS Lab Sec -C",
+      "instructor": "10:30 - 01:00 06/Nov/26",
+      "room": "Koh",
+      "type": "Lab",
+      "semester": null,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
       "department": "Bachelor of Science (Financial Technology)",
       "batch_section": "FT-5B",
       "day": "Fri",
@@ -10765,19 +10778,6 @@
       "type": "Lab",
       "semester": 2,
       "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-3C",
-      "day": "Fri",
-      "time": "02:00 - 03:20",
-      "course": "Objected Oriented Data Structures SeC -C",
-      "instructor": "2026-11-06 11:00:00",
-      "room": "Poth",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "C",
       "school": "Engineering"
     },
     {
