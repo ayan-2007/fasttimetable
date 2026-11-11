@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-10T12:16:59+0000",
+  "generated_at": "2026-11-11T11:43:22+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 855,
+  "count": 862,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -901,6 +901,19 @@
       "school": "Management"
     },
     {
+      "department": "Computer Engineering",
+      "batch_section": "CE-3 (All)",
+      "day": "Mon",
+      "time": "11:25 - 12:45",
+      "course": "Civics and Comminity Engagement CE-A,CE-B Ms. Maria Mazhar 11:30 to 03:00 pm only Monday 16 Nov, 2026 (Main Auditoriam A-BlocK)",
+      "instructor": "Not assigned",
+      "room": "B-129",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "All",
+      "school": "Engineering"
+    },
+    {
       "department": "Electrical Engineering",
       "batch_section": "EE-3B",
       "day": "Mon",
@@ -1354,19 +1367,6 @@
       "semester": 5,
       "section": "A",
       "school": "Management"
-    },
-    {
-      "department": "Computer Engineering",
-      "batch_section": "CE-3 (All)",
-      "day": "Mon",
-      "time": "12:50 - 02:10",
-      "course": "Civics and Comminity Engagement CE-A,CE-B Ms. Maria Mazhar 12:50 - 02:45 (Main Auditoriam A-BlocK)",
-      "instructor": "Not assigned",
-      "room": "B-129",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "All",
-      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
@@ -4645,16 +4645,16 @@
       "school": "Engineering"
     },
     {
-      "department": "Computer Engineering",
-      "batch_section": "CE-5A",
+      "department": "Electrical Engineering",
+      "batch_section": "EE-5B",
       "day": "Tue",
       "time": "03:45 - 05:05",
-      "course": "Computer Org.Architecture CE-A",
-      "instructor": "Dr. Nasir Ali Shah (Resch) Nov 10, 2026",
-      "room": "B-230",
+      "course": "Basic Mechanical Engg. B",
+      "instructor": "Dr. M. Adnan Resch 17-Nov-26",
+      "room": "B-119",
       "type": "Lecture",
       "semester": 5,
-      "section": "A",
+      "section": "B",
       "school": "Engineering"
     },
     {
@@ -4693,19 +4693,6 @@
       "room": "B-028",
       "type": "Lecture",
       "semester": 7,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Computer Engineering",
-      "batch_section": "CE-3A",
-      "day": "Tue",
-      "time": "03:45 - 05:05",
-      "course": "Linear Algebra A",
-      "instructor": "Dr. Sumaira Azhar Resch Nov 10, 2026",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 3,
       "section": "A",
       "school": "Engineering"
     },
@@ -5412,19 +5399,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-5B",
-      "day": "Wed",
-      "time": "09:55 - 11:15",
-      "course": "Basic Mechanical Engg. B",
-      "instructor": "Dr. M. Adnan Resch 11-Nov-26",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
       "department": "Computer Engineering",
       "batch_section": "CE-5A",
       "day": "Wed",
@@ -5828,19 +5802,6 @@
       "school": "Management"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-5A",
-      "day": "Wed",
-      "time": "11:25 - 12:45",
-      "course": "Basic Mechanical Engg. A",
-      "instructor": "Dr. M. Adnan Resch 11-Nov-26",
-      "room": "B-019",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
       "department": "Computer Engineering",
       "batch_section": "CE-7C",
       "day": "Wed",
@@ -5851,19 +5812,6 @@
       "type": "Lecture",
       "semester": 7,
       "section": "C",
-      "school": "Engineering"
-    },
-    {
-      "department": "Computer Engineering",
-      "batch_section": "CE-5A",
-      "day": "Wed",
-      "time": "11:25 - 12:45",
-      "course": "Data Com. & Netwks. CE-A",
-      "instructor": "Engr. Shahid Qureshi Resch 11-Nov-26",
-      "room": "B-230",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "A",
       "school": "Engineering"
     },
     {
@@ -5903,19 +5851,6 @@
       "type": "Lab",
       "semester": 1,
       "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "School of Engineering",
-      "batch_section": "All",
-      "day": "Wed",
-      "time": "11:25 - 12:45",
-      "course": "VLSI Worskshop",
-      "instructor": "Not assigned",
-      "room": "Koh",
-      "type": "Lecture",
-      "semester": null,
-      "section": "All",
       "school": "Engineering"
     },
     {
@@ -10053,6 +9988,19 @@
       "school": "Management"
     },
     {
+      "department": "Computer Engineering",
+      "batch_section": "CE-1A",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "Applied Calculus CE-A",
+      "instructor": "Dr. Farah Jabeen Awan (Resch) Nov 13, 26",
+      "room": "B-119",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Bachelor of Business Administration",
       "batch_section": "BBA-1A",
       "day": "Fri",
@@ -10103,6 +10051,32 @@
       "semester": 1,
       "section": "B",
       "school": "Management"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-3A",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "Discrete Strucures CE-A",
+      "instructor": "Dr. Mukhtar Ullah (Resch) Nov 13, 2026",
+      "room": "B-130",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-3A",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "Elect Devices & Circuits CE-A",
+      "instructor": "Engr. Maria Nasir (Resch) Nov 13, 2026",
+      "room": "B-129",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "A",
+      "school": "Engineering"
     },
     {
       "department": "Bachelor of Science (Business Analytics)",
@@ -10214,7 +10188,7 @@
       "day": "Fri",
       "time": "08:30 - 09:50",
       "course": "Physics for Engineers Lab EE-D",
-      "instructor": "Engr. Deema Zargoon Resch 13-Nov-26 09am to 12pm",
+      "instructor": "Engr. Deema Zargoon Resch 13-Nov-26 08:30 to 10:00 am",
       "room": "Phy",
       "type": "Lab",
       "semester": 1,
@@ -10339,6 +10313,32 @@
       "school": "Management"
     },
     {
+      "department": "Computer Engineering",
+      "batch_section": "CE-1A",
+      "day": "Fri",
+      "time": "09:55 - 11:15",
+      "course": "Applications of ICT CE-A",
+      "instructor": "Dr. M. Ibrar Khan (Reschedule) Nov 13, 2026 09:55 to 12:45",
+      "room": "B-119",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1A",
+      "day": "Fri",
+      "time": "09:55 - 11:15",
+      "course": "Applied Calculus EE-A",
+      "instructor": "Dr. Farah Jabeen Awan (Resch) Nov 13,",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Electrical Engineering",
       "batch_section": "EE-5A",
       "day": "Fri",
@@ -10365,6 +10365,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1B",
+      "day": "Fri",
+      "time": "09:55 - 11:15",
+      "course": "English Language Skills EE-B",
+      "instructor": "Ms. Hajra Khalid (Resch) Nov 13",
+      "room": "B-028",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
       "department": "Computer Engineering",
       "batch_section": "CE-3B",
       "day": "Fri",
@@ -10388,6 +10401,19 @@
       "type": "Lecture",
       "semester": 3,
       "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1C",
+      "day": "Fri",
+      "time": "09:55 - 11:15",
+      "course": "Physics for Engr. EE-C",
+      "instructor": "Engr. Fakhar Abbas (Resch) 13 Nov",
+      "room": "B-030",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
       "school": "Engineering"
     },
     {
@@ -10717,6 +10743,19 @@
     },
     {
       "department": "Electrical Engineering",
+      "batch_section": "EE-1B",
+      "day": "Fri",
+      "time": "11:25 - 12:45",
+      "course": "Applied Calculus EE-B",
+      "instructor": "Dr. Farah Jabeen Awan (Resch) Nov 13",
+      "room": "B-028",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
       "batch_section": "EE-5B",
       "day": "Fri",
       "time": "11:25 - 12:45",
@@ -10726,6 +10765,19 @@
       "type": "Lecture",
       "semester": 5,
       "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1C",
+      "day": "Fri",
+      "time": "11:25 - 12:45",
+      "course": "English Language Skills EE-C",
+      "instructor": "Ms. Hajra Khalid (Resch) Nov 13",
+      "room": "B-030",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
       "school": "Engineering"
     },
     {
@@ -10752,6 +10804,19 @@
       "type": "Lecture",
       "semester": 3,
       "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1A",
+      "day": "Fri",
+      "time": "11:25 - 12:45",
+      "course": "Physics for Engr. EE-A",
+      "instructor": "Engr. Fakhar Abbas (Resch) 13 Nov",
+      "room": "B-027",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
       "school": "Engineering"
     },
     {
@@ -10817,6 +10882,32 @@
       "type": "Lecture",
       "semester": 7,
       "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-3A",
+      "day": "Fri",
+      "time": "12:50 - 02:10",
+      "course": "Discrete Strucures CE-A",
+      "instructor": "Dr. Mukhtar Ullah (Resch) Nov 13, 2026",
+      "room": "B-129",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-3B",
+      "day": "Fri",
+      "time": "12:50 - 02:10",
+      "course": "Elect Devices & Circuits CE-B",
+      "instructor": "Engr. Maria Nasir (Resch) Nov 13, 2026",
+      "room": "B-130",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "B",
       "school": "Engineering"
     },
     {
