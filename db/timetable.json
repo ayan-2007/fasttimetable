@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-11T11:43:22+0000",
+  "generated_at": "2026-11-12T12:18:33+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 862,
+  "count": 861,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -4307,6 +4307,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Computer Engineering",
+      "batch_section": "CE-1A",
+      "day": "Tue",
+      "time": "02:20 - 03:40",
+      "course": "Pakistan Studies CE-A",
+      "instructor": "Ms. Asefa Zareen (reschedule) 17 Nov, 2026",
+      "room": "B-119",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
       "department": "Electrical Engineering",
       "batch_section": "EE-1D",
       "day": "Tue",
@@ -4651,7 +4664,7 @@
       "time": "03:45 - 05:05",
       "course": "Basic Mechanical Engg. B",
       "instructor": "Dr. M. Adnan Resch 17-Nov-26",
-      "room": "B-119",
+      "room": "B-230",
       "type": "Lecture",
       "semester": 5,
       "section": "B",
@@ -8403,19 +8416,6 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-5B",
-      "day": "Thu",
-      "time": "11:25 - 12:45",
-      "course": "MP Inter. & Prog B",
-      "instructor": "Engr. Shehzad Ahmed Resch 12-Nov-26",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
       "batch_section": "EE-3A",
       "day": "Thu",
       "time": "11:25 - 12:45",
@@ -9689,19 +9689,6 @@
       "school": "Management"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-5A",
-      "day": "Thu",
-      "time": "03:45 - 05:05",
-      "course": "Basic Mechanical Engg. A",
-      "instructor": "Dr. M. Adnan Resch 12-Nov-26",
-      "room": "B-020",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
       "department": "Computer Engineering",
       "batch_section": "CE-7C",
       "day": "Thu",
@@ -10054,15 +10041,15 @@
     },
     {
       "department": "Computer Engineering",
-      "batch_section": "CE-3A",
+      "batch_section": "CE-3B",
       "day": "Fri",
       "time": "08:30 - 09:50",
-      "course": "Discrete Strucures CE-A",
+      "course": "Discrete Strucures CE-B",
       "instructor": "Dr. Mukhtar Ullah (Resch) Nov 13, 2026",
       "room": "B-130",
       "type": "Lecture",
       "semester": 3,
-      "section": "A",
+      "section": "B",
       "school": "Engineering"
     },
     {
@@ -10188,7 +10175,7 @@
       "day": "Fri",
       "time": "08:30 - 09:50",
       "course": "Physics for Engineers Lab EE-D",
-      "instructor": "Engr. Deema Zargoon Resch 13-Nov-26 08:30 to 10:00 am",
+      "instructor": "13-Nov-26 08:30 to 10:00 am",
       "room": "Phy",
       "type": "Lab",
       "semester": 1,
