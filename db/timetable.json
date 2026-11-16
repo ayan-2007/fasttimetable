@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-15T11:48:28+0000",
+  "generated_at": "2026-11-16T12:30:15+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 851,
+  "count": 860,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -901,19 +901,6 @@
       "school": "Management"
     },
     {
-      "department": "Computer Engineering",
-      "batch_section": "CE-3 (All)",
-      "day": "Mon",
-      "time": "11:25 - 12:45",
-      "course": "Civics and Comminity Engagement CE-A,CE-B Ms. Maria Mazhar 11:30 to 03:00 pm only Monday 16 Nov, 2026 (Main Auditoriam A-BlocK)",
-      "instructor": "Not assigned",
-      "room": "B-129",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "All",
-      "school": "Engineering"
-    },
-    {
       "department": "Electrical Engineering",
       "batch_section": "EE-3B",
       "day": "Mon",
@@ -1367,6 +1354,19 @@
       "semester": 5,
       "section": "A",
       "school": "Management"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-3 (All)",
+      "day": "Mon",
+      "time": "12:50 - 02:10",
+      "course": "Civics and Comminity Engagement CE-A,CE-B Ms. Maria Mazhar 12:50 - 02:45 (Main Auditoriam A-BlocK)",
+      "instructor": "Not assigned",
+      "room": "B-129",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "All",
+      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
@@ -3497,6 +3497,19 @@
       "room": "Comp-II",
       "type": "Lab",
       "semester": 3,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-7B",
+      "day": "Tue",
+      "time": "11:25 - 12:45",
+      "course": "Tech. & Business Writing B",
+      "instructor": "Dr. Aamer Hafeez (Resch) Nov 17, 2026",
+      "room": "B-119",
+      "type": "Lecture",
+      "semester": 7,
       "section": "B",
       "school": "Engineering"
     },
@@ -5867,15 +5880,15 @@
       "school": "Engineering"
     },
     {
-      "department": "School of Engineering",
-      "batch_section": "All",
+      "department": "Electrical Engineering",
+      "batch_section": "EE-3 (All)",
       "day": "Wed",
       "time": "11:25 - 12:45",
-      "course": "Retake Sessional II Exam",
+      "course": "Understanding of Holy Quran-II Retake Sessional II Exam",
       "instructor": "2026-11-18 00:00:00",
       "room": "B-019",
       "type": "Lecture",
-      "semester": null,
+      "semester": 3,
       "section": "All",
       "school": "Engineering"
     },
@@ -7254,6 +7267,19 @@
       "room": "B-027",
       "type": "Lecture",
       "semester": 2,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-7A",
+      "day": "Wed",
+      "time": "03:45 - 05:05",
+      "course": "Tech. & Business Writing A",
+      "instructor": "Dr. Aamer Hafeez (Resch) Nov 18, 2026",
+      "room": "B-028",
+      "type": "Lecture",
+      "semester": 7,
       "section": "A",
       "school": "Engineering"
     },
@@ -9469,6 +9495,19 @@
     },
     {
       "department": "Electrical Engineering",
+      "batch_section": "EE-1B",
+      "day": "Thu",
+      "time": "02:20 - 03:40",
+      "course": "English Language Skills EE-B",
+      "instructor": "Ms. Hajra Khalid (Resc) Nov 19, 2026",
+      "room": "B-119",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
       "batch_section": "EE-7A",
       "day": "Thu",
       "time": "02:20 - 03:40",
@@ -10014,6 +10053,45 @@
       "school": "Management"
     },
     {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1A",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "Applications of ICT Lab EE-A",
+      "instructor": "Engr. Alina Gulzar (Reschedule) Nov 20, 2026",
+      "room": "Comp-II",
+      "type": "Lab",
+      "semester": 1,
+      "section": "A",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1B",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "Applications of ICT Lab EE-B",
+      "instructor": "Engr. Esha Rizwan (Reschedule) Nov 20, 2026",
+      "room": "Comp-III",
+      "type": "Lab",
+      "semester": 1,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-3 (All)",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "Civics and Comminity Engagement CE-A,CE-B Ms. Maria Mazhar (Presentations) Nov 20, 2026 Mian Auditorium A Block",
+      "instructor": "Not assigned",
+      "room": "B-129",
+      "type": "Lecture",
+      "semester": 3,
+      "section": "All",
+      "school": "Engineering"
+    },
+    {
       "department": "Bachelor of Business Administration",
       "batch_section": "BBA-1A",
       "day": "Fri",
@@ -10064,6 +10142,32 @@
       "semester": 1,
       "section": "B",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1C",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "Engineering Drawing EE-C",
+      "instructor": "Engr. Ammar Ali (Reschedule) Nov 20, 2026",
+      "room": "B-028",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1D",
+      "day": "Fri",
+      "time": "08:30 - 09:50",
+      "course": "Engineering Drawing EE-D",
+      "instructor": "Engr. Moiza Eman (Reschedule) Nov 20, 2026",
+      "room": "B-030",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "D",
+      "school": "Engineering"
     },
     {
       "department": "Bachelor of Science (Business Analytics)",
@@ -10285,6 +10389,19 @@
       "semester": 3,
       "section": "D",
       "school": "Management"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-7A",
+      "day": "Fri",
+      "time": "09:55 - 11:15",
+      "course": "Applied Machine Learning Lab A",
+      "instructor": "Engr. Fasih Ahmed Janjua (Reschedule) Nov 20, 2026",
+      "room": "Koh",
+      "type": "Lab",
+      "semester": 7,
+      "section": "A",
+      "school": "Engineering"
     },
     {
       "department": "Electrical Engineering",
