@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T12:30:15+0000",
+  "generated_at": "2026-11-17T12:51:15+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 860,
+  "count": 858,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -3450,6 +3450,19 @@
     },
     {
       "department": "Electrical Engineering",
+      "batch_section": "EE-7B",
+      "day": "Tue",
+      "time": "11:25 - 12:45",
+      "course": "Fund. Database Systems Lab B",
+      "instructor": "Engr. Sajjal Mudassar (Reschedule) Nov 24, 2026",
+      "room": "Comp-III",
+      "type": "Lab",
+      "semester": 7,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
       "batch_section": "EE-2A",
       "day": "Tue",
       "time": "11:25 - 12:45",
@@ -3497,19 +3510,6 @@
       "room": "Comp-II",
       "type": "Lab",
       "semester": 3,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-7B",
-      "day": "Tue",
-      "time": "11:25 - 12:45",
-      "course": "Tech. & Business Writing B",
-      "instructor": "Dr. Aamer Hafeez (Resch) Nov 17, 2026",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 7,
       "section": "B",
       "school": "Engineering"
     },
@@ -4320,19 +4320,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Computer Engineering",
-      "batch_section": "CE-1A",
-      "day": "Tue",
-      "time": "02:20 - 03:40",
-      "course": "Pakistan Studies CE-A",
-      "instructor": "Ms. Asefa Zareen (reschedule) 17 Nov, 2026",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
       "department": "Electrical Engineering",
       "batch_section": "EE-1D",
       "day": "Tue",
@@ -4668,19 +4655,6 @@
       "type": "Lecture",
       "semester": 7,
       "section": "A",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-5B",
-      "day": "Tue",
-      "time": "03:45 - 05:05",
-      "course": "Basic Mechanical Engg. B",
-      "instructor": "Dr. M. Adnan Resch 17-Nov-26",
-      "room": "B-230",
-      "type": "Lecture",
-      "semester": 5,
-      "section": "B",
       "school": "Engineering"
     },
     {
@@ -9026,19 +9000,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1B",
-      "day": "Thu",
-      "time": "12:50 - 02:10",
-      "course": "Physics for Engr. EE-B",
-      "instructor": "Dr. Mukhtar Ullah (Resch) Nov 19, 2026",
-      "room": "B-028",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "B",
-      "school": "Engineering"
-    },
-    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-5C",
       "day": "Thu",
@@ -9495,15 +9456,15 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-1B",
+      "batch_section": "EE-1C",
       "day": "Thu",
       "time": "02:20 - 03:40",
-      "course": "English Language Skills EE-B",
+      "course": "English Language Skills EE-C",
       "instructor": "Ms. Hajra Khalid (Resc) Nov 19, 2026",
       "room": "B-119",
       "type": "Lecture",
       "semester": 1,
-      "section": "B",
+      "section": "C",
       "school": "Engineering"
     },
     {
@@ -9537,7 +9498,7 @@
       "batch_section": "EE-1 (All)",
       "day": "Thu",
       "time": "02:20 - 03:40",
-      "course": "Ocp. Health & Safety EE-A,B,C Teacher: Saad Usman Shah 02:20 - 03:30 D Block Auditorium",
+      "course": "Ocp. Health & Safety EE-A,B,C Teacher: Saad Usman Shah 02:20 - 03:30",
       "instructor": "Not assigned",
       "room": "B-027",
       "type": "Lecture",
@@ -10816,6 +10777,19 @@
       "room": "B-130",
       "type": "Lecture",
       "semester": 3,
+      "section": "B",
+      "school": "Engineering"
+    },
+    {
+      "department": "Electrical Engineering",
+      "batch_section": "EE-1B",
+      "day": "Fri",
+      "time": "11:25 - 12:45",
+      "course": "Physics for Engr. EE-B",
+      "instructor": "Dr. Mukhtar Ullah (Resch) Nov 20, 2026",
+      "room": "B-028",
+      "type": "Lecture",
+      "semester": 1,
       "section": "B",
       "school": "Engineering"
     },
