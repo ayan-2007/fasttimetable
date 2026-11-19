@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T12:44:16+0000",
+  "generated_at": "2026-11-19T12:35:59+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 864,
+  "count": 861,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -1830,7 +1830,7 @@
       "time": "02:20 - 03:40",
       "course": "Analogue and Digital Communication - Lab A",
       "instructor": "Engr. Abdur Rehman",
-      "room": "Comp-III",
+      "room": "Koh",
       "type": "Lab",
       "semester": 5,
       "section": "A",
@@ -1947,7 +1947,7 @@
       "time": "02:20 - 03:40",
       "course": "Engineering Drawing EE-D",
       "instructor": "Engr. Moiza Eman",
-      "room": "Koh",
+      "room": "Comp-III",
       "type": "Lecture",
       "semester": 1,
       "section": "D",
@@ -3403,7 +3403,7 @@
       "time": "11:25 - 12:45",
       "course": "Analogue and Digital Communication - Lab B",
       "instructor": "Engr. Abdur Rehman",
-      "room": "Koh",
+      "room": "Comp-I",
       "type": "Lab",
       "semester": 5,
       "section": "B",
@@ -3442,7 +3442,7 @@
       "time": "11:25 - 12:45",
       "course": "Digital Signal Processing Lab CE-B",
       "instructor": "Engr. Abu Bakar",
-      "room": "Comp-I",
+      "room": "Koh",
       "type": "Lab",
       "semester": 5,
       "section": "B",
@@ -7284,19 +7284,6 @@
       "school": "Engineering"
     },
     {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-7A",
-      "day": "Wed",
-      "time": "03:45 - 05:05",
-      "course": "Tech. & Business Writing A",
-      "instructor": "Dr. Aamer Hafeez (Resch) Nov 18, 2026",
-      "room": "B-028",
-      "type": "Lecture",
-      "semester": 7,
-      "section": "A",
-      "school": "Engineering"
-    },
-    {
       "department": "Bachelor of Science (Business Analytics)",
       "batch_section": "BSBA-1C",
       "day": "Wed",
@@ -9000,6 +8987,19 @@
       "school": "Engineering"
     },
     {
+      "department": "Computer Engineering",
+      "batch_section": "CE-1C",
+      "day": "Thu",
+      "time": "12:50 - 02:10",
+      "course": "English Language Skills CE-A, EE-ABC (Combine Prsentations)",
+      "instructor": "Ms. Hajra Khalid (Venue: D-Block Main Auditoriam) Nov 26, 2026",
+      "room": "B-030",
+      "type": "Lecture",
+      "semester": 1,
+      "section": "C",
+      "school": "Engineering"
+    },
+    {
       "department": "Electrical Engineering",
       "batch_section": "EE-7A",
       "day": "Thu",
@@ -9036,19 +9036,6 @@
       "type": "Lab",
       "semester": 3,
       "section": "C",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
-      "batch_section": "EE-1 (All)",
-      "day": "Thu",
-      "time": "12:50 - 02:10",
-      "course": "Retake Exam",
-      "instructor": "Sessional - II",
-      "room": "B-027",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "All",
       "school": "Engineering"
     },
     {
@@ -9508,19 +9495,6 @@
     },
     {
       "department": "Electrical Engineering",
-      "batch_section": "EE-1C",
-      "day": "Thu",
-      "time": "02:20 - 03:40",
-      "course": "English Language Skills EE-C",
-      "instructor": "Ms. Hajra Khalid (Resc) Nov 19, 2026",
-      "room": "B-119",
-      "type": "Lecture",
-      "semester": 1,
-      "section": "C",
-      "school": "Engineering"
-    },
-    {
-      "department": "Electrical Engineering",
       "batch_section": "EE-7A",
       "day": "Thu",
       "time": "02:20 - 03:40",
@@ -9777,19 +9751,6 @@
       "type": "Lecture",
       "semester": 7,
       "section": "C",
-      "school": "Engineering"
-    },
-    {
-      "department": "Computer Engineering",
-      "batch_section": "CE-3A",
-      "day": "Thu",
-      "time": "03:45 - 05:05",
-      "course": "Discrete Strucures CE-A",
-      "instructor": "Dr. Mukhtar Ullah (Resch) Nov 19, 2026",
-      "room": "B-028",
-      "type": "Lecture",
-      "semester": 3,
-      "section": "A",
       "school": "Engineering"
     },
     {
