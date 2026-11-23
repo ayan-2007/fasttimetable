@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-22T12:20:46+0000",
+  "generated_at": "2026-11-23T14:09:02+0000",
   "source": "https://docs.google.com/spreadsheets/d/1fL2TWhPgbPc2d66vm_KywTpdsGBIaBLqlmz4JLPudCw/edit?usp=sharing, https://docs.google.com/spreadsheets/d/1AnFQQhv9lu4grESE2ypbDG7E1QOPGgGCRiejem5ocPw/edit?usp=sharing",
-  "count": 855,
+  "count": 856,
   "entries": [
     {
       "department": "Electrical Engineering",
@@ -9530,6 +9530,19 @@
       "type": "Lecture",
       "semester": 3,
       "section": "C",
+      "school": "Engineering"
+    },
+    {
+      "department": "Computer Engineering",
+      "batch_section": "CE-5A",
+      "day": "Thu",
+      "time": "02:20 - 03:40",
+      "course": "Digital Signal Processing CE-A",
+      "instructor": "Dr. Shahzad Saleem Resch Nov 26, 2026",
+      "room": "B-230",
+      "type": "Lecture",
+      "semester": 5,
+      "section": "A",
       "school": "Engineering"
     },
     {
